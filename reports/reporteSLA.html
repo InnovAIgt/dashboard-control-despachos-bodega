@@ -269,53 +269,9 @@
             line-height: 1.6;
         }
 
-        .sla-guide-title {
-            display: block;
+        .sla-guide strong {
             color: #1e3a8a;
             font-weight: 800;
-        }
-
-        .sla-legend {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px 18px;
-            margin: 9px 0 7px;
-        }
-
-        .sla-legend-item {
-            display: inline-flex;
-            align-items: center;
-            gap: 7px;
-            color: #334155;
-        }
-
-        .sla-legend-dot {
-            width: 11px;
-            height: 11px;
-            flex: 0 0 11px;
-            border-radius: 50%;
-        }
-
-        .sla-legend-dot.ok {
-            background: #16a34a;
-        }
-
-        .sla-legend-dot.warning {
-            background: #d97706;
-        }
-
-        .sla-legend-dot.late {
-            background: #dc2626;
-        }
-
-        .sla-legend-dot.total {
-            background: #64748b;
-        }
-
-        .sla-guide-note {
-            margin: 0;
-            color: #475569;
-            font-size: 12px;
         }
 
         .header-chart {
@@ -641,33 +597,14 @@
                 </div>
                 <div class="global-kpi-value" id="kpi-global">—</div>
             </div>
-            <section class="sla-guide" aria-label="Leyenda del SLA">
-                <strong class="sla-guide-title">
-                    Cómo leer el SLA global de <span id="sla-guide-country">Guatemala y El Salvador</span>
-                </strong>
-                <div class="sla-legend">
-                    <span class="sla-legend-item">
-                        <span class="sla-legend-dot ok" aria-hidden="true"></span>
-                        <span><strong>En tiempo:</strong> de 0 a 2 días</span>
-                    </span>
-                    <span class="sla-legend-item">
-                        <span class="sla-legend-dot warning" aria-hidden="true"></span>
-                        <span><strong>Por vencer:</strong> día 3</span>
-                    </span>
-                    <span class="sla-legend-item">
-                        <span class="sla-legend-dot late" aria-hidden="true"></span>
-                        <span><strong>Vencida:</strong> más de 3 días</span>
-                    </span>
-                    <span class="sla-legend-item">
-                        <span class="sla-legend-dot total" aria-hidden="true"></span>
-                        <span><strong>Total:</strong> todas las solicitudes abiertas del país</span>
-                    </span>
-                </div>
-                <p class="sla-guide-note">
-                    KPI = solicitudes abiertas en tiempo ÷ total de solicitudes abiertas × 100.
-                    El SLA usa días calendario hasta hoy; “Días activa” llega hasta la última actualización exitosa del API.
-                </p>
-            </section>
+            <p class="sla-guide">
+                <strong>Cómo leer el SLA global de <span id="sla-guide-country">Guatemala y El Salvador</span>:</strong>
+                verde significa que la factura abierta tiene de 0 a 2 días; amarillo indica que está en el día 3
+                de su SLA; rojo significa que superó los 3 días; gris indica el total de facturas abiertas incluidas.
+                El cálculo usa días calendario desde la fecha de emisión. “Días activa” se cuenta hasta la última
+                actualización exitosa del API. El KPI es solicitudes abiertas en tiempo ÷ total de solicitudes
+                abiertas × 100.
+            </p>
 
             <div class="cards">
                 <article class="card blue">
