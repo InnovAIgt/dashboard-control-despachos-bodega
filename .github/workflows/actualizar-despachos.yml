@@ -1,0 +1,53 @@
+name: Actualizar datos de despachos
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-despachos
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Consultar SAP y generar snapshot
+        env:
+          SAP_API_KEY: ${{ secrets.SAP_API_KEY }}
+          SAP_API_URL: ${{ vars.SAP_API_URL }}
+          SAP_YEAR: ${{ vars.SAP_YEAR }}
+          SAP_AUTH_TYPE: ${{ vars.SAP_AUTH_TYPE }}
+          SAP_HEADER_NAME: ${{ vars.SAP_HEADER_NAME }}
+          SAP_RUTA_LISTA: ${{ vars.SAP_RUTA_LISTA }}
+          SAP_AGRUPAR_POR_FACTURA: ${{ vars.SAP_AGRUPAR_POR_FACTURA }}
+        run: node scripts/actualizar-despachos.js
+
+      - name: Guardar snapshot si cambió
+        shell: bash
+        run: |
+          if git diff --quiet -- "dashboards/bodega/control-despachos/data/facturas.json"; then
+            echo "No hay cambios para guardar."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add "dashboards/bodega/control-despachos/data/facturas.json"
+          git commit -m "chore(bodega): actualiza datos de despachos"
+          git push

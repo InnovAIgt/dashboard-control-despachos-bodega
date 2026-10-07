@@ -1,0 +1,11 @@
+{
+  "ok": false,
+  "facturas": [],
+  "meta": {
+    "ultimoExito": null,
+    "ultimoIntento": null,
+    "intervaloMin": 5,
+    "fuente": "sin datos",
+    "error": "Pendiente de primera ejecución del workflow de actualización."
+  }
+}
