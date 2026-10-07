@@ -37791,7 +37791,7 @@
       "numeroFactura": "1025327",
       "fechaEmision": "2026-09-01",
       "fechaDespacho": "2026-09-30",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001018",
       "nombreCliente": "MUNICIPALIDAD DE SANTO DOMINGO XENACOJ DEPTO DE SACATEPEQUEZ",
       "totalFactura": 0,
@@ -39848,7 +39848,7 @@
       "numeroFactura": "1025514",
       "fechaEmision": "2026-09-22",
       "fechaDespacho": "2026-10-22",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001035",
       "nombreCliente": "VIGILANCIA Y PROTECCION CORPORATIVA S.A.",
       "totalFactura": 0,
@@ -43384,6 +43384,149 @@
       "nombreCliente": "PERSONAS Y SERVICIOS, SOCIEDAD ANONIMA",
       "totalFactura": 0,
       "docEntry": 32803
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025836",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000630",
+      "nombreCliente": "FERROCARRILES DE GUATEMALA",
+      "totalFactura": 0,
+      "docEntry": 32804
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025837",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000693",
+      "nombreCliente": "SISTEMAS INTEGRADOS GUATEMALTECOS DE SEGURIDAD, S.A.",
+      "totalFactura": 0,
+      "docEntry": 32805
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025838",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001034",
+      "nombreCliente": "MUNICIPALIDAD DE PARRAMOS CHIMALTENANGO",
+      "totalFactura": 0,
+      "docEntry": 32806
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025839",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000996",
+      "nombreCliente": "ALIMENTOS CORPORATIVOS CORALSA, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 32807
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025840",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000185",
+      "nombreCliente": "MUNICIPALIDAD DE SANTA LUCIA MILPAS ALTAS SACATEPEQUEZ",
+      "totalFactura": 0,
+      "docEntry": 32808
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025841",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000185",
+      "nombreCliente": "MUNICIPALIDAD DE SANTA LUCIA MILPAS ALTAS SACATEPEQUEZ",
+      "totalFactura": 0,
+      "docEntry": 32809
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025842",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000185",
+      "nombreCliente": "MUNICIPALIDAD DE SANTA LUCIA MILPAS ALTAS SACATEPEQUEZ",
+      "totalFactura": 0,
+      "docEntry": 32810
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025843",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000841",
+      "nombreCliente": "MUNICIPALIDAD DE ZARAGOZA",
+      "totalFactura": 0,
+      "docEntry": 32811
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025844",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000571",
+      "nombreCliente": "SERVICIOS Y CONSULTORIA DE CONSTRUCCION AGRICULTURA Y",
+      "totalFactura": 0,
+      "docEntry": 32812
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025845",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000520",
+      "nombreCliente": "MULTITRANSPORTES MAGEN, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 32813
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025846",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000045",
+      "nombreCliente": "WACKENHUT DE GUATEMALA, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 32814
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025847",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000608",
+      "nombreCliente": "CORPORACION DE ORGANIZACIONES Y PROYECTOS DE SEGURIDAD S.A",
+      "totalFactura": 0,
+      "docEntry": 32815
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025848",
+      "fechaEmision": "2026-10-07",
+      "fechaDespacho": "2026-11-07",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001075",
+      "nombreCliente": "JOSE ANTONIO ARZÚ TINOCO",
+      "totalFactura": 0,
+      "docEntry": 32816
     },
     {
       "pais": "GT",
@@ -78477,6 +78620,17 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073113",
+      "fechaEmision": "2026-10-05",
+      "fechaDespacho": "2026-10-05",
+      "estatus": "Abierta",
+      "codigoCliente": "CL003302",
+      "nombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 48533
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080001",
       "fechaEmision": "2026-01-02",
       "fechaDespacho": "2026-01-31",
@@ -91952,8 +92106,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-07T17:50:43.839Z",
-    "ultimoIntento": "2026-10-07T17:50:43.839Z",
+    "ultimoExito": "2026-10-07T22:18:16.525Z",
+    "ultimoIntento": "2026-10-07T22:18:16.525Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
