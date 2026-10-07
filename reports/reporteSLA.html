@@ -30,39 +30,66 @@
         }
 
         .header {
-            padding: 26px 30px 30px;
+            padding: 12px 22px;
             color: #fff;
             background: linear-gradient(115deg, #102348, #1d4ed8);
             border-radius: 14px 14px 0 0;
-            text-align: center;
         }
 
-        .eyebrow {
-            width: 54px;
-            height: 54px;
+        .header-main {
             display: grid;
-            place-items: center;
-            margin: 0 auto 12px;
-            color: #fff;
-            background: linear-gradient(145deg, #ef4444, #991b1b);
-            border: 3px solid rgba(255, 255, 255, .7);
-            border-radius: 50%;
-            box-shadow: 0 3px 10px rgba(15, 23, 42, .35);
-            font-size: 10px;
-            font-weight: 900;
-            letter-spacing: .04em;
+            grid-template-columns: 48px minmax(0, 1fr) 40px;
+            align-items: center;
+            gap: 14px;
+            min-height: 48px;
+        }
+
+        .header-logo {
+            display: block;
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+
+        .header-title-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-width: 0;
         }
 
         h1 {
             margin: 0;
             font-size: clamp(21px, 3vw, 29px);
             line-height: 1.25;
+            text-align: center;
         }
 
-        .subtitle {
-            margin: 9px 0 0;
-            color: #dbeafe;
-            font-size: 14px;
+        .header-flags {
+            display: flex;
+            flex: 0 0 auto;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .header-country-flag {
+            display: block;
+            width: 34px;
+            height: 34px;
+            object-fit: cover;
+            background: #fff;
+            border: 1px solid rgba(255, 255, 255, .8);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(15, 23, 42, .25);
+        }
+
+        .header-country-code {
+            justify-self: end;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: .04em;
         }
 
         .country-label {
@@ -272,13 +299,6 @@
         .sla-guide strong {
             color: #1e3a8a;
             font-weight: 800;
-        }
-
-        .header-chart {
-            display: block;
-            margin: 0 auto 12px;
-            font-size: 32px;
-            line-height: 1;
         }
 
         .card {
@@ -506,7 +526,35 @@
             }
 
             .header {
-                padding: 23px 17px;
+                padding: 10px 12px;
+            }
+
+            .header-main {
+                grid-template-columns: 38px minmax(0, 1fr) 32px;
+                gap: 7px;
+                min-height: 38px;
+            }
+
+            .header-logo {
+                width: 38px;
+                height: 38px;
+            }
+
+            .header-title-group {
+                gap: 6px;
+            }
+
+            h1 {
+                font-size: clamp(15px, 4vw, 21px);
+            }
+
+            .header-country-flag {
+                width: 26px;
+                height: 26px;
+            }
+
+            .header-country-code {
+                font-size: 13px;
             }
 
             .date-stamp {
@@ -549,16 +597,17 @@
 <body>
     <main class="dashboard">
         <header class="header">
-            <p class="eyebrow" aria-label="Reporte">RED</p>
-            <span class="header-chart" aria-hidden="true">📈</span>
-            <h1>Reporte diario de SLA · <span id="titulo-kpi">— global</span></h1>
-            <p class="subtitle">
-                Red Intelfon — Operación de bodega ·
-                <span id="header-country">
-                    <span class="country-label"><span class="flag-mark gt" aria-hidden="true"></span>Guatemala</span> ·
-                    <span class="country-label"><span class="flag-mark sv" aria-hidden="true"></span>El Salvador</span>
-                </span>
-            </p>
+            <div class="header-main">
+                <img class="header-logo" src="../assets/red256.webp" alt="RED Intelfon">
+                <div class="header-title-group">
+                    <h1>Reporte diario de SLA · <span id="titulo-kpi">— global</span></h1>
+                    <span class="header-flags" id="header-flags" aria-label="Países incluidos">
+                        <img class="header-country-flag" src="../assets/imagen.png" alt="Bandera de Guatemala">
+                        <img class="header-country-flag" src="../assets/imagen%20(1).png" alt="Bandera de El Salvador">
+                    </span>
+                </div>
+                <span class="header-country-code" id="header-country-code" aria-label="Códigos de país">GT / SV</span>
+            </div>
         </header>
         <div class="date-stamp">
             🕒 Reporte generado: <span id="generado">Cargando…</span>
@@ -709,6 +758,25 @@
                 return code === "GT" ? "gt" : code === "SV" ? "sv" : "";
             }
 
+            function renderHeaderCountry(code) {
+                var flags = document.getElementById("header-flags");
+                var countryCodes = code ? [code] : ["GT", "SV"];
+                flags.replaceChildren();
+                countryCodes.forEach(function (countryCode) {
+                    var flag = document.createElement("img");
+                    flag.className = "header-country-flag";
+                    flag.src = countryCode === "GT"
+                        ? "../assets/imagen.png"
+                        : "../assets/imagen%20(1).png";
+                    flag.alt = "Bandera de " + countryName(countryCode);
+                    flags.appendChild(flag);
+                });
+                setText("header-country-code", code || "GT / SV");
+                flags.setAttribute("aria-label", code
+                    ? "Bandera de " + countryName(code)
+                    : "Banderas de Guatemala y El Salvador");
+            }
+
             function appendCountryLabel(container, code) {
                 var label = document.createElement("span");
                 label.className = "country-label";
@@ -734,6 +802,7 @@
             }
 
             function configureCountryReport() {
+                renderHeaderCountry(fixedCountry);
                 if (!fixedCountry) return;
                 document.body.dataset.reportCountry = fixedCountry;
                 document.title = "Reporte SLA · " + countryName(fixedCountry);
@@ -741,9 +810,6 @@
                 setText("kpi-pais", countryName(fixedCountry));
                 document.getElementById("country-scope-label").textContent = "País del reporte:";
                 setText("intro-country", countryName(fixedCountry));
-                var headerCountry = document.getElementById("header-country");
-                headerCountry.replaceChildren();
-                appendCountryLabel(headerCountry, fixedCountry);
                 renderCountryScope();
             }
 

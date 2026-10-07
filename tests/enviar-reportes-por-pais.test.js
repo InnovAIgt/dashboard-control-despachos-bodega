@@ -93,6 +93,19 @@ test('dashboard locks the report to the country specified in the URL', () => {
   assert.match(dashboard, /pais\.value = fixedCountry/);
 });
 
+test('uses the asset logo and swaps country flag and code positions in the header', () => {
+  const dashboard = fs.readFileSync(
+    path.join(__dirname, '..', 'reports', 'reporteSLA.html'),
+    'utf8'
+  );
+  assert.match(dashboard, /class="header-logo" src="\.\.\/assets\/red256\.webp"/);
+  assert.match(dashboard, /class="header-flags" id="header-flags"/);
+  assert.match(dashboard, /class="header-country-code" id="header-country-code"/);
+  assert.match(dashboard, /"\.\.\/assets\/imagen\.png"/);
+  assert.match(dashboard, /"\.\.\/assets\/imagen%20\(1\)\.png"/);
+  assert.match(dashboard, /setText\("header-country-code", code \|\| "GT \/ SV"\)/);
+});
+
 test('shows a country-aware SLA explanation in a single blue banner', () => {
   const dashboard = fs.readFileSync(
     path.join(__dirname, '..', 'reports', 'reporteSLA.html'),
