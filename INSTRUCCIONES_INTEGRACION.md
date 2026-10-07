@@ -8,7 +8,9 @@ Paquete preparado para `Prototipado_Dashboard_Intelfon`.
 dashboards/bodega/control-despachos/control-despachos.html
 dashboards/bodega/control-despachos/data/facturas.json
 scripts/actualizar-despachos.js
+scripts/enviar-reporte-sla.js
 .github/workflows/actualizar-despachos.yml
+.github/workflows/enviar-reporte-sla.yml
 ```
 
 ## Arquitectura final
@@ -60,6 +62,37 @@ Solo hace commit cuando:
 - cambian las facturas, o
 - cambia el estado de error de SAP.
 
+## Envío diario del reporte SLA por correo
+
+`.github/workflows/enviar-reporte-sla.yml` envía el reporte diariamente a las 8:00 a. m. de Guatemala
+y El Salvador (14:00 UTC). También se puede ejecutar manualmente desde
+`Actions -> Enviar reporte diario de SLA`.
+El correo incluye los indicadores globales y la tabla completa de reclamos abiertos; no depende del
+país seleccionado en el navegador. El destinatario configurado actualmente es
+`fernandozetatrading@gmail.com`; para cambiarlo, edita `SLA_EMAIL_TO` en el workflow.
+
+Configurar en GitHub, en `Settings -> Secrets and variables -> Actions`:
+
+**Variables** (se pueden modificar sin cambiar el código):
+
+- `SLA_SMTP_HOST`: `smtp.office365.com` para Outlook/Microsoft 365 o `smtp.gmail.com` para Gmail.
+- `SLA_SMTP_PORT`: `587` para Outlook/Microsoft 365 o `465` para Gmail.
+- `SLA_SMTP_SECURE`: `false` para puerto 587 o `true` para puerto 465.
+- `SLA_EMAIL_FROM`: opcional; por defecto se usa `SLA_SMTP_USER`.
+
+**Secrets** (credenciales privadas; no agregarlas al repositorio):
+
+- `SLA_SMTP_USER`: cuenta remitente de correo.
+- `SLA_SMTP_PASSWORD`: contraseña de aplicación o credencial SMTP autorizada para esa cuenta.
+
+Para Gmail, usar una contraseña de aplicación y tener habilitada la verificación en dos pasos. Para
+Microsoft 365, la cuenta/tenant debe permitir SMTP AUTH. Si la organización bloquea SMTP, se debe
+habilitar con el administrador o utilizar un servidor SMTP autorizado.
+
+El workflow falla de forma visible si falta una variable/credencial o si el servidor rechaza el envío.
+La ejecución manual envía un correo real a los destinatarios configurados; probar primero con una
+dirección controlada.
+
 ## Prueba antes del merge
 
 1. Copiar esta estructura a la rama de trabajo.
@@ -69,6 +102,9 @@ Solo hace commit cuando:
 5. Ejecutar `Run workflow` sobre esa rama.
 6. Confirmar que `facturas.json` se llena.
 7. Abrir `control-despachos.html`.
+8. Configurar las variables y secretos del correo descritos arriba.
+9. Ejecutar manualmente `Enviar reporte diario de SLA` y confirmar la recepción en
+   `fernandozetatrading@gmail.com`.
 
 ## Pendiente de registro
 

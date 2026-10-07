@@ -1,0 +1,42 @@
+name: Enviar reporte diario de SLA
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: enviar-reporte-diario-sla
+  cancel-in-progress: false
+
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Generar y enviar reporte SLA
+        env:
+          SLA_EMAIL_TO: fernandozetatrading@gmail.com
+          SLA_EMAIL_FROM: ${{ vars.SLA_EMAIL_FROM }}
+          SLA_SMTP_HOST: ${{ vars.SLA_SMTP_HOST }}
+          SLA_SMTP_PORT: ${{ vars.SLA_SMTP_PORT }}
+          SLA_SMTP_SECURE: ${{ vars.SLA_SMTP_SECURE }}
+          SLA_SMTP_USER: ${{ secrets.SLA_SMTP_USER }}
+          SLA_SMTP_PASSWORD: ${{ secrets.SLA_SMTP_PASSWORD }}
+        run: node scripts/enviar-reporte-sla.js

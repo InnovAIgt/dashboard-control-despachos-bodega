@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reporte de SLA de despachos</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #0f172a;
+            background: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 32px 20px;
+            background: #f1f5f9;
+        }
+
+        .dashboard {
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 26px 30px;
+            color: #fff;
+            background: linear-gradient(135deg, #0f172a, #1d4ed8);
+            border-radius: 14px 14px 0 0;
+        }
+
+        .eyebrow {
+            margin: 0 0 7px;
+            color: #bfdbfe;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 25px;
+            line-height: 1.25;
+        }
+
+        .subtitle {
+            margin: 7px 0 0;
+            color: #dbeafe;
+            font-size: 13px;
+        }
+
+        .date-stamp {
+            flex: 0 0 auto;
+            color: #dbeafe;
+            font-size: 12px;
+            text-align: right;
+        }
+
+        .content {
+            padding: 26px;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-top: 0;
+        }
+
+        .filter {
+            display: grid;
+            gap: 6px;
+            width: min(100%, 240px);
+            margin-bottom: 22px;
+        }
+
+        .filter label {
+            color: #475569;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .filter select {
+            min-height: 38px;
+            padding: 8px 10px;
+            color: #334155;
+            background: #fff;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            font: inherit;
+            font-size: 12px;
+        }
+
+        .section-heading {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin: 0 0 12px;
+        }
+
+        .section-heading h2 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .section-note {
+            margin: 0 0 15px;
+            color: #64748b;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin-bottom: 26px;
+        }
+
+        .card {
+            min-height: 112px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-top: 4px solid #64748b;
+            border-radius: 9px;
+        }
+
+        .card.blue {
+            background: #eff6ff;
+            border-color: #bfdbfe;
+            border-top-color: #2563eb;
+        }
+
+        .card.green {
+            background: #f0fdf4;
+            border-color: #bbf7d0;
+            border-top-color: #15803d;
+        }
+
+        .card.amber {
+            background: #fffbeb;
+            border-color: #fde68a;
+            border-top-color: #d97706;
+        }
+
+        .card.amber {
+            background: #fffbeb;
+            border-color: #fde68a;
+            border-top-color: #d97706;
+        }
+
+        .card.red {
+            background: #fef2f2;
+            border-color: #fecaca;
+            border-top-color: #dc2626;
+        }
+
+        .card-label {
+            color: #475569;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .045em;
+            text-transform: uppercase;
+        }
+
+        .card-value {
+            margin-top: 10px;
+            color: #0f172a;
+            font-size: 27px;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .card-help {
+            margin-top: 7px;
+            color: #64748b;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+
+        .api-message {
+            display: none;
+            margin: 0 0 18px;
+            padding: 11px 13px;
+            border: 1px solid #fde68a;
+            border-radius: 7px;
+            color: #92400e;
+            background: #fffbeb;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+        .api-message.error {
+            color: #991b1b;
+            background: #fef2f2;
+            border-color: #fecaca;
+        }
+
+        .claims {
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .claims-header {
+            padding: 16px 17px 12px;
+        }
+
+        .open-count {
+            flex: 0 0 auto;
+            padding: 5px 9px;
+            color: #991b1b;
+            background: #fee2e2;
+            border-radius: 999px;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .table-wrap {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .pagination {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 12px 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .pagination-info {
+            color: #64748b;
+            font-size: 11px;
+        }
+
+        .pagination-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .pagination button {
+            min-height: 34px;
+            padding: 7px 12px;
+            color: #1e40af;
+            background: #fff;
+            border: 1px solid #bfdbfe;
+            border-radius: 7px;
+            font: inherit;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .pagination button:disabled {
+            color: #94a3b8;
+            background: #f8fafc;
+            border-color: #e2e8f0;
+            cursor: not-allowed;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        thead {
+            color: #475569;
+            background: #f8fafc;
+        }
+
+        th,
+        td {
+            padding: 12px 15px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 11px;
+            white-space: nowrap;
+        }
+
+        th {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: .035em;
+            text-transform: uppercase;
+        }
+
+        td {
+            color: #334155;
+        }
+
+        .invoice {
+            color: #1d4ed8;
+            font-weight: 700;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 5px 8px;
+            border-radius: 999px;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .status.ok {
+            color: #166534;
+            background: #dcfce7;
+        }
+
+        .status.warning {
+            color: #92400e;
+            background: #fef3c7;
+        }
+
+        .status.late {
+            color: #991b1b;
+            background: #fee2e2;
+        }
+
+        .footer {
+            padding: 14px 20px;
+            color: #94a3b8;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-top: 0;
+            border-radius: 0 0 14px 14px;
+            font-size: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            .header {
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 21px;
+            }
+
+            .date-stamp {
+                text-align: left;
+            }
+
+            .content {
+                padding: 18px 14px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .pagination {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <main class="dashboard">
+        <header class="header">
+            <div>
+                <p class="eyebrow">Red Intelfon · Operación de bodega</p>
+                <h1>Reporte de SLA de despachos</h1>
+                <p class="subtitle">Indicadores globales y seguimiento de reclamos abiertos</p>
+            </div>
+            <div class="date-stamp">
+                <div>Reporte generado: <span id="generado">Cargando…</span></div>
+                <div>Datos del API: <span id="actualizado">Cargando…</span> (hora de Guatemala)</div>
+            </div>
+        </header>
+
+        <section class="content">
+            <div class="filter">
+                <label for="pais">País</label>
+                <select id="pais">
+                    <option value="">Todos los países</option>
+                </select>
+            </div>
+
+            <div class="section-heading">
+                <h2>Indicadores globales</h2>
+            </div>
+            <p class="section-note">
+                Los indicadores y el detalle se actualizan según el país seleccionado. El detalle muestra únicamente
+                los reclamos abiertos.
+            </p>
+
+            <div class="api-message" id="api-message" role="status" aria-live="polite"></div>
+
+            <div class="cards">
+                <article class="card green">
+                    <div class="card-label">SLA global</div>
+                    <div class="card-value" id="kpi-global">—</div>
+                    <div class="card-help">Despachos en tiempo ÷ facturas emitidas × 100</div>
+                </article>
+                <article class="card blue">
+                    <div class="card-label">Facturas emitidas</div>
+                    <div class="card-value" id="total-facturas">—</div>
+                    <div class="card-help">Total de facturas recibidas del API</div>
+                </article>
+                <article class="card">
+                    <div class="card-label">Despachos en tiempo</div>
+                    <div class="card-value" id="despachos-en-tiempo">—</div>
+                    <div class="card-help">Facturas con despacho dentro del SLA de hasta 2 días</div>
+                </article>
+                <article class="card amber">
+                    <div class="card-label">Por vencer</div>
+                    <div class="card-value" id="por-vencer">—</div>
+                    <div class="card-help">Facturas en el día 3 del ciclo SLA</div>
+                </article>
+                <article class="card red">
+                    <div class="card-label">Vencidas</div>
+                    <div class="card-value" id="vencidas">—</div>
+                    <div class="card-help">Facturas que superaron los 3 días del ciclo SLA</div>
+                </article>
+                <article class="card red">
+                    <div class="card-label">Reclamos abiertos</div>
+                    <div class="card-value" id="reclamos-abiertos">—</div>
+                    <div class="card-help">Facturas con estatus Abierta en el API</div>
+                </article>
+            </div>
+
+            <section class="claims" aria-labelledby="reclamos-titulo">
+                <div class="claims-header">
+                    <div class="section-heading">
+                        <h2 id="reclamos-titulo">Detalle de reclamos abiertos</h2>
+                        <span class="open-count" id="abiertas-count">—</span>
+                    </div>
+                    <p class="section-note">
+                        Según el criterio definido, se consideran reclamos abiertos las facturas cuyo estatus en el API
+                        sea “Abierta”.
+                    </p>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">País</th>
+                                <th scope="col">Número de factura</th>
+                                <th scope="col">Nombre del cliente</th>
+                                <th scope="col">Fecha de emisión</th>
+                                <th scope="col">Estado del SLA</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td colspan="5" id="tabla-estado">Cargando facturas…</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <nav class="pagination" aria-label="Paginación de reclamos abiertos">
+                    <span class="pagination-info" id="paginacion-info" aria-live="polite">Mostrando 0 de 0</span>
+                    <div class="pagination-actions">
+                        <button id="pagina-anterior" type="button" disabled>Anterior</button>
+                        <button id="pagina-siguiente" type="button" disabled>Siguiente</button>
+                    </div>
+                </nav>
+            </section>
+        </section>
+
+        <footer class="footer">
+            Reporte de seguimiento de despachos · <span id="fuente-api">Datos del snapshot de Control de Despachos</span>
+        </footer>
+    </main>
+    <script>
+        (function () {
+            "use strict";
+
+            var DATA_URL = "../dashboards/bodega/control-despachos/data/facturas.json";
+            var facturas = [];
+            var meta = {};
+            var pais = document.getElementById("pais");
+            var tbody = document.querySelector(".table-wrap tbody");
+            var pageSize = 15;
+            var currentPage = 1;
+            var message = document.getElementById("api-message");
+            var formatter = new Intl.NumberFormat("es");
+            var reportDate = new Date().toLocaleDateString("en-CA", { timeZone: "America/Guatemala" });
+            var fechaFormatter = new Intl.DateTimeFormat("es", {
+                day: "2-digit", month: "2-digit", year: "numeric", timeZone: "UTC"
+            });
+
+            function setText(id, value) {
+                document.getElementById(id).textContent = value;
+            }
+
+            function parseDate(value) {
+                if (!value) return null;
+                var match = String(value).match(/^(\d{4})-(\d{2})-(\d{2})/);
+                if (!match) return null;
+                return Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+            }
+
+            function formatDate(value) {
+                var timestamp = parseDate(value);
+                return timestamp === null ? "—" : fechaFormatter.format(timestamp);
+            }
+
+            function elapsedDays(start, end) {
+                var startTime = parseDate(start);
+                var endTime = parseDate(end);
+                if (startTime === null || endTime === null || endTime < startTime) return null;
+                return Math.floor((endTime - startTime) / 86400000);
+            }
+
+            function slaStatus(invoice, asOfDate) {
+                var days = elapsedDays(invoice.fechaEmision, invoice.fechaDespacho || asOfDate);
+                if (!invoice.fechaDespacho && days === null) return { label: "Sin fecha válida", className: "warning" };
+                if (!invoice.fechaDespacho && days <= 2) return { label: "Sin despacho", className: "warning" };
+                if (days === null) return { label: "Sin fecha válida", className: "warning" };
+                if (days <= 2) return { label: "En tiempo", className: "ok" };
+                if (days === 3) return { label: "Por vencer", className: "warning" };
+                return { label: "Vencido", className: "late" };
+            }
+
+            function createCell(row, value, className) {
+                var cell = document.createElement("td");
+                cell.textContent = value || "—";
+                if (className) cell.className = className;
+                row.appendChild(cell);
+                return cell;
+            }
+
+            function showNotice(text, isError) {
+                message.textContent = text;
+                message.classList.toggle("error", Boolean(isError));
+                message.style.display = "block";
+            }
+
+            function render() {
+                var slaCounts = { "En tiempo": 0, "Por vencer": 0, "Vencido": 0 };
+                var visible = facturas.filter(function (invoice) {
+                    return !pais.value || invoice.pais === pais.value;
+                });
+                visible.forEach(function (invoice) {
+                    var status = slaStatus(invoice, reportDate).label;
+                    if (Object.prototype.hasOwnProperty.call(slaCounts, status)) slaCounts[status]++;
+                });
+                var openInvoices = visible.filter(function (invoice) {
+                    return String(invoice.estatus || "").trim().toLowerCase() === "abierta";
+                });
+
+                setText("total-facturas", formatter.format(visible.length));
+                setText("despachos-en-tiempo", formatter.format(slaCounts["En tiempo"]));
+                setText("por-vencer", formatter.format(slaCounts["Por vencer"]));
+                setText("vencidas", formatter.format(slaCounts.Vencido));
+                setText("kpi-global", (visible.length ? (slaCounts["En tiempo"] / visible.length * 100).toFixed(1) : "0.0") + "%");
+                setText("reclamos-abiertos", formatter.format(openInvoices.length));
+                setText("abiertas-count", formatter.format(openInvoices.length) + " reclamos abiertos");
+
+                var pageCount = Math.ceil(openInvoices.length / pageSize);
+                currentPage = Math.min(currentPage, Math.max(pageCount, 1));
+                var firstIndex = (currentPage - 1) * pageSize;
+                var pageInvoices = openInvoices.slice(firstIndex, firstIndex + pageSize);
+
+                tbody.replaceChildren();
+                if (!openInvoices.length) {
+                    var emptyRow = tbody.insertRow();
+                    var emptyCell = emptyRow.insertCell();
+                    emptyCell.colSpan = 5;
+                    emptyCell.textContent = "No hay facturas con estatus Abierta.";
+                } else {
+                    pageInvoices.forEach(function (invoice) {
+                        var row = tbody.insertRow();
+                        createCell(row, invoice.pais);
+                        createCell(row, invoice.numeroFactura, "invoice");
+                        createCell(row, invoice.nombreCliente);
+                        createCell(row, formatDate(invoice.fechaEmision));
+                        var status = slaStatus(invoice, reportDate);
+                        var statusCell = row.insertCell();
+                        var badge = document.createElement("span");
+                        badge.className = "status " + status.className;
+                        badge.textContent = status.label;
+                        statusCell.appendChild(badge);
+                    });
+                }
+                setText("paginacion-info", openInvoices.length
+                    ? "Mostrando " + formatter.format(firstIndex + 1) + "–" +
+                        formatter.format(firstIndex + pageInvoices.length) + " de " +
+                        formatter.format(openInvoices.length) + " reclamos abiertos"
+                    : "Mostrando 0 de 0 reclamos abiertos");
+                document.getElementById("pagina-anterior").disabled = currentPage <= 1;
+                document.getElementById("pagina-siguiente").disabled = currentPage >= pageCount;
+            }
+
+            function renderCountries() {
+                var countries = Array.from(new Set(facturas.map(function (invoice) {
+                    return invoice.pais;
+                }).filter(Boolean))).sort();
+                countries.forEach(function (code) {
+                    var option = document.createElement("option");
+                    option.value = code;
+                    option.textContent = code;
+                    pais.appendChild(option);
+                });
+            }
+
+            function formatUpdatedAt(value) {
+                if (!value) return "Sin actualización registrada";
+                var date = new Date(value);
+                return Number.isNaN(date.getTime()) ? "Sin actualización registrada" :
+                    date.toLocaleString("es-GT", {
+                        day: "2-digit", month: "2-digit", year: "numeric",
+                        hour: "2-digit", minute: "2-digit", timeZone: "America/Guatemala"
+                    });
+            }
+
+            pais.addEventListener("change", function () {
+                currentPage = 1;
+                render();
+            });
+            document.getElementById("pagina-anterior").addEventListener("click", function () {
+                if (currentPage > 1) {
+                    currentPage--;
+                    render();
+                }
+            });
+            document.getElementById("pagina-siguiente").addEventListener("click", function () {
+                currentPage++;
+                render();
+            });
+            setText("generado", formatUpdatedAt(new Date().toISOString()));
+
+            fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" })
+                .then(function (response) {
+                    if (!response.ok) throw new Error("No se pudo leer el snapshot de facturas (" + response.status + ").");
+                    return response.json();
+                })
+                .then(function (data) {
+                    if (!data || !Array.isArray(data.facturas)) {
+                        throw new Error("El archivo de datos no tiene el formato esperado.");
+                    }
+                    facturas = data.facturas;
+                    meta = data.meta || {};
+                    renderCountries();
+                    setText("actualizado", formatUpdatedAt(meta.ultimoExito));
+                    if (meta.error) {
+                        showNotice("El API reportó un error en su última actualización: " + meta.error +
+                            (meta.fuente === "API + snapshot anterior" ? " Se muestran los últimos datos guardados." : ""), true);
+                    } else if (!facturas.length) {
+                        showNotice("El snapshot está vacío. Confirma que el workflow de actualización haya ejecutado correctamente.", true);
+                    } else {
+                        showNotice("Datos cargados: " + formatter.format(facturas.length) +
+                            " facturas. El detalle muestra únicamente facturas con estatus Abierta.");
+                    }
+                    render();
+                })
+                .catch(function (error) {
+                    setText("actualizado", "Error de conexión");
+                    setText("tabla-estado", "No fue posible cargar los datos del API.");
+                    showNotice(error.message + " Abre este HTML desde un servidor web; el navegador bloquea fetch al abrirlo como archivo local.", true);
+                });
+        }());
+    </script>
+</body>
+
+</html>
