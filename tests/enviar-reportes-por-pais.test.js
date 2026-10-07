@@ -93,6 +93,23 @@ test('dashboard locks the report to the country specified in the URL', () => {
   assert.match(dashboard, /pais\.value = fixedCountry/);
 });
 
+test('shows a country-aware visual SLA legend using the report status thresholds', () => {
+  const dashboard = fs.readFileSync(
+    path.join(__dirname, '..', 'reports', 'reporteSLA.html'),
+    'utf8'
+  );
+  assert.match(dashboard, /class="sla-guide" aria-label="Leyenda del SLA"/);
+  assert.match(dashboard, /id="sla-guide-country"/);
+  assert.match(dashboard, /sla-legend-dot ok/);
+  assert.match(dashboard, /sla-legend-dot warning/);
+  assert.match(dashboard, /sla-legend-dot late/);
+  assert.match(dashboard, /sla-legend-dot total/);
+  assert.match(dashboard, /En tiempo:<\/strong> de 0 a 2 días/);
+  assert.match(dashboard, /Por vencer:<\/strong> día 3/);
+  assert.match(dashboard, /Vencida:<\/strong> más de 3 días/);
+  assert.match(dashboard, /solicitudes abiertas en tiempo ÷ total de solicitudes abiertas × 100/);
+});
+
 test('installs one daily trigger per country and removes the legacy combined trigger', () => {
   const script = loadCountryScripts();
   script.context.instalarEnvioDiarioGT();
