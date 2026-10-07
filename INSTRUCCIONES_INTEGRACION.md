@@ -8,9 +8,9 @@ Paquete preparado para `Prototipado_Dashboard_Intelfon`.
 dashboards/bodega/control-despachos/control-despachos.html
 dashboards/bodega/control-despachos/data/facturas.json
 scripts/actualizar-despachos.js
-scripts/enviar-reporte-sla.js
 .github/workflows/actualizar-despachos.yml
-.github/workflows/enviar-reporte-sla.yml
+apps-script/EnviarReporteSLA.gs
+apps-script/appsscript.json
 ```
 
 ## Arquitectura final
@@ -62,36 +62,34 @@ Solo hace commit cuando:
 - cambian las facturas, o
 - cambia el estado de error de SAP.
 
-## Envío diario del reporte SLA por correo
+## Envío diario del reporte SLA por Gmail
 
-`.github/workflows/enviar-reporte-sla.yml` envía el reporte diariamente a las 8:00 a. m. de Guatemala
-y El Salvador (14:00 UTC). También se puede ejecutar manualmente desde
-`Actions -> Enviar reporte diario de SLA`.
-El correo incluye los indicadores globales y la tabla completa de reclamos abiertos; no depende del
-país seleccionado en el navegador. El destinatario configurado actualmente es
-`fernandozetatrading@gmail.com`; para cambiarlo, edita `SLA_EMAIL_TO` en el workflow.
+Hay dos scripts independientes, cada uno envía un correo con un solo botón al reporte de su país:
 
-Configurar en GitHub, en `Settings -> Secrets and variables -> Actions`:
+- `apps-script/EnviarReporteGT.gs`: Guatemala, `reports/reporteSLA.html?pais=GT`.
+- `apps-script/EnviarReporteSV.gs`: El Salvador, `reports/reporteSLA.html?pais=SV`.
 
-**Variables** (se pueden modificar sin cambiar el código):
+Los dos correos abren el HTML publicado existente y pasan el código del país en la URL. Publica la
+versión actualizada de `reports/reporteSLA.html` en GitHub Pages para que ese filtro se aplique.
 
-- `SLA_SMTP_HOST`: `smtp.office365.com` para Outlook/Microsoft 365 o `smtp.gmail.com` para Gmail.
-- `SLA_SMTP_PORT`: `587` para Outlook/Microsoft 365 o `465` para Gmail.
-- `SLA_SMTP_SECURE`: `false` para puerto 587 o `true` para puerto 465.
-- `SLA_EMAIL_FROM`: opcional; por defecto se usa `SLA_SMTP_USER`.
+Ambos correos se envían a `fernandozetatrading@gmail.com`. Cada script instala su propio activador
+diario a las 8:00 a. m. en `America/Guatemala` (misma hora en El Salvador). Google puede ejecutar
+los activadores de hora dentro de una ventana aproximada, no necesariamente exactamente al minuto.
 
-**Secrets** (credenciales privadas; no agregarlas al repositorio):
+### Configuración única
 
-- `SLA_SMTP_USER`: cuenta remitente de correo.
-- `SLA_SMTP_PASSWORD`: contraseña de aplicación o credencial SMTP autorizada para esa cuenta.
+1. Inicia sesión con la cuenta Google remitente y abre [script.google.com](https://script.google.com).
+2. Crea un proyecto y agrega el contenido de ambos scripts (`EnviarReporteGT.gs` y
+   `EnviarReporteSV.gs`) como archivos `.gs` separados. Configura `America/Guatemala` en
+   `Project Settings -> Time zone`; la zona también está declarada en `apps-script/appsscript.json`.
+3. Ejecuta `probarEnvioReporteGT` y `probarEnvioReporteSV` para autorizar Gmail y comprobar que llegue
+   un correo por país. Ambos scripts tienen el destinatario configurable al inicio.
+4. Ejecuta una vez `instalarEnvioDiarioGT` y `instalarEnvioDiarioSV`. Deben quedar dos activadores:
+   `enviarReporteGT` y `enviarReporteSV`, ambos diarios a las 8:00 a. m. El instalador elimina el
+   antiguo activador combinado `enviarReporteSLA` para evitar correos duplicados.
 
-Para Gmail, usar una contraseña de aplicación y tener habilitada la verificación en dos pasos. Para
-Microsoft 365, la cuenta/tenant debe permitir SMTP AUTH. Si la organización bloquea SMTP, se debe
-habilitar con el administrador o utilizar un servidor SMTP autorizado.
-
-El workflow falla de forma visible si falta una variable/credencial o si el servidor rechaza el envío.
-La ejecución manual envía un correo real a los destinatarios configurados; probar primero con una
-dirección controlada.
+No se requieren contraseñas SMTP, secretos de GitHub, Apps Passwords ni GitHub Actions para el envío.
+Si cambia el destinatario, actualízalo en ambos scripts y guarda el proyecto.
 
 ## Prueba antes del merge
 
@@ -102,9 +100,9 @@ dirección controlada.
 5. Ejecutar `Run workflow` sobre esa rama.
 6. Confirmar que `facturas.json` se llena.
 7. Abrir `control-despachos.html`.
-8. Configurar las variables y secretos del correo descritos arriba.
-9. Ejecutar manualmente `Enviar reporte diario de SLA` y confirmar la recepción en
-   `fernandozetatrading@gmail.com`.
+8. Crear y autorizar el proyecto de Google Apps Script siguiendo los pasos de configuración.
+9. Ejecutar `probarEnvioReporteGT` y `probarEnvioReporteSV`; confirmar que llegue un correo por país.
+10. Ejecutar `instalarEnvioDiarioGT` e `instalarEnvioDiarioSV` para activar ambos envíos diarios.
 
 ## Pendiente de registro
 

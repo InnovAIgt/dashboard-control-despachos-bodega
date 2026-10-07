@@ -30,42 +30,107 @@
         }
 
         .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            padding: 26px 30px;
+            padding: 26px 30px 30px;
             color: #fff;
-            background: linear-gradient(135deg, #0f172a, #1d4ed8);
+            background: linear-gradient(115deg, #102348, #1d4ed8);
             border-radius: 14px 14px 0 0;
+            text-align: center;
         }
 
         .eyebrow {
-            margin: 0 0 7px;
-            color: #bfdbfe;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: .08em;
-            text-transform: uppercase;
+            width: 54px;
+            height: 54px;
+            display: grid;
+            place-items: center;
+            margin: 0 auto 12px;
+            color: #fff;
+            background: linear-gradient(145deg, #ef4444, #991b1b);
+            border: 3px solid rgba(255, 255, 255, .7);
+            border-radius: 50%;
+            box-shadow: 0 3px 10px rgba(15, 23, 42, .35);
+            font-size: 10px;
+            font-weight: 900;
+            letter-spacing: .04em;
         }
 
         h1 {
             margin: 0;
-            font-size: 25px;
+            font-size: clamp(21px, 3vw, 29px);
             line-height: 1.25;
         }
 
         .subtitle {
-            margin: 7px 0 0;
+            margin: 9px 0 0;
             color: #dbeafe;
-            font-size: 13px;
+            font-size: 14px;
+        }
+
+        .country-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            white-space: nowrap;
+        }
+
+        .flag-mark {
+            position: relative;
+            display: inline-block;
+            flex: 0 0 20px;
+            width: 20px;
+            height: 14px;
+            overflow: hidden;
+            border: 1px solid #cbd5e1;
+            border-radius: 2px;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, .18);
+            vertical-align: -2px;
+        }
+
+        .flag-mark.gt {
+            background: linear-gradient(to right, #4997d0 0 33.33%, #fff 33.33% 66.66%, #4997d0 66.66%);
+        }
+
+        .flag-mark.gt::after {
+            position: absolute;
+            top: 4px;
+            left: 8px;
+            width: 3px;
+            height: 5px;
+            background: #1b6bb5;
+            border-radius: 50%;
+            content: "";
+        }
+
+        .flag-mark.sv {
+            background: linear-gradient(to bottom, #0f47af 0 33.33%, #fff 33.33% 66.66%, #0f47af 66.66%);
         }
 
         .date-stamp {
-            flex: 0 0 auto;
-            color: #dbeafe;
+            padding: 12px 22px;
+            color: #cbd5e1;
+            background: #1e293b;
+            border-bottom: 1px solid #cbd5e1;
             font-size: 12px;
-            text-align: right;
+            text-align: left;
+        }
+
+        .date-stamp span {
+            margin-right: 16px;
+        }
+
+        .intro {
+            margin: 0 0 18px;
+            color: #475569;
+            font-size: 14px;
+            line-height: 1.65;
+        }
+
+        .intro-greeting {
+            margin: 0 0 7px;
+            color: #334155;
+        }
+
+        .intro-copy {
+            margin: 0;
         }
 
         .content {
@@ -88,6 +153,17 @@
             font-weight: 700;
         }
 
+        .country-scope {
+            margin: -12px 0 18px;
+            color: #475569;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .country-scope strong {
+            color: #0f172a;
+        }
+
         .filter select {
             min-height: 38px;
             padding: 8px 10px;
@@ -97,6 +173,10 @@
             border-radius: 7px;
             font: inherit;
             font-size: 12px;
+        }
+
+        body[data-report-country] .filter {
+            display: none;
         }
 
         .section-heading {
@@ -121,9 +201,114 @@
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 12px;
             margin-bottom: 26px;
+        }
+
+        .global-kpi {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 22px;
+            padding: 19px 22px;
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: 9px;
+        }
+
+        .global-kpi-copy {
+            min-width: 0;
+        }
+
+        .global-kpi-label {
+            color: #1e40af;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: .035em;
+            text-transform: uppercase;
+        }
+
+        .global-kpi-value {
+            flex: 0 0 auto;
+            color: #1d4ed8;
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1;
+            text-align: right;
+        }
+
+        .global-kpi-help {
+            margin-top: 7px;
+            color: #475569;
+            font-size: 13px;
+        }
+
+        .global-kpi-reference {
+            margin-top: 5px;
+            color: #64748b;
+            font-size: 11px;
+        }
+
+        .global-kpi-outside {
+            margin-top: 6px;
+            color: #64748b;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .header-chart {
+            display: block;
+            margin: 0 auto 12px;
+            font-size: 32px;
+            line-height: 1;
+        }
+
+        .country-kpis {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-bottom: 22px;
+        }
+
+        .country-kpi {
+            padding: 15px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #2563eb;
+            border-radius: 9px;
+        }
+
+        .country-kpi.sv {
+            border-left-color: #e11d48;
+        }
+
+        body[data-report-country="GT"] .country-kpi.sv,
+        body[data-report-country="SV"] .country-kpi:not(.sv) {
+            display: none;
+        }
+
+        .country-kpi-label {
+            color: #475569;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        .country-kpi-value {
+            margin-top: 8px;
+            color: #0f172a;
+            font-size: 25px;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .country-kpi-help {
+            margin-top: 7px;
+            color: #64748b;
+            font-size: 10px;
         }
 
         .card {
@@ -351,20 +536,38 @@
             }
 
             .header {
-                align-items: flex-start;
-                flex-direction: column;
-                padding: 21px;
+                padding: 23px 17px;
             }
 
             .date-stamp {
                 text-align: left;
             }
 
+            .date-stamp span {
+                display: block;
+                margin: 2px 0;
+            }
+
             .content {
                 padding: 18px 14px;
             }
 
+            .global-kpi {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 14px;
+                padding: 17px;
+            }
+
+            .global-kpi-value {
+                text-align: left;
+            }
+
             .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .country-kpis {
                 grid-template-columns: 1fr;
             }
 
@@ -380,77 +583,107 @@
 <body>
     <main class="dashboard">
         <header class="header">
-            <div>
-                <p class="eyebrow">Red Intelfon · Operación de bodega</p>
-                <h1>Reporte de SLA de despachos</h1>
-                <p class="subtitle">Indicadores globales y seguimiento de reclamos abiertos</p>
-            </div>
-            <div class="date-stamp">
-                <div>Reporte generado: <span id="generado">Cargando…</span></div>
-                <div>Datos del API: <span id="actualizado">Cargando…</span> (hora de Guatemala)</div>
-            </div>
+            <p class="eyebrow" aria-label="Reporte">RED</p>
+            <span class="header-chart" aria-hidden="true">📈</span>
+            <h1>Reporte diario de SLA · <span id="titulo-kpi">— global</span></h1>
+            <p class="subtitle">
+                Red Intelfon — Operación de bodega ·
+                <span id="header-country">
+                    <span class="country-label"><span class="flag-mark gt" aria-hidden="true"></span>Guatemala</span> ·
+                    <span class="country-label"><span class="flag-mark sv" aria-hidden="true"></span>El Salvador</span>
+                </span>
+            </p>
         </header>
+        <div class="date-stamp">
+            🕒 Reporte generado: <span id="generado">Cargando…</span>
+            <span>Actualización del API: <span id="actualizado">Cargando…</span> (hora de Guatemala)</span>
+        </div>
 
         <section class="content">
+            <div class="intro">
+                <p class="intro-greeting">Hola,</p>
+                <p class="intro-copy">
+                    Este reporte resume las solicitudes de despacho actualmente abiertas en
+                    <strong id="intro-country">Guatemala y El Salvador</strong>.
+                    El SLA se calcula según la antigüedad de cada factura abierta: hasta 2 días en tiempo, 3 días por vencer
+                    y más de 3 días vencida.
+                </p>
+            </div>
             <div class="filter">
-                <label for="pais">País</label>
+                <label for="pais">Filtrar indicadores y facturas por país</label>
                 <select id="pais">
-                    <option value="">Todos los países</option>
+                    <option value="">🌎 Guatemala + El Salvador</option>
                 </select>
             </div>
-
-            <div class="section-heading">
-                <h2>Indicadores globales</h2>
-            </div>
-            <p class="section-note">
-                Los indicadores y el detalle se actualizan según el país seleccionado. El detalle muestra únicamente
-                los reclamos abiertos.
+            <p class="country-scope" aria-live="polite">
+                <span id="country-scope-label">Países incluidos en los indicadores:</span>
+                <strong id="alcance-paises">🇬🇹 Guatemala + 🇸🇻 El Salvador</strong>
             </p>
 
             <div class="api-message" id="api-message" role="status" aria-live="polite"></div>
 
+            <div class="global-kpi" aria-live="polite">
+                <div class="global-kpi-copy">
+                    <div class="global-kpi-label">KPI SLA global · <span id="kpi-pais">Guatemala + El Salvador</span></div>
+                    <div class="global-kpi-help"><span id="kpi-fraccion">—</span> solicitudes abiertas dentro del SLA</div>
+                    <div class="global-kpi-reference">Referencia: solicitudes en tiempo ÷ solicitudes abiertas × 100</div>
+                    <div class="global-kpi-outside"><span id="kpi-fuera">—</span> fuera de tiempo (por vencer o vencidas)</div>
+                </div>
+                <div class="global-kpi-value" id="kpi-global">—</div>
+            </div>
+
+            <section aria-labelledby="sla-pais-titulo">
+                <div class="section-heading">
+                    <h2 id="sla-pais-titulo">SLA por país</h2>
+                </div>
+                <p class="section-note" id="sla-pais-nota">
+                    Cada porcentaje se calcula por separado con las solicitudes abiertas de ese país, sin depender del filtro de la tabla.
+                </p>
+                <div class="country-kpis">
+                    <article class="country-kpi">
+                        <div class="country-kpi-label"><span class="country-label"><span class="flag-mark gt" aria-hidden="true"></span>Guatemala</span> · SLA de solicitudes abiertas</div>
+                        <div class="country-kpi-value" id="sla-gt">—</div>
+                        <div class="country-kpi-help" id="sla-gt-formula">—</div>
+                    </article>
+                    <article class="country-kpi sv">
+                        <div class="country-kpi-label"><span class="country-label"><span class="flag-mark sv" aria-hidden="true"></span>El Salvador</span> · SLA de solicitudes abiertas</div>
+                        <div class="country-kpi-value" id="sla-sv">—</div>
+                        <div class="country-kpi-help" id="sla-sv-formula">—</div>
+                    </article>
+                </div>
+            </section>
+
             <div class="cards">
-                <article class="card green">
-                    <div class="card-label">SLA global</div>
-                    <div class="card-value" id="kpi-global">—</div>
-                    <div class="card-help">Despachos en tiempo ÷ facturas emitidas × 100</div>
-                </article>
                 <article class="card blue">
-                    <div class="card-label">Facturas emitidas</div>
-                    <div class="card-value" id="total-facturas">—</div>
-                    <div class="card-help">Total de facturas recibidas del API</div>
+                    <div class="card-label">Solicitudes de despacho abiertas</div>
+                    <div class="card-value" id="solicitudes-abiertas">—</div>
+                    <div class="card-help">Facturas con estatus Abierta en el API</div>
                 </article>
-                <article class="card">
-                    <div class="card-label">Despachos en tiempo</div>
+                <article class="card green">
+                    <div class="card-label">Solicitudes de despacho en tiempo</div>
                     <div class="card-value" id="despachos-en-tiempo">—</div>
-                    <div class="card-help">Facturas con despacho dentro del SLA de hasta 2 días</div>
+                    <div class="card-help">Solicitudes abiertas dentro del SLA de hasta 2 días</div>
                 </article>
                 <article class="card amber">
-                    <div class="card-label">Por vencer</div>
+                    <div class="card-label">Solicitudes de despacho por vencer</div>
                     <div class="card-value" id="por-vencer">—</div>
-                    <div class="card-help">Facturas en el día 3 del ciclo SLA</div>
+                    <div class="card-help">Solicitudes abiertas en el día 3 del ciclo SLA</div>
                 </article>
                 <article class="card red">
-                    <div class="card-label">Vencidas</div>
+                    <div class="card-label">Solicitudes de despacho vencidas</div>
                     <div class="card-value" id="vencidas">—</div>
-                    <div class="card-help">Facturas que superaron los 3 días del ciclo SLA</div>
-                </article>
-                <article class="card red">
-                    <div class="card-label">Reclamos abiertos</div>
-                    <div class="card-value" id="reclamos-abiertos">—</div>
-                    <div class="card-help">Facturas con estatus Abierta en el API</div>
+                    <div class="card-help">Solicitudes abiertas que superaron los 3 días del ciclo SLA</div>
                 </article>
             </div>
 
-            <section class="claims" aria-labelledby="reclamos-titulo">
+            <section class="claims" aria-labelledby="facturas-titulo">
                 <div class="claims-header">
                     <div class="section-heading">
-                        <h2 id="reclamos-titulo">Detalle de reclamos abiertos</h2>
+                        <h2 id="facturas-titulo">Detalle de facturas abiertas</h2>
                         <span class="open-count" id="abiertas-count">—</span>
                     </div>
                     <p class="section-note">
-                        Según el criterio definido, se consideran reclamos abiertos las facturas cuyo estatus en el API
-                        sea “Abierta”.
+                        El detalle incluye únicamente facturas cuyo estatus en el API sea “Abierta”.
                     </p>
                 </div>
                 <div class="table-wrap">
@@ -469,7 +702,7 @@
                         </tbody>
                     </table>
                 </div>
-                <nav class="pagination" aria-label="Paginación de reclamos abiertos">
+                <nav class="pagination" aria-label="Paginación de facturas abiertas">
                     <span class="pagination-info" id="paginacion-info" aria-live="polite">Mostrando 0 de 0</span>
                     <div class="pagination-actions">
                         <button id="pagina-anterior" type="button" disabled>Anterior</button>
@@ -487,7 +720,13 @@
         (function () {
             "use strict";
 
-            var DATA_URL = "../dashboards/bodega/control-despachos/data/facturas.json";
+            var DATA_URL =
+                "https://innovaigt.github.io/dashboard-control-despachos-bodega/dashboards/bodega/control-despachos/data/facturas.json";
+            var COUNTRY_NAMES = { GT: "Guatemala", SV: "El Salvador" };
+            var requestedCountry = new URLSearchParams(window.location.search).get("pais");
+            var fixedCountry = Object.prototype.hasOwnProperty.call(COUNTRY_NAMES, requestedCountry)
+                ? requestedCountry
+                : "";
             var facturas = [];
             var meta = {};
             var pais = document.getElementById("pais");
@@ -503,6 +742,57 @@
 
             function setText(id, value) {
                 document.getElementById(id).textContent = value;
+            }
+
+            function countryName(code) {
+                if (COUNTRY_NAMES[code]) return COUNTRY_NAMES[code];
+                return code || "País no identificado";
+            }
+
+            function countryFlag(code) {
+                return code === "GT" ? "gt" : code === "SV" ? "sv" : "";
+            }
+
+            function appendCountryLabel(container, code) {
+                var label = document.createElement("span");
+                label.className = "country-label";
+                label.setAttribute("aria-label", countryName(code));
+                var flag = document.createElement("span");
+                flag.className = "flag-mark " + countryFlag(code);
+                flag.setAttribute("aria-hidden", "true");
+                label.appendChild(flag);
+                label.appendChild(document.createTextNode(countryName(code)));
+                container.appendChild(label);
+            }
+
+            function renderCountryScope() {
+                var scope = document.getElementById("alcance-paises");
+                scope.replaceChildren();
+                if (pais.value) {
+                    appendCountryLabel(scope, pais.value);
+                    return;
+                }
+                appendCountryLabel(scope, "GT");
+                scope.appendChild(document.createTextNode(" + "));
+                appendCountryLabel(scope, "SV");
+            }
+
+            function configureCountryReport() {
+                if (!fixedCountry) return;
+                document.body.dataset.reportCountry = fixedCountry;
+                document.title = "Reporte SLA · " + countryName(fixedCountry);
+                setText("titulo-kpi", countryName(fixedCountry) + " · SLA");
+                setText("kpi-pais", countryName(fixedCountry));
+                document.getElementById("country-scope-label").textContent = "País del reporte:";
+                setText("sla-pais-titulo", "SLA de " + countryName(fixedCountry));
+                setText("sla-pais-nota",
+                    "Indicador calculado únicamente con las solicitudes abiertas de " +
+                    countryName(fixedCountry) + ".");
+                setText("intro-country", countryName(fixedCountry));
+                var headerCountry = document.getElementById("header-country");
+                headerCountry.replaceChildren();
+                appendCountryLabel(headerCountry, fixedCountry);
+                renderCountryScope();
             }
 
             function parseDate(value) {
@@ -525,13 +815,43 @@
             }
 
             function slaStatus(invoice, asOfDate) {
-                var days = elapsedDays(invoice.fechaEmision, invoice.fechaDespacho || asOfDate);
-                if (!invoice.fechaDespacho && days === null) return { label: "Sin fecha válida", className: "warning" };
-                if (!invoice.fechaDespacho && days <= 2) return { label: "Sin despacho", className: "warning" };
+                var isClosed = String(invoice.estatus || "").trim().toLowerCase() === "cerrada";
+                var referenceDate = isClosed && invoice.fechaDespacho
+                    ? invoice.fechaDespacho
+                    : asOfDate;
+                var days = elapsedDays(invoice.fechaEmision, referenceDate);
                 if (days === null) return { label: "Sin fecha válida", className: "warning" };
                 if (days <= 2) return { label: "En tiempo", className: "ok" };
                 if (days === 3) return { label: "Por vencer", className: "warning" };
                 return { label: "Vencido", className: "late" };
+            }
+
+            function countSla(invoices) {
+                var counts = { "En tiempo": 0, "Por vencer": 0, "Vencido": 0 };
+                invoices.forEach(function (invoice) {
+                    var status = slaStatus(invoice, reportDate).label;
+                    if (Object.prototype.hasOwnProperty.call(counts, status)) counts[status]++;
+                });
+                return counts;
+            }
+
+            function renderCountrySla() {
+                ["GT", "SV"].forEach(function (code) {
+                    var openInvoices = facturas.filter(function (invoice) {
+                        return invoice.pais === code &&
+                            String(invoice.estatus || "").trim().toLowerCase() === "abierta";
+                    });
+                    var counts = countSla(openInvoices);
+                    var prefix = code.toLowerCase();
+                    var percentage = openInvoices.length
+                        ? (counts["En tiempo"] / openInvoices.length * 100).toFixed(2)
+                        : "0.00";
+
+                    setText("sla-" + prefix, percentage + "%");
+                    setText("sla-" + prefix + "-formula",
+                        formatter.format(counts["En tiempo"]) + " / " +
+                        formatter.format(openInvoices.length) + " solicitudes abiertas × 100");
+                });
             }
 
             function createCell(row, value, className) {
@@ -549,25 +869,36 @@
             }
 
             function render() {
-                var slaCounts = { "En tiempo": 0, "Por vencer": 0, "Vencido": 0 };
                 var visible = facturas.filter(function (invoice) {
                     return !pais.value || invoice.pais === pais.value;
-                });
-                visible.forEach(function (invoice) {
-                    var status = slaStatus(invoice, reportDate).label;
-                    if (Object.prototype.hasOwnProperty.call(slaCounts, status)) slaCounts[status]++;
                 });
                 var openInvoices = visible.filter(function (invoice) {
                     return String(invoice.estatus || "").trim().toLowerCase() === "abierta";
                 });
+                var slaCounts = countSla(openInvoices);
 
-                setText("total-facturas", formatter.format(visible.length));
+                setText("solicitudes-abiertas", formatter.format(openInvoices.length));
                 setText("despachos-en-tiempo", formatter.format(slaCounts["En tiempo"]));
                 setText("por-vencer", formatter.format(slaCounts["Por vencer"]));
                 setText("vencidas", formatter.format(slaCounts.Vencido));
-                setText("kpi-global", (visible.length ? (slaCounts["En tiempo"] / visible.length * 100).toFixed(1) : "0.0") + "%");
-                setText("reclamos-abiertos", formatter.format(openInvoices.length));
-                setText("abiertas-count", formatter.format(openInvoices.length) + " reclamos abiertos");
+                var slaPercentage = (openInvoices.length
+                    ? (slaCounts["En tiempo"] / openInvoices.length * 100).toFixed(2)
+                    : "0.00") + "%";
+                setText("kpi-global", slaPercentage);
+                setText("kpi-fraccion",
+                    formatter.format(slaCounts["En tiempo"]) + " / " +
+                    formatter.format(openInvoices.length) + " × 100");
+                setText("kpi-fuera",
+                    formatter.format(openInvoices.length - slaCounts["En tiempo"]));
+                setText("kpi-pais", pais.value
+                    ? countryName(pais.value)
+                    : "Guatemala + El Salvador");
+                setText("titulo-kpi", pais.value
+                    ? (fixedCountry ? countryName(pais.value) + " · " + slaPercentage : slaPercentage + " · " + countryName(pais.value))
+                    : slaPercentage + " global");
+                renderCountryScope();
+                setText("abiertas-count", formatter.format(openInvoices.length) + " facturas abiertas");
+                renderCountrySla();
 
                 var pageCount = Math.ceil(openInvoices.length / pageSize);
                 currentPage = Math.min(currentPage, Math.max(pageCount, 1));
@@ -583,7 +914,8 @@
                 } else {
                     pageInvoices.forEach(function (invoice) {
                         var row = tbody.insertRow();
-                        createCell(row, invoice.pais);
+                        var countryCell = row.insertCell();
+                        appendCountryLabel(countryCell, invoice.pais);
                         createCell(row, invoice.numeroFactura, "invoice");
                         createCell(row, invoice.nombreCliente);
                         createCell(row, formatDate(invoice.fechaEmision));
@@ -598,8 +930,8 @@
                 setText("paginacion-info", openInvoices.length
                     ? "Mostrando " + formatter.format(firstIndex + 1) + "–" +
                         formatter.format(firstIndex + pageInvoices.length) + " de " +
-                        formatter.format(openInvoices.length) + " reclamos abiertos"
-                    : "Mostrando 0 de 0 reclamos abiertos");
+                        formatter.format(openInvoices.length) + " facturas abiertas"
+                    : "Mostrando 0 de 0 facturas abiertas");
                 document.getElementById("pagina-anterior").disabled = currentPage <= 1;
                 document.getElementById("pagina-siguiente").disabled = currentPage >= pageCount;
             }
@@ -611,9 +943,15 @@
                 countries.forEach(function (code) {
                     var option = document.createElement("option");
                     option.value = code;
-                    option.textContent = code;
+                    option.textContent = countryName(code) + " (" + code + ")";
                     pais.appendChild(option);
                 });
+                if (fixedCountry) {
+                    pais.value = fixedCountry;
+                    if (!pais.value) {
+                        throw new Error("El snapshot no contiene datos para " + countryName(fixedCountry) + ".");
+                    }
+                }
             }
 
             function formatUpdatedAt(value) {
@@ -624,6 +962,18 @@
                         day: "2-digit", month: "2-digit", year: "numeric",
                         hour: "2-digit", minute: "2-digit", timeZone: "America/Guatemala"
                     });
+            }
+
+            function formatGeneratedAt(value) {
+                return new Date(value).toLocaleString("es-GT", {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                    hour: "numeric",
+                    minute: "2-digit",
+                    timeZone: "America/Guatemala"
+                });
             }
 
             pais.addEventListener("change", function () {
@@ -640,7 +990,8 @@
                 currentPage++;
                 render();
             });
-            setText("generado", formatUpdatedAt(new Date().toISOString()));
+            configureCountryReport();
+            setText("generado", formatGeneratedAt(new Date().toISOString()));
 
             fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" })
                 .then(function (response) {
@@ -662,7 +1013,8 @@
                         showNotice("El snapshot está vacío. Confirma que el workflow de actualización haya ejecutado correctamente.", true);
                     } else {
                         showNotice("Datos cargados: " + formatter.format(facturas.length) +
-                            " facturas. El detalle muestra únicamente facturas con estatus Abierta.");
+                            " registros de facturas. Los indicadores y el detalle consideran únicamente facturas " +
+                            "con estatus Abierta.");
                     }
                     render();
                 })
