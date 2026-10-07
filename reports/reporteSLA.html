@@ -265,52 +265,6 @@
             line-height: 1;
         }
 
-        .country-kpis {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 12px;
-            margin-bottom: 22px;
-        }
-
-        .country-kpi {
-            padding: 15px;
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-left: 4px solid #2563eb;
-            border-radius: 9px;
-        }
-
-        .country-kpi.sv {
-            border-left-color: #e11d48;
-        }
-
-        body[data-report-country="GT"] .country-kpi.sv,
-        body[data-report-country="SV"] .country-kpi:not(.sv) {
-            display: none;
-        }
-
-        .country-kpi-label {
-            color: #475569;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: .04em;
-            text-transform: uppercase;
-        }
-
-        .country-kpi-value {
-            margin-top: 8px;
-            color: #0f172a;
-            font-size: 25px;
-            font-weight: 800;
-            line-height: 1;
-        }
-
-        .country-kpi-help {
-            margin-top: 7px;
-            color: #64748b;
-            font-size: 10px;
-        }
-
         .card {
             min-height: 112px;
             padding: 15px;
@@ -567,10 +521,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .country-kpis {
-                grid-template-columns: 1fr;
-            }
-
             .pagination {
                 align-items: flex-start;
                 flex-direction: column;
@@ -632,27 +582,6 @@
                 <div class="global-kpi-value" id="kpi-global">—</div>
             </div>
 
-            <section aria-labelledby="sla-pais-titulo">
-                <div class="section-heading">
-                    <h2 id="sla-pais-titulo">SLA por país</h2>
-                </div>
-                <p class="section-note" id="sla-pais-nota">
-                    Cada porcentaje se calcula por separado con las solicitudes abiertas de ese país, sin depender del filtro de la tabla.
-                </p>
-                <div class="country-kpis">
-                    <article class="country-kpi">
-                        <div class="country-kpi-label"><span class="country-label"><span class="flag-mark gt" aria-hidden="true"></span>Guatemala</span> · SLA de solicitudes abiertas</div>
-                        <div class="country-kpi-value" id="sla-gt">—</div>
-                        <div class="country-kpi-help" id="sla-gt-formula">—</div>
-                    </article>
-                    <article class="country-kpi sv">
-                        <div class="country-kpi-label"><span class="country-label"><span class="flag-mark sv" aria-hidden="true"></span>El Salvador</span> · SLA de solicitudes abiertas</div>
-                        <div class="country-kpi-value" id="sla-sv">—</div>
-                        <div class="country-kpi-help" id="sla-sv-formula">—</div>
-                    </article>
-                </div>
-            </section>
-
             <div class="cards">
                 <article class="card blue">
                     <div class="card-label">Solicitudes de despacho abiertas</div>
@@ -684,6 +613,7 @@
                     </div>
                     <p class="section-note">
                         El detalle incluye únicamente facturas cuyo estatus en el API sea “Abierta”.
+                        Los días activa se cuentan hasta la última actualización exitosa del API.
                     </p>
                 </div>
                 <div class="table-wrap">
@@ -694,11 +624,12 @@
                                 <th scope="col">Número de factura</th>
                                 <th scope="col">Nombre del cliente</th>
                                 <th scope="col">Fecha de emisión</th>
+                                <th scope="col">Días activa</th>
                                 <th scope="col">Estado del SLA</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td colspan="5" id="tabla-estado">Cargando facturas…</td></tr>
+                            <tr><td colspan="6" id="tabla-estado">Cargando facturas…</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -729,6 +660,7 @@
                 : "";
             var facturas = [];
             var meta = {};
+            var activeAsOfDate = null;
             var pais = document.getElementById("pais");
             var tbody = document.querySelector(".table-wrap tbody");
             var pageSize = 15;
@@ -784,10 +716,6 @@
                 setText("titulo-kpi", countryName(fixedCountry) + " · SLA");
                 setText("kpi-pais", countryName(fixedCountry));
                 document.getElementById("country-scope-label").textContent = "País del reporte:";
-                setText("sla-pais-titulo", "SLA de " + countryName(fixedCountry));
-                setText("sla-pais-nota",
-                    "Indicador calculado únicamente con las solicitudes abiertas de " +
-                    countryName(fixedCountry) + ".");
                 setText("intro-country", countryName(fixedCountry));
                 var headerCountry = document.getElementById("header-country");
                 headerCountry.replaceChildren();
@@ -805,6 +733,22 @@
             function formatDate(value) {
                 var timestamp = parseDate(value);
                 return timestamp === null ? "—" : fechaFormatter.format(timestamp);
+            }
+
+            function dateInGuatemala(value) {
+                var timestamp = new Date(value);
+                if (Number.isNaN(timestamp.getTime())) return null;
+                var parts = new Intl.DateTimeFormat("en-CA", {
+                    year: "numeric",
+                    month: "2-digit",
+                    day: "2-digit",
+                    timeZone: "America/Guatemala"
+                }).formatToParts(timestamp);
+                var dateParts = {};
+                parts.forEach(function (part) {
+                    if (part.type !== "literal") dateParts[part.type] = part.value;
+                });
+                return dateParts.year + "-" + dateParts.month + "-" + dateParts.day;
             }
 
             function elapsedDays(start, end) {
@@ -835,25 +779,6 @@
                 return counts;
             }
 
-            function renderCountrySla() {
-                ["GT", "SV"].forEach(function (code) {
-                    var openInvoices = facturas.filter(function (invoice) {
-                        return invoice.pais === code &&
-                            String(invoice.estatus || "").trim().toLowerCase() === "abierta";
-                    });
-                    var counts = countSla(openInvoices);
-                    var prefix = code.toLowerCase();
-                    var percentage = openInvoices.length
-                        ? (counts["En tiempo"] / openInvoices.length * 100).toFixed(2)
-                        : "0.00";
-
-                    setText("sla-" + prefix, percentage + "%");
-                    setText("sla-" + prefix + "-formula",
-                        formatter.format(counts["En tiempo"]) + " / " +
-                        formatter.format(openInvoices.length) + " solicitudes abiertas × 100");
-                });
-            }
-
             function createCell(row, value, className) {
                 var cell = document.createElement("td");
                 cell.textContent = value || "—";
@@ -874,6 +799,13 @@
                 });
                 var openInvoices = visible.filter(function (invoice) {
                     return String(invoice.estatus || "").trim().toLowerCase() === "abierta";
+                });
+                openInvoices.sort(function (left, right) {
+                    var leftDate = parseDate(left.fechaEmision);
+                    var rightDate = parseDate(right.fechaEmision);
+                    if (leftDate === null) return rightDate === null ? 0 : 1;
+                    if (rightDate === null) return -1;
+                    return leftDate - rightDate;
                 });
                 var slaCounts = countSla(openInvoices);
 
@@ -898,7 +830,6 @@
                     : slaPercentage + " global");
                 renderCountryScope();
                 setText("abiertas-count", formatter.format(openInvoices.length) + " facturas abiertas");
-                renderCountrySla();
 
                 var pageCount = Math.ceil(openInvoices.length / pageSize);
                 currentPage = Math.min(currentPage, Math.max(pageCount, 1));
@@ -909,7 +840,7 @@
                 if (!openInvoices.length) {
                     var emptyRow = tbody.insertRow();
                     var emptyCell = emptyRow.insertCell();
-                    emptyCell.colSpan = 5;
+                    emptyCell.colSpan = 6;
                     emptyCell.textContent = "No hay facturas con estatus Abierta.";
                 } else {
                     pageInvoices.forEach(function (invoice) {
@@ -919,6 +850,8 @@
                         createCell(row, invoice.numeroFactura, "invoice");
                         createCell(row, invoice.nombreCliente);
                         createCell(row, formatDate(invoice.fechaEmision));
+                        var activeDays = elapsedDays(invoice.fechaEmision, activeAsOfDate);
+                        createCell(row, activeDays === null ? "—" : formatter.format(activeDays));
                         var status = slaStatus(invoice, reportDate);
                         var statusCell = row.insertCell();
                         var badge = document.createElement("span");
@@ -1004,6 +937,7 @@
                     }
                     facturas = data.facturas;
                     meta = data.meta || {};
+                    activeAsOfDate = dateInGuatemala(meta.ultimoExito);
                     renderCountries();
                     setText("actualizado", formatUpdatedAt(meta.ultimoExito));
                     if (meta.error) {
