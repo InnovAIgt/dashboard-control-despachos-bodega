@@ -125,9 +125,13 @@ body{
 }
 .seg button:hover{color:var(--text);background:rgba(90,162,255,.09)}
 .seg button.active{background:linear-gradient(145deg,var(--accent),#cc0f45);color:#fff;font-weight:800;box-shadow:0 4px 14px rgba(255,46,99,.32)}
-.seg button.active[data-country="GT"]{background:linear-gradient(145deg,#3b7ee0,#1e4b96);box-shadow:0 4px 14px rgba(59,126,224,.3)}
-.seg button.active[data-country="SV"]{background:linear-gradient(145deg,var(--sv),#b3123f);box-shadow:0 4px 14px rgba(255,77,125,.3)}
-.seg button.active[data-country=""]{background:linear-gradient(145deg,#2f5fa8,#1a3a6f);box-shadow:0 4px 14px rgba(47,95,168,.3)}
+.seg button.active[data-country="GT"],
+.seg button.active[data-country="SV"],
+.seg button.active[data-country=""]{
+  background:linear-gradient(145deg,var(--accent),#cc0f45);
+  color:#fff;
+  box-shadow:0 4px 14px rgba(255,46,99,.32);
+}
 input,select{
   background:#060c17;border:1px solid var(--line);color:var(--text);
   font:inherit;font-size:13px;font-weight:600;padding:10px 13px;border-radius:11px;outline:none;
@@ -327,6 +331,20 @@ input[type="date"]{color-scheme:dark}
 .table-panel{padding:0;overflow:hidden}
 .table-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 22px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .table-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.detail-search{
+  display:flex;align-items:center;gap:10px;margin:14px 22px;padding:0 14px;height:44px;
+  border:1px solid var(--line-2);border-radius:11px;background:rgba(17,30,51,.72);
+  color:var(--muted);transition:.18s;
+}
+.detail-search:focus-within{
+  border-color:#31527f;box-shadow:0 0 0 3px rgba(49,82,127,.15);background:rgba(17,30,51,.92);
+}
+.detail-search .ic{color:var(--muted-2);flex:none}
+.detail-search input{
+  width:100%;height:100%;border:0!important;outline:0;background:transparent!important;
+  box-shadow:none!important;padding:0;color:var(--text);font:inherit;font-size:13px;font-weight:600;
+}
+.detail-search input::placeholder{color:#5c7095;font-weight:500}
 .count-pill{font-size:12px;font-weight:700;color:var(--muted);background:#060c17;border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-variant-numeric:tabular-nums}
 .table-scroll{overflow:auto;max-height:660px}
 table.detail{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;min-width:1180px}
@@ -393,6 +411,9 @@ select.pagesize{padding:8px 30px 8px 12px;font-size:12px;width:auto}
 .flag-box{
   width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex:none;
   background:#060c17;border:1px solid var(--line-2);box-shadow:var(--sh-1);
+}
+.country-flag-icon{
+  width:20px;height:20px;color:#fff;display:block;
 }
 .cty{gap:8px}
 .cty .flg{box-shadow:0 0 0 1px rgba(255,255,255,.14)}
@@ -964,11 +985,6 @@ table.detail tbody tr:hover td:first-child{background:rgba(90,162,255,.08)}
       <button class="btn btn-toggle" id="btnFiltros"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6.5h16M7 12h10M10 17.5h4"/></svg> Filtros <span class="badge">0</span> <span class="caret">▾</span></button>
 
       <div class="spacer"></div>
-
-      <div class="fg">
-        <span class="flabel">&nbsp;</span>
-        <button class="icon-btn" id="btnReset" title="Reiniciar todos los filtros"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5A8 8 0 1 0 18.4 17"/><path d="M20.5 5.5V11h-5.5"/></svg></button>
-      </div>
     </div>
 
     <!-- ============ PANEL DESPLEGABLE DE FILTROS (ref. 2) ============ -->
@@ -1033,32 +1049,10 @@ table.detail tbody tr:hover td:first-child{background:rgba(90,162,255,.08)}
       </div>
     </div>
 
-    <div class="api-bar">
-      <div class="api-estado oculto" id="apiEstado"></div>
-      <div class="api-right">
-        <span class="api-hora" id="apiHora">—</span>
-        <button type="button" class="btn btn-sm" id="btnRefrescar" title="Recarga el último snapshot publicado">↻ Recargar datos</button>
-      </div>
-    </div>
-
-    <div class="hint-note">
-      <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8h.01"/></svg>
-      <span id="baseNoteText">Abiertas y pendientes se miden contra la fecha de corte; cerradas y canceladas contra su fecha de despacho.</span>
-    </div>
-
-    <div class="presets">
-      <button type="button" class="chip chip-filtro" id="chipSemaforo">
-        <span id="chipSemaforoTxt">—</span>
-        <svg class="ic" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-      </button>
-      <span class="vsep"></span>
-      <span class="plabel">Ventanas rápidas</span>
-      <button class="chip" data-preset="all">Todo el año</button>
-      <button class="chip" data-preset="7">Últimos 7 días</button>
-      <button class="chip" data-preset="30">Últimos 30 días</button>
-      <button class="chip" data-preset="month">Mes en curso</button>
-      <button class="chip" data-preset="riesgo">Solo vencidas (&gt; 3 días)</button>
-    </div>
+    <button type="button" class="chip chip-filtro" id="chipSemaforo" title="Quitar filtro de semáforo">
+      <span id="chipSemaforoTxt">—</span>
+      <svg class="ic" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
   </section>
 
   <!-- ============ TABS ============ -->
@@ -1075,7 +1069,12 @@ table.detail tbody tr:hover td:first-child{background:rgba(90,162,255,.08)}
       <div class="sla-card gt">
         <div class="sla-head">
           <div class="sla-country">
-            <div class="flag"><span class="flag-box"><img class="flg flg-lg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJHdWF0ZW1hbGEiIGNsYXNzPSJmbGciIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiPgogIDxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzQ5OTdEMCIvPgogIDxyZWN0IHg9IjIwIiB3aWR0aD0iMjAiIGhlaWdodD0iNDAiIGZpbGw9IiNGRkZGRkYiLz4KICA8cmVjdCB4PSI0MCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjQwIiBmaWxsPSIjNDk5N0QwIi8+CiAgPGNpcmNsZSBjeD0iMzAiIGN5PSIyMCIgcj0iNS4yIiBmaWxsPSJub25lIiBzdHJva2U9IiMwQjRFOEMiIHN0cm9rZS13aWR0aD0iMC45Ii8+CiAgPHBhdGggZD0iTTMwIDEzLjggTDMxLjUgMTcuNiBMMzUuNCAxNy42IEwzMi40IDIwLjIgTDMzLjYgMjQgTDMwIDIxLjggTDI2LjQgMjQgTDI3LjYgMjAuMiBMMjQuNiAxNy42IEwyOC41IDE3LjYgWiIgZmlsbD0iIzFCNkJCNSIvPgogIDxwYXRoIGQ9Ik0yNC42IDI3LjIgUTMwIDMxIDM1LjQgMjcuMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMUI2QkI1IiBzdHJva2Utd2lkdGg9IjAuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPg==" alt=""></span></div>
+            <div class="flag"><span class="flag-box">
+              <svg class="country-flag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 21V4"/>
+                <path d="M6 5h10l-2 4 2 4H6"/>
+              </svg>
+            </span></div>
             <div>
               <div class="cn">Guatemala</div>
               <div class="ct">SLA GLOBAL</div>
@@ -1092,7 +1091,12 @@ table.detail tbody tr:hover td:first-child{background:rgba(90,162,255,.08)}
       <div class="sla-card sv">
         <div class="sla-head">
           <div class="sla-country">
-            <div class="flag"><span class="flag-box"><img class="flg flg-lg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MCA0MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJFbCBTYWx2YWRvciIgY2xhc3M9ImZsZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQgbWVldCI+CiAgPHJlY3Qgd2lkdGg9IjYwIiBoZWlnaHQ9IjEzLjM0IiBmaWxsPSIjMEY0N0FGIi8+CiAgPHJlY3QgeT0iMTMuMzMiIHdpZHRoPSI2MCIgaGVpZ2h0PSIxMy4zNCIgZmlsbD0iI0ZGRkZGRiIvPgogIDxyZWN0IHk9IjI2LjY2IiB3aWR0aD0iNjAiIGhlaWdodD0iMTMuMzQiIGZpbGw9IiMwRjQ3QUYiLz4KICA8cGF0aCBkPSJNMzAgOC41IEwzMiAxMyBMMzYuNiAxMyBMMzMuMiAxNS45IEwzNC42IDIwLjQgTDMwIDE3LjkgTDI1LjQgMjAuNCBMMjYuOCAxNS45IEwyMy40IDEzIEwyOCAxMyBaIiBmaWxsPSJub25lIiBzdHJva2U9IiMwQTJFNkIiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgogIDxwYXRoIGQ9Ik0yNS41IDMwIFEzMCAzNC41IDM0LjUgMzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzBBMkU2QiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8Y2lyY2xlIGN4PSIzMCIgY3k9IjIwIiByPSI0LjYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzBBMkU2QiIgc3Ryb2tlLXdpZHRoPSIwLjgiLz4KPC9zdmc+" alt=""></span></div>
+            <div class="flag"><span class="flag-box">
+              <svg class="country-flag-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 21V4"/>
+                <path d="M6 5h10l-2 4 2 4H6"/>
+              </svg>
+            </span></div>
             <div>
               <div class="cn">El Salvador</div>
               <div class="ct">SLA GLOBAL</div>
@@ -1251,8 +1255,15 @@ table.detail tbody tr:hover td:first-child{background:rgba(90,162,255,.08)}
         </div>
         <div class="table-tools">
           <span class="count-pill" id="detCount">0 facturas</span>
-          <button class="btn btn-primary" id="btnExport"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v10.5"/><path d="M8 11l4 4 4-4"/><path d="M4.5 19.5h15"/></svg> Exportar CSV</button>
+          <button class="btn btn-primary" id="btnExport"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v10.5"/><path d="M8 11l4 4 4-4"/><path d="M4.5 19.5h15"/></svg> Excel</button>
         </div>
+      </div>
+      <div class="detail-search">
+        <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="M20 20l-4-4"></path>
+        </svg>
+        <input type="text" id="detalleBusqueda" placeholder="Buscar en todas las columnas..." autocomplete="off" />
       </div>
       <div class="table-scroll">
         <table class="detail">
@@ -1454,7 +1465,7 @@ async function cargarDatos(forzar){
   // En el centralizado SAP se consulta desde GitHub Actions, no desde el navegador.
   try {
     marcarEstado('Actualizando datos…', 'cargando');
-    var dataUrl = './data/facturas.json?t=' + Date.now();
+    var dataUrl = 'https://innovaigt.github.io/dashboard-control-despachos-bodega/dashboards/bodega/control-despachos/data/facturas.json?t=' + Date.now();
     var r = await fetch(dataUrl, { cache:'no-store' });
     if(!r.ok) throw new Error('El servidor respondió ' + r.status);
     var j = await r.json();
@@ -1995,12 +2006,34 @@ function ordenarVista(){
 }
 
 function renderTabla(){
-  var total = vista.length, size = state.pageSize;
+  var inputBusqueda = document.getElementById('detalleBusqueda');
+  var q = (inputBusqueda ? inputBusqueda.value : '').trim().toLowerCase();
+
+  var filasTabla = vista;
+  if(q){
+    filasTabla = vista.filter(function(f){
+      var texto = [
+        f.pais,
+        f.numeroFactura,
+        f.fechaEmision,
+        f.fechaDespacho,
+        f.estatus,
+        f.codigoCliente,
+        f.nombreCliente,
+        f.totalFactura,
+        f.diasEmitida,
+        f.semaforo
+      ].join(' ').toLowerCase();
+      return texto.indexOf(q) !== -1;
+    });
+  }
+
+  var total = filasTabla.length, size = state.pageSize;
   var pages = Math.max(1, Math.ceil(total/size));
   if(state.page > pages) state.page = pages;
   if(state.page < 1) state.page = 1;
   var from = (state.page-1)*size, to = Math.min(total, from+size);
-  var rows = vista.slice(from, to);
+  var rows = filasTabla.slice(from, to);
 
   setText('detCount', fmtNum(total) + " facturas");
   setText('pgFrom', total ? fmtNum(from+1) : "0");
@@ -2111,10 +2144,12 @@ function reiniciar(){
   state.wDesde=null; state.wHasta=null;
   el.desde.value=state.desde; el.hasta.value=state.hasta; el.corte.value=state.corte;
   el.cliente.value=""; el.factura.value="";
+  var detalleBusqueda = document.getElementById('detalleBusqueda');
+  if(detalleBusqueda) detalleBusqueda.value="";
   document.querySelectorAll('#segCountry button').forEach(function(b){
     b.classList.toggle('active', b.dataset.country==="");
   });
-  document.querySelectorAll('.presets .chip').forEach(function(c){
+  document.querySelectorAll('.presets .chip[data-preset]').forEach(function(c){
     c.classList.toggle('active', c.dataset.preset==='all');
   });
   sincronizarSemanal();
@@ -2123,7 +2158,7 @@ function reiniciar(){
 
 function aplicarPreset(key){
   var hoy = hoyISO();
-  document.querySelectorAll('.presets .chip').forEach(function(c){
+  document.querySelectorAll('.presets .chip[data-preset]').forEach(function(c){
     c.classList.toggle('active', c.dataset.preset===key);
   });
   if(key==='all'){ state.desde=DATA_MIN; state.hasta=DATA_MAX; state.corte=hoy; state.soloVencidas=false; }
@@ -2159,7 +2194,7 @@ document.querySelectorAll('.tab').forEach(function(t){
   });
 });
 
-document.querySelectorAll('.presets .chip').forEach(function(c){
+document.querySelectorAll('.presets .chip[data-preset]').forEach(function(c){
   c.addEventListener('click', function(){ aplicarPreset(c.dataset.preset); });
 });
 
@@ -2242,9 +2277,6 @@ function aplicarPop(cerrar){
   state.estado = pop.estado;
   state.semaforo = pop.semaforo;
   state.baseSLA = pop.base;
-  document.getElementById('baseNoteText').textContent = pop.base === 'corte'
-    ? 'Todas las facturas se miden contra la fecha de corte, incluidas las cerradas.'
-    : 'Abiertas y pendientes se miden contra la fecha de corte; cerradas y canceladas contra su fecha de despacho.';
   if(cerrar) cerrarPop();
   refrescar();
   contarChecks();
@@ -2253,8 +2285,6 @@ function limpiarPop(){
   pop.estado = ''; pop.semaforo = ''; pop.base = 'cierre';
   state.estado = ''; state.semaforo = ''; state.cliente = ''; state.factura = '';
   el.cliente.value = ''; el.factura.value = '';
-  document.getElementById('baseNoteText').textContent =
-    'Abiertas y pendientes se miden contra la fecha de corte; cerradas y canceladas contra su fecha de despacho.';
   sincronizarChecks();
   cerrarPop();
   refrescar();
@@ -2419,19 +2449,32 @@ document.getElementById('chipSemaforo').addEventListener('click', function(){
   state.semaforo = '';
   refrescar();
 });
-
-document.getElementById('btnRefrescar').addEventListener('click', function(){
-  var b = this;
-  b.classList.add('busy');
-  cargarDatos(true).finally(function(){ b.classList.remove('busy'); });
-});
-document.getElementById('btnReset').addEventListener('click', function(){ reiniciar(); cerrarPop(); });
 document.getElementById('btnExport').addEventListener('click', exportarCSV);
+
+var detalleBusqueda = document.getElementById('detalleBusqueda');
+if(detalleBusqueda){
+  detalleBusqueda.addEventListener('input', function(){
+    state.page = 1;
+    renderTabla();
+  });
+}
+
 el.pgSize.addEventListener('change', function(){ state.pageSize=parseInt(this.value,10)||50; state.page=1; renderTabla(); });
 document.getElementById('pgFirst').addEventListener('click', function(){ state.page=1; renderTabla(); });
 document.getElementById('pgPrev').addEventListener('click', function(){ state.page--; renderTabla(); });
 document.getElementById('pgNext').addEventListener('click', function(){ state.page++; renderTabla(); });
-document.getElementById('pgLast').addEventListener('click', function(){ state.page=Math.max(1,Math.ceil(vista.length/state.pageSize)); renderTabla(); });
+document.getElementById('pgLast').addEventListener('click', function(){
+  var q = (document.getElementById('detalleBusqueda') ? document.getElementById('detalleBusqueda').value : '').trim().toLowerCase();
+  var total = vista.length;
+  if(q){
+    total = vista.filter(function(f){
+      return [f.pais,f.numeroFactura,f.fechaEmision,f.fechaDespacho,f.estatus,f.codigoCliente,f.nombreCliente,f.totalFactura,f.diasEmitida,f.semaforo]
+        .join(' ').toLowerCase().indexOf(q) !== -1;
+    }).length;
+  }
+  state.page=Math.max(1,Math.ceil(total/state.pageSize));
+  renderTabla();
+});
 
 document.querySelectorAll('table.detail thead th').forEach(function(th){
   th.addEventListener('click', function(){
@@ -2448,7 +2491,7 @@ document.querySelectorAll('table.detail thead th').forEach(function(th){
 (function init(){
   el.desde.value=state.desde; el.hasta.value=state.hasta; el.corte.value=state.corte;
   el.pgSize.value=state.pageSize;
-  document.querySelectorAll('.presets .chip').forEach(function(c){
+  document.querySelectorAll('.presets .chip[data-preset]').forEach(function(c){
     c.classList.toggle('active', c.dataset.preset==='all');
   });
   /* Rango inicial de la gráfica semanal: últimas 12 semanas */
