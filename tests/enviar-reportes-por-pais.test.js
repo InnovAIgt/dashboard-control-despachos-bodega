@@ -93,6 +93,27 @@ test('dashboard locks the report to the country specified in the URL', () => {
   assert.match(dashboard, /pais\.value = fixedCountry/);
 });
 
+test('refreshes the dashboard snapshot every five minutes without the Guatemala timezone label', () => {
+  const dashboard = fs.readFileSync(
+    path.join(__dirname, '..', 'reports', 'reporteSLA.html'),
+    'utf8'
+  );
+  const updater = fs.readFileSync(
+    path.join(__dirname, '..', 'scripts', 'actualizar-despachos.js'),
+    'utf8'
+  );
+  const workflow = fs.readFileSync(
+    path.join(__dirname, '..', '.github', 'workflows', 'actualizar-despachos.yml'),
+    'utf8'
+  );
+
+  assert.match(dashboard, /window\.setInterval\(loadSnapshot, 5 \* 60 \* 1000\)/);
+  assert.match(workflow, /cron: "\*\/5 \* \* \* \*"/);
+  assert.match(updater, /!datosCambiaron && !errorCambio && !huboRespuestaNueva/);
+  assert.doesNotMatch(dashboard, /hora de Guatemala/);
+  assert.match(dashboard, /Actualización del API: <span id="actualizado">/);
+});
+
 test('uses the asset logo and swaps country flag and code positions in the header', () => {
   const dashboard = fs.readFileSync(
     path.join(__dirname, '..', 'reports', 'reporteSLA.html'),

@@ -330,7 +330,7 @@ async function main() {
   const errorCambio = errorTexto !== prevError;
   const primeraVez = !anterior || !Array.isArray(anterior.facturas);
 
-  if (!primeraVez && !datosCambiaron && !errorCambio) {
+  if (!primeraVez && !datosCambiaron && !errorCambio && !huboRespuestaNueva) {
     console.log('Sin cambios. No se modifica facturas.json.');
     return;
   }
