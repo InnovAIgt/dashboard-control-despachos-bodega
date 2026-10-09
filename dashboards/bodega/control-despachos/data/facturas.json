@@ -43739,6 +43739,28 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1025868",
+      "fechaEmision": "2026-10-08",
+      "fechaDespacho": "2026-11-08",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001123",
+      "nombreCliente": "ROVALLEGO INGENIERIA, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 32836
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025869",
+      "fechaEmision": "2026-10-08",
+      "fechaDespacho": "2026-11-08",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000409",
+      "nombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
+      "totalFactura": 0,
+      "docEntry": 32837
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -59714,7 +59736,7 @@
       "numeroFactura": "9071375",
       "fechaEmision": "2026-05-04",
       "fechaDespacho": "2026-05-31",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL003373",
       "nombreCliente": "ACONTAXIS, DE R.L.",
       "totalFactura": 0,
@@ -74124,7 +74146,7 @@
       "numeroFactura": "9072685",
       "fechaEmision": "2026-09-01",
       "fechaDespacho": "2026-09-30",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000036",
       "nombreCliente": "COAMCUSAM, S.A. DE C.V",
       "totalFactura": 0,
@@ -92315,8 +92337,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-08T20:53:34.093Z",
-    "ultimoIntento": "2026-10-08T20:53:34.093Z",
+    "ultimoExito": "2026-10-09T00:44:22.830Z",
+    "ultimoIntento": "2026-10-09T00:44:22.830Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
