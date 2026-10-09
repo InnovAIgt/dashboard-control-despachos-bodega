@@ -40024,7 +40024,7 @@
       "numeroFactura": "1025530",
       "fechaEmision": "2026-09-28",
       "fechaDespacho": "2026-10-28",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001171",
       "nombreCliente": "CELMA EVELYN PEREZ PEREZ",
       "totalFactura": 0,
@@ -92337,8 +92337,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-09T06:46:55.206Z",
-    "ultimoIntento": "2026-10-09T06:46:55.206Z",
+    "ultimoExito": "2026-10-09T13:49:57.087Z",
+    "ultimoIntento": "2026-10-09T13:49:57.087Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
