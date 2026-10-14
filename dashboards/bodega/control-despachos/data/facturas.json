@@ -43907,7 +43907,7 @@
       "numeroFactura": "1025883",
       "fechaEmision": "2026-10-13",
       "fechaDespacho": "2026-10-13",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000677",
       "nombreCliente": "ASOC DE PROP MICROB RULET 1RO DE JULIO SERVITAX",
       "totalFactura": 0,
@@ -43934,6 +43934,17 @@
       "nombreCliente": "DIRECCION GENERAL DEL SISTEMA PENITENCIARIO",
       "totalFactura": 0,
       "docEntry": 32853
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025886",
+      "fechaEmision": "2026-10-14",
+      "fechaDespacho": "2026-10-14",
+      "estatus": "Abierta",
+      "codigoCliente": "CE000001",
+      "nombreCliente": "INTELFON, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 32854
     },
     {
       "pais": "GT",
@@ -92546,8 +92557,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-14T20:21:11.526Z",
-    "ultimoIntento": "2026-10-14T20:21:11.526Z",
+    "ultimoExito": "2026-10-14T23:19:16.434Z",
+    "ultimoIntento": "2026-10-14T23:19:16.434Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
