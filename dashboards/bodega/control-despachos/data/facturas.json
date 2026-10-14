@@ -43915,6 +43915,28 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1025884",
+      "fechaEmision": "2026-10-14",
+      "fechaDespacho": "2026-11-14",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000252",
+      "nombreCliente": "MUNICIPALIDAD DE SANTA CATARINA PINULA",
+      "totalFactura": 0,
+      "docEntry": 32852
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1025885",
+      "fechaEmision": "2026-10-02",
+      "fechaDespacho": "2026-10-31",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000879",
+      "nombreCliente": "DIRECCION GENERAL DEL SISTEMA PENITENCIARIO",
+      "totalFactura": 0,
+      "docEntry": 32853
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -79027,6 +79049,17 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073115",
+      "fechaEmision": "2026-10-14",
+      "fechaDespacho": "2026-10-31",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000002",
+      "nombreCliente": "TELEFONICA MOVILES EL SALVADOR, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48536
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080001",
       "fechaEmision": "2026-01-02",
       "fechaDespacho": "2026-01-31",
@@ -92513,8 +92546,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-14T16:47:11.986Z",
-    "ultimoIntento": "2026-10-14T16:47:11.986Z",
+    "ultimoExito": "2026-10-14T20:21:11.526Z",
+    "ultimoIntento": "2026-10-14T20:21:11.526Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
