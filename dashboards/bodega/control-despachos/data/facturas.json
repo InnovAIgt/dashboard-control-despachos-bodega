@@ -36438,7 +36438,7 @@
       "numeroFactura": "1025204",
       "fechaEmision": "2026-09-01",
       "fechaDespacho": "2026-09-30",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000640",
       "nombreCliente": "CORPORACION YANTARNI, SOCIEDAD ANONIMA",
       "totalFactura": 0,
@@ -38737,7 +38737,7 @@
       "numeroFactura": "1025413",
       "fechaEmision": "2026-09-01",
       "fechaDespacho": "2026-09-30",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001142",
       "nombreCliente": "INMOBILIARIA LAS ACACIAS, S.A.",
       "totalFactura": 0,
@@ -39221,7 +39221,7 @@
       "numeroFactura": "1025457",
       "fechaEmision": "2026-09-04",
       "fechaDespacho": "2026-10-04",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000654",
       "nombreCliente": "VIGILANCIA Y SERVICIOS SOCIEDAD ANONIMA",
       "totalFactura": 0,
@@ -39606,7 +39606,7 @@
       "numeroFactura": "1025492",
       "fechaEmision": "2026-09-09",
       "fechaDespacho": "2026-09-09",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000640",
       "nombreCliente": "CORPORACION YANTARNI, SOCIEDAD ANONIMA",
       "totalFactura": 0,
@@ -41960,7 +41960,7 @@
       "numeroFactura": "1025706",
       "fechaEmision": "2026-10-02",
       "fechaDespacho": "2026-10-31",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001015",
       "nombreCliente": "BODEGAS CUENCA, SOCIEDAD ANÓNIMA",
       "totalFactura": 0,
@@ -44110,6 +44110,17 @@
       "nombreCliente": "INTELFON, S.A. DE C.V",
       "totalFactura": 0,
       "docEntry": 32460
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "2000110",
+      "fechaEmision": "2026-10-14",
+      "fechaDespacho": "2026-10-14",
+      "estatus": "Abierta",
+      "codigoCliente": "CE000001",
+      "nombreCliente": "INTELFON, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 32855
     },
     {
       "pais": "GT",
@@ -92557,8 +92568,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-15T11:45:10.238Z",
-    "ultimoIntento": "2026-10-15T11:45:10.238Z",
+    "ultimoExito": "2026-10-15T15:45:23.977Z",
+    "ultimoIntento": "2026-10-15T15:45:23.977Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
