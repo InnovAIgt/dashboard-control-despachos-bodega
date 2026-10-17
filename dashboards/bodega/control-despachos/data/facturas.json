@@ -90162,7 +90162,7 @@
       "numeroFactura": "9080988",
       "fechaEmision": "2026-10-01",
       "fechaDespacho": "2026-10-31",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001199",
       "nombreCliente": "ARGUETA CHICA JOSE FREDDY",
       "totalFactura": 0,
@@ -92788,8 +92788,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-17T13:11:36.185Z",
-    "ultimoIntento": "2026-10-17T13:11:36.185Z",
+    "ultimoExito": "2026-10-17T16:24:00.819Z",
+    "ultimoIntento": "2026-10-17T16:24:00.819Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
