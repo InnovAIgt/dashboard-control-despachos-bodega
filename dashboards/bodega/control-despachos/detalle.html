@@ -140,6 +140,13 @@
       white-space: pre-wrap;
     }
 
+    .detail-note {
+      margin: -6px 0 18px;
+      color: #59677d;
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
     .table-scroll {
       max-width: 100%;
       overflow-x: auto;
@@ -215,7 +222,8 @@
         "codigoCliente",
         "nombreCliente",
         "totalFactura",
-        "docEntry"
+        "docEntry",
+        "detalleArticulos"
       ]);
 
       function showMessage(errorMessage) {
@@ -347,11 +355,41 @@
         return String(additionalValue);
       }
 
+      function formatApiFieldLabel(fieldName) {
+        var normalizedName = fieldName.replace(/[_\s-]/g, "").toLowerCase();
+        var spanishLabels = {
+          itemcode: "Código de artículo",
+          itemname: "Artículo",
+          itemdescription: "Descripción",
+          dscription: "Descripción",
+          description: "Descripción",
+          quantity: "Cantidad",
+          qty: "Cantidad",
+          model: "Modelo",
+          serialnumber: "Número de serie",
+          serialnumbers: "Números de serie",
+          internalserialnumber: "Número de serie interno",
+          manufacturer: "Fabricante",
+          brand: "Marca",
+          warehousecode: "Código de bodega",
+          warehousename: "Bodega",
+          linetotal: "Total de línea",
+          unitprice: "Precio unitario",
+          price: "Precio",
+          currency: "Moneda",
+          linenum: "Número de línea",
+          batchnumber: "Número de lote",
+          project: "Proyecto",
+          stock: "Existencia"
+        };
+        return spanishLabels[normalizedName] || fieldName;
+      }
+
       function renderObjectArrayTable(parentElement, fieldName, objectRows) {
         var field = document.createElement("div");
         field.className = "field";
         var label = document.createElement("dt");
-        label.textContent = fieldName;
+        label.textContent = formatApiFieldLabel(fieldName);
         field.appendChild(label);
 
         var description = document.createElement("dd");
@@ -389,7 +427,7 @@
         columnNames.forEach(function (columnName) {
           var heading = document.createElement("th");
           heading.scope = "col";
-          heading.textContent = columnName;
+          heading.textContent = formatApiFieldLabel(columnName);
           headingRow.appendChild(heading);
         });
         head.appendChild(headingRow);
@@ -444,6 +482,69 @@
         });
 
         card.appendChild(list);
+        parentElement.appendChild(card);
+      }
+
+      function collectNestedObjectArrays(value, fieldPath, collectedArrays) {
+        if (!value || typeof value !== "object") return;
+
+        if (Array.isArray(value)) {
+          if (value.some(function (item) {
+            return item !== null && typeof item === "object" && !Array.isArray(item);
+          })) {
+            collectedArrays.push({ fieldName: fieldPath, rows: value });
+          }
+          value.forEach(function (item, index) {
+            collectNestedObjectArrays(item, fieldPath + "[" + index + "]", collectedArrays);
+          });
+          return;
+        }
+
+        Object.keys(value).forEach(function (key) {
+          collectNestedObjectArrays(
+            value[key],
+            fieldPath ? fieldPath + "." + key : key,
+            collectedArrays
+          );
+        });
+      }
+
+      function appendArticleDetails(parentElement, invoiceRecord) {
+        var articleRows = Array.isArray(invoiceRecord.detalleArticulos)
+          ? invoiceRecord.detalleArticulos
+          : [];
+        var card = document.createElement("section");
+        card.className = "card";
+        var heading = document.createElement("h2");
+        heading.textContent = "Detalle de artículos y equipos";
+        card.appendChild(heading);
+
+        var explanation = document.createElement("p");
+        explanation.className = "detail-note";
+        explanation.textContent = articleRows.length
+          ? "Campos de artículos recibidos de SAP. Los valores originales se conservan; los nombres comunes se muestran en español."
+          : "El snapshot actual no incluye renglones ni campos de artículos/equipos para esta factura. Se mostrarán aquí cuando la API los entregue y el snapshot se actualice.";
+        card.appendChild(explanation);
+
+        if (articleRows.length > 0) {
+          var articleList = document.createElement("dl");
+          articleList.className = "additional-list";
+          renderObjectArrayTable(
+            articleList,
+            "Datos de artículos por registro de SAP",
+            articleRows
+          );
+
+          var nestedTables = [];
+          articleRows.forEach(function (row, rowIndex) {
+            collectNestedObjectArrays(row, "Registro " + (rowIndex + 1), nestedTables);
+          });
+          nestedTables.forEach(function (nestedTable) {
+            renderObjectArrayTable(articleList, nestedTable.fieldName, nestedTable.rows);
+          });
+
+          card.appendChild(articleList);
+        }
         parentElement.appendChild(card);
       }
 
@@ -519,6 +620,7 @@
             formatInvoiceTotal(invoiceRecord.totalFactura, countryCode)
           );
         });
+        appendArticleDetails(invoiceDetailsElement, invoiceRecord);
         appendAdditionalInvoiceInfo(invoiceDetailsElement, invoiceRecord);
         errorMessageElement.hidden = true;
         invoiceDetailsElement.hidden = false;

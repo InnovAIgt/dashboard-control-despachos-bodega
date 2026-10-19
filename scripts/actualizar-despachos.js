@@ -136,6 +136,21 @@ function normalizarPais(v) {
   return s || 'GT';
 }
 
+const CAMPOS_DETALLE_ARTICULO =
+  /art[ií]cul|item|line|l[ií]nea|producto|equipo|material|traslad|modelo|cantidad|quantity|serial|serie|sku|warehouse|almac[eé]n|descrip|dscription|description|precio|price|unit|unidad|detalle|brand|marca|manufacturer|fabricante|batch|lote|project|proyecto|stock|bodega|ubicaci[oó]n|sucursal|origen|destino|transfer|discount|descuento|tax|impuesto|currency|moneda|cost|costo|family|familia|version|firmware/i;
+
+function extraerDetalleArticulo(fila) {
+  const detalle = {};
+
+  for (const [campo, valor] of Object.entries(fila)) {
+    if (CAMPOS_DETALLE_ARTICULO.test(campo)) {
+      detalle[campo] = valor;
+    }
+  }
+
+  return Object.keys(detalle).length ? detalle : null;
+}
+
 function extraerLista(json) {
   if (Array.isArray(json)) return json;
 
@@ -228,13 +243,18 @@ function procesarFilas(filasCrudas, paisPorDefecto) {
       codigoCliente: String(leerCampo(fila, 'codigoCliente') || '').trim(),
       nombreCliente: String(leerCampo(fila, 'nombreCliente') || '').trim(),
       totalFactura: normalizarNumero(leerCampo(fila, 'totalFactura')),
-      docEntry: normalizarNumero(fila.docEntry || fila.DocEntry || fila.DOCENTRY)
+      docEntry: normalizarNumero(fila.docEntry || fila.DocEntry || fila.DOCENTRY),
+      detalleArticulos: []
     };
+    const detalleArticulo = extraerDetalleArticulo(fila);
+    if (detalleArticulo) registro.detalleArticulos.push(detalleArticulo);
 
     if (CONFIG.api.agruparPorFactura) {
       if (mapa.has(clave)) {
         const prev = mapa.get(clave);
         prev.totalFactura += registro.totalFactura;
+        if (!Array.isArray(prev.detalleArticulos)) prev.detalleArticulos = [];
+        prev.detalleArticulos.push(...registro.detalleArticulos);
 
         if (!prev.fechaDespacho && registro.fechaDespacho) prev.fechaDespacho = registro.fechaDespacho;
         if (!prev.estatus && registro.estatus) prev.estatus = registro.estatus;
@@ -249,7 +269,10 @@ function procesarFilas(filasCrudas, paisPorDefecto) {
     }
   }
 
-  return Array.from(mapa.values());
+  return Array.from(mapa.values()).map(registro => {
+    if (registro.detalleArticulos.length === 0) delete registro.detalleArticulos;
+    return registro;
+  });
 }
 
 function leerAnterior() {

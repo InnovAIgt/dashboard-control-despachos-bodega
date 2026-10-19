@@ -29,7 +29,7 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
   const server = http.createServer((request, response) => {
     const country = new URL(request.url, 'http://localhost').searchParams.get('var_pais');
     response.setHeader('Content-Type', 'application/json');
-    response.end(JSON.stringify([{
+    const invoiceRows = [{
       pais: country,
       numeroFactura: country + '-123',
       fechaEmision: '2026-01-01',
@@ -38,8 +38,23 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
       codigoCliente: 'C1',
       nombreCliente: 'Cliente de prueba',
       totalFactura: 10,
-      docEntry: 123
-    }]));
+      docEntry: 123,
+      ItemCode: 'RADIO-X',
+      Dscription: 'Radio portátil modelo X',
+      Quantity: 4,
+      Model: 'X',
+      SerialNumbers: [{ InternalSerialNumber: 'SERIE-001' }]
+    }];
+    if (country === 'GT') {
+      invoiceRows.push({
+        ...invoiceRows[0],
+        ItemCode: 'BATERIA-X',
+        Dscription: 'Batería para radio modelo X',
+        Quantity: 4,
+        SerialNumbers: [{ InternalSerialNumber: 'SERIE-002' }]
+      });
+    }
+    response.end(JSON.stringify(invoiceRows));
   });
 
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
@@ -59,6 +74,14 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
   await runUpdater();
   const firstSnapshot = JSON.parse(fs.readFileSync(snapshotPath, 'utf8'));
   const originalInvoices = firstSnapshot.facturas;
+  const guatemalaInvoice = originalInvoices.find(invoice => invoice.pais === 'GT');
+  assert.equal(guatemalaInvoice.detalleArticulos.length, 2);
+  assert.equal(guatemalaInvoice.detalleArticulos[0].ItemCode, 'RADIO-X');
+  assert.equal(guatemalaInvoice.detalleArticulos[0].Quantity, 4);
+  assert.deepEqual(
+    guatemalaInvoice.detalleArticulos[0].SerialNumbers,
+    [{ InternalSerialNumber: 'SERIE-001' }]
+  );
   firstSnapshot.meta.ultimoExito = '2000-01-01T00:00:00.000Z';
   fs.writeFileSync(snapshotPath, JSON.stringify(firstSnapshot));
 
