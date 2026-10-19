@@ -150,12 +150,14 @@
     .table-scroll {
       max-width: 100%;
       overflow-x: auto;
+      overflow-y: hidden;
       border: 1px solid #e2e8f0;
       border-radius: 6px;
     }
 
     .additional-table {
-      width: 100%;
+      width: max-content;
+      min-width: 100%;
       border-collapse: collapse;
       font-size: 0.9rem;
     }
@@ -166,14 +168,20 @@
       border-bottom: 1px solid #e2e8f0;
       text-align: left;
       vertical-align: top;
-      white-space: pre-wrap;
+      white-space: normal;
       overflow-wrap: anywhere;
     }
 
     .additional-table th {
+      white-space: nowrap;
       color: #102348;
       background: #f1f5f9;
       font-weight: 700;
+    }
+
+    .additional-table td {
+      min-width: 84px;
+      max-width: 280px;
     }
 
     .additional-table tr:last-child td {
@@ -193,6 +201,10 @@
       .field-grid {
         grid-template-columns: 1fr;
         gap: 16px;
+      }
+
+      .additional-table {
+        font-size: 0.84rem;
       }
     }
   </style>
@@ -548,12 +560,25 @@
         return flattenedRows;
       }
 
+      function removeArticleCollections(apiRecord) {
+        if (!apiRecord || typeof apiRecord !== "object" || Array.isArray(apiRecord)) {
+          return apiRecord;
+        }
+        return Object.keys(apiRecord).reduce(function (recordWithoutArticles, fieldName) {
+          var normalizedName = fieldName.replace(/[_\s-]/g, "").toLowerCase();
+          if (normalizedName !== "articulos") {
+            recordWithoutArticles[fieldName] = apiRecord[fieldName];
+          }
+          return recordWithoutArticles;
+        }, {});
+      }
+
       function appendArticleDetails(parentElement, invoiceRecord) {
         var articleRows = Array.isArray(invoiceRecord.detalleArticulos)
           ? flattenArticleRows(invoiceRecord.detalleArticulos)
           : [];
         var fullApiRecords = Array.isArray(invoiceRecord.registrosApi)
-          ? invoiceRecord.registrosApi
+          ? invoiceRecord.registrosApi.map(removeArticleCollections)
           : [];
         var card = document.createElement("section");
         card.className = "card";
@@ -581,7 +606,7 @@
           if (fullApiRecords.length > 0) {
             renderObjectArrayTable(
               articleList,
-              "Todos los campos del registro original del API",
+              "Datos originales de SAP (sin repetir artículos)",
               fullApiRecords
             );
           }
