@@ -45,7 +45,8 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
       Model: 'X',
       SerialNumbers: [{ InternalSerialNumber: 'SERIE-001' }],
       CustomValidationField: 'dato adicional conservado',
-      DocumentLines: [{ ItemCode: 'RADIO-X', Quantity: 4 }]
+      DocumentLines: [{ ItemCode: 'RADIO-X', Quantity: 4 }],
+      ApiToken: 'must-not-be-published'
     }];
     if (country === 'GT') {
       invoiceRows.push({
@@ -92,6 +93,9 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
     guatemalaInvoice.detalleArticulos[0].DocumentLines,
     [{ ItemCode: 'RADIO-X', Quantity: 4 }]
   );
+  assert.equal(guatemalaInvoice.registrosApi.length, 2);
+  assert.equal(guatemalaInvoice.registrosApi[0].fechaEmision, '2026-01-01');
+  assert.equal(Object.hasOwn(guatemalaInvoice.registrosApi[0], 'ApiToken'), false);
   firstSnapshot.meta.ultimoExito = '2000-01-01T00:00:00.000Z';
   fs.writeFileSync(snapshotPath, JSON.stringify(firstSnapshot));
 

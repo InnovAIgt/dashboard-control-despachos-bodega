@@ -223,7 +223,8 @@
         "nombreCliente",
         "totalFactura",
         "docEntry",
-        "detalleArticulos"
+        "detalleArticulos",
+        "registrosApi"
       ]);
 
       function showMessage(errorMessage) {
@@ -358,6 +359,15 @@
       function formatApiFieldLabel(fieldName) {
         var normalizedName = fieldName.replace(/[_\s-]/g, "").toLowerCase();
         var spanishLabels = {
+          pais: "País",
+          numerofactura: "No. factura",
+          docentry: "DocEntry (SAP)",
+          fechaemision: "Fecha de emisión",
+          fechadespacho: "Fecha de vencimiento",
+          estatus: "Estatus",
+          codigocliente: "Código de cliente",
+          nombrecliente: "Cliente",
+          totalfactura: "Total factura",
           itemcode: "Código de artículo",
           itemname: "Artículo",
           itemdescription: "Descripción",
@@ -513,6 +523,9 @@
         var articleRows = Array.isArray(invoiceRecord.detalleArticulos)
           ? invoiceRecord.detalleArticulos
           : [];
+        var fullApiRecords = Array.isArray(invoiceRecord.registrosApi)
+          ? invoiceRecord.registrosApi
+          : [];
         var card = document.createElement("section");
         card.className = "card";
         var heading = document.createElement("h2");
@@ -522,18 +535,27 @@
         var explanation = document.createElement("p");
         explanation.className = "detail-note";
         explanation.textContent = articleRows.length
-          ? "Se conservan los campos originales que SAP devuelve en cada registro, incluidos artículos, cantidades, modelos, series y otros datos disponibles."
-          : "El snapshot actual solo contiene datos generales de la factura; no incluye líneas de artículos o equipos. Esta sección se completará cuando SAP devuelva esos campos y se actualice el snapshot.";
+          ? "Se muestran los campos recibidos del API para los artículos y se conserva cada registro original de SAP para validar la información."
+          : "La respuesta actual del API para esta factura no contiene campos de líneas de artículos o equipos. Se muestran abajo todos los campos que sí entregó.";
         card.appendChild(explanation);
 
-        if (articleRows.length > 0) {
+        if (articleRows.length > 0 || fullApiRecords.length > 0) {
           var articleList = document.createElement("dl");
           articleList.className = "additional-list";
-          renderObjectArrayTable(
-            articleList,
-            "Campos disponibles por registro de SAP",
-            articleRows
-          );
+          if (articleRows.length > 0) {
+            renderObjectArrayTable(
+              articleList,
+              "Campos disponibles por artículo o registro de SAP",
+              articleRows
+            );
+          }
+          if (fullApiRecords.length > 0) {
+            renderObjectArrayTable(
+              articleList,
+              "Todos los campos del registro original del API",
+              fullApiRecords
+            );
+          }
 
           var nestedTables = [];
           articleRows.forEach(function (row, rowIndex) {

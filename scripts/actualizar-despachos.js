@@ -162,6 +162,32 @@ function extraerDetalleSap(fila) {
   return Object.keys(detalle).length ? detalle : null;
 }
 
+function sanitizarRegistroApi(valor) {
+  if (Array.isArray(valor)) return valor.map(sanitizarRegistroApi);
+  if (!valor || typeof valor !== 'object') return valor;
+
+  return Object.entries(valor).reduce((registroSeguro, [campo, dato]) => {
+    if (!/(token|secret|password|authorization|credential|api.?key)/i.test(campo)) {
+      registroSeguro[campo] = sanitizarRegistroApi(dato);
+    }
+    return registroSeguro;
+  }, {});
+}
+
+const CAMPOS_LINEA_ARTICULO =
+  /art[ií]cul|item|product|producto|equipo|material|documentlines|quantity|cantidad|model|modelo|serial|serie|sku|dscription|description|warehouse|almac[eé]n|unitprice|linetotal|batch|lote/i;
+
+function contieneCamposLineaArticulo(valor) {
+  if (Array.isArray(valor)) {
+    return valor.some(contieneCamposLineaArticulo);
+  }
+  if (!valor || typeof valor !== 'object') return false;
+
+  return Object.entries(valor).some(([campo, dato]) =>
+    CAMPOS_LINEA_ARTICULO.test(campo) || contieneCamposLineaArticulo(dato)
+  );
+}
+
 function extraerLista(json) {
   if (Array.isArray(json)) return json;
 
@@ -244,7 +270,8 @@ function procesarFilas(filasCrudas, paisPorDefecto) {
 
     const clave = String(num).trim();
     const pais = normalizarPais(leerCampo(fila, 'pais') || paisPorDefecto);
-    const detalleSap = extraerDetalleSap(fila);
+    const registroApiCompleto = sanitizarRegistroApi(fila);
+    const detalleSap = extraerDetalleSap(registroApiCompleto);
 
     const registro = {
       pais,
@@ -255,7 +282,8 @@ function procesarFilas(filasCrudas, paisPorDefecto) {
       codigoCliente: String(leerCampo(fila, 'codigoCliente') || '').trim(),
       nombreCliente: String(leerCampo(fila, 'nombreCliente') || '').trim(),
       totalFactura: normalizarNumero(leerCampo(fila, 'totalFactura')),
-      docEntry: normalizarNumero(fila.docEntry || fila.DocEntry || fila.DOCENTRY)
+      docEntry: normalizarNumero(fila.docEntry || fila.DocEntry || fila.DOCENTRY),
+      registrosApi: [registroApiCompleto]
     };
     if (detalleSap) registro.detalleArticulos = [detalleSap];
 
@@ -263,6 +291,8 @@ function procesarFilas(filasCrudas, paisPorDefecto) {
       if (mapa.has(clave)) {
         const prev = mapa.get(clave);
         prev.totalFactura += registro.totalFactura;
+        if (!Array.isArray(prev.registrosApi)) prev.registrosApi = [];
+        prev.registrosApi.push(...registro.registrosApi);
         if (registro.detalleArticulos) {
           if (!Array.isArray(prev.detalleArticulos)) prev.detalleArticulos = [];
           prev.detalleArticulos.push(...registro.detalleArticulos);
@@ -328,6 +358,25 @@ async function main() {
       huboRespuestaNueva = true;
 
       console.log(`✓ ${pais}: ${filas.length} filas -> ${facturas.length} facturas`);
+      const filasConCamposAdicionales = filas.filter(fila =>
+        extraerDetalleSap(sanitizarRegistroApi(fila))
+      ).length;
+      const filasConDetalleArticulo = filas.filter(contieneCamposLineaArticulo).length;
+      if (filasConDetalleArticulo > 0) {
+        console.log(
+          `  ↳ SAP entregó campos de artículos/equipos en ${filasConDetalleArticulo} filas`
+        );
+      } else if (filasConCamposAdicionales > 0) {
+        console.warn(
+          `  ↳ SAP entregó campos adicionales en ${filasConCamposAdicionales} filas, ` +
+          'pero no se reconocieron campos comunes de artículos/equipos; los datos originales se conservaron.'
+        );
+      } else {
+        console.warn(
+          `  ↳ La API no entregó campos de artículos/equipos para ${pais}; ` +
+          'solo se podrán mostrar los datos generales disponibles.'
+        );
+      }
     } catch (e) {
       const msg = `${pais}: ${e.message || e}`;
       errores.push(msg);
