@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102348">
+  <title>Detalle de factura · Control de despachos</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Arial, sans-serif;
+      color: #17233b;
+      background: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: #f1f5f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .page-header {
+      padding: 24px max(20px, calc((100% - 1040px) / 2));
+      color: #fff;
+      background: #102348;
+    }
+
+    .page-header h1 {
+      margin: 0;
+      font-size: clamp(1.35rem, 4vw, 1.8rem);
+      line-height: 1.25;
+    }
+
+    .page-header p {
+      margin: 8px 0 0;
+      color: #dbe5f5;
+      font-size: 0.95rem;
+    }
+
+    main {
+      width: min(100% - 32px, 1040px);
+      margin: 28px auto 48px;
+    }
+
+    .message {
+      margin: 0 0 20px;
+      padding: 14px 16px;
+      border: 1px solid #f1b9b9;
+      border-radius: 8px;
+      color: #8f2020;
+      background: #fff1f1;
+      line-height: 1.5;
+    }
+
+    .message[hidden] {
+      display: none;
+    }
+
+    .card {
+      margin: 0 0 20px;
+      padding: clamp(18px, 4vw, 26px);
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgb(16 35 72 / 4%);
+    }
+
+    .card h2 {
+      margin: 0 0 20px;
+      color: #102348;
+      font-size: 1.2rem;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px 24px;
+    }
+
+    .field {
+      min-width: 0;
+      margin: 0;
+    }
+
+    .field dt {
+      margin-bottom: 6px;
+      color: #59677d;
+      font-size: 0.83rem;
+      font-weight: 700;
+    }
+
+    .field dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+      color: #17233b;
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .status-green {
+      color: #17643a;
+      background: #e4f5eb;
+    }
+
+    .status-yellow {
+      color: #785200;
+      background: #fff3cd;
+    }
+
+    .status-red {
+      color: #9b2525;
+      background: #fde8e8;
+    }
+
+    .status-neutral {
+      color: #45546b;
+      background: #edf1f6;
+    }
+
+    .additional-list {
+      display: grid;
+      gap: 18px;
+      margin: 0;
+    }
+
+    .additional-list .field dd {
+      white-space: pre-wrap;
+    }
+
+    .table-scroll {
+      max-width: 100%;
+      overflow-x: auto;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+    }
+
+    .additional-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    .additional-table th,
+    .additional-table td {
+      padding: 9px 12px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      vertical-align: top;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .additional-table th {
+      color: #102348;
+      background: #f1f5f9;
+      font-weight: 700;
+    }
+
+    .additional-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      .page-header {
+        padding: 20px 16px;
+      }
+
+      main {
+        width: min(100% - 24px, 1040px);
+        margin-top: 18px;
+      }
+
+      .field-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1>Detalle de factura</h1>
+    <p>Control de despachos de bodega</p>
+  </header>
+  <main>
+    <p id="message" class="message" role="alert" hidden></p>
+    <div id="content" hidden></div>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      var messageElement = document.getElementById("message");
+      var contentElement = document.getElementById("content");
+      var knownFields = new Set([
+        "pais",
+        "numeroFactura",
+        "fechaEmision",
+        "fechaDespacho",
+        "estatus",
+        "codigoCliente",
+        "nombreCliente",
+        "totalFactura",
+        "docEntry"
+      ]);
+
+      function showMessage(message) {
+        messageElement.textContent = message;
+        messageElement.hidden = false;
+        contentElement.hidden = true;
+      }
+
+      function getDateParts(value, timeZone) {
+        if (typeof value !== "string" && typeof value !== "number") {
+          return null;
+        }
+
+        var text = String(value).trim();
+        var dateOnly = /^(\d{4})-(\d{2})-(\d{2})$/.exec(text);
+        if (dateOnly) {
+          var year = Number(dateOnly[1]);
+          var month = Number(dateOnly[2]);
+          var day = Number(dateOnly[3]);
+          var check = new Date(Date.UTC(year, month - 1, day));
+          if (check.getUTCFullYear() !== year ||
+              check.getUTCMonth() !== month - 1 ||
+              check.getUTCDate() !== day) {
+            return null;
+          }
+          return { year: year, month: month, day: day };
+        }
+
+        var date = new Date(value);
+        if (Number.isNaN(date.getTime())) {
+          return null;
+        }
+        var parts = new Intl.DateTimeFormat("en-US", {
+          timeZone: timeZone,
+          year: "numeric",
+          month: "2-digit",
+          day: "2-digit"
+        }).formatToParts(date);
+        var result = {};
+        for (var i = 0; i < parts.length; i += 1) {
+          if (parts[i].type === "year") result.year = Number(parts[i].value);
+          if (parts[i].type === "month") result.month = Number(parts[i].value);
+          if (parts[i].type === "day") result.day = Number(parts[i].value);
+        }
+        return result.year && result.month && result.day ? result : null;
+      }
+
+      function formatDate(value, timeZone) {
+        var parts = getDateParts(value, timeZone);
+        if (!parts) return "—";
+        return String(parts.day).padStart(2, "0") + "/" +
+          String(parts.month).padStart(2, "0") + "/" + parts.year;
+      }
+
+      function dayNumber(parts) {
+        return Date.UTC(parts.year, parts.month - 1, parts.day) / 86400000;
+      }
+
+      function daysActive(invoice, timeZone, cutoffValue) {
+        var emission = getDateParts(invoice.fechaEmision, timeZone);
+        var cutoff = cutoffValue
+          ? getDateParts(cutoffValue, timeZone)
+          : getDateParts(Date.now(), timeZone);
+        if (!emission || !cutoff) return "—";
+        return String(Math.max(0, dayNumber(cutoff) - dayNumber(emission)));
+      }
+
+      function processType(invoice, timeZone) {
+        var customerCode = String(invoice.codigoCliente || "");
+        if (customerCode.indexOf("CE") === 0) return "STR";
+
+        var emission = getDateParts(invoice.fechaEmision, timeZone);
+        var dispatch = getDateParts(invoice.fechaDespacho, timeZone);
+        if (emission && dispatch &&
+            emission.year === dispatch.year &&
+            emission.month === dispatch.month) {
+          var lastDay = new Date(Date.UTC(emission.year, emission.month, 0)).getUTCDate();
+          if (dispatch.day === lastDay) return "Cíclica";
+        }
+        return "Reserva";
+      }
+
+      function appendField(parent, label, value, className) {
+        var wrapper = document.createElement("div");
+        wrapper.className = "field";
+        if (className) wrapper.classList.add(className);
+        var term = document.createElement("dt");
+        term.textContent = label;
+        var description = document.createElement("dd");
+        description.textContent = value === null || value === undefined || value === ""
+          ? "—"
+          : String(value);
+        wrapper.appendChild(term);
+        wrapper.appendChild(description);
+        parent.appendChild(wrapper);
+        return description;
+      }
+
+      function formatAmount(value, country) {
+        if (value === null || value === undefined || value === "") return "—";
+        var amount = Number(value);
+        if (!Number.isFinite(amount)) return String(value);
+        return new Intl.NumberFormat(country === "GT" ? "es-GT" : "es-SV", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        }).format(amount);
+      }
+
+      function displayValue(value) {
+        if (value === null || value === undefined || value === "") return "—";
+        if (typeof value === "object") {
+          return JSON.stringify(value, null, 2);
+        }
+        return String(value);
+      }
+
+      function appendObjectArray(parent, key, rows) {
+        var field = document.createElement("div");
+        field.className = "field";
+        var label = document.createElement("dt");
+        label.textContent = key;
+        field.appendChild(label);
+
+        var description = document.createElement("dd");
+        if (rows.length === 0) {
+          description.textContent = "—";
+          field.appendChild(description);
+          parent.appendChild(field);
+          return;
+        }
+
+        var columns = [];
+        for (var i = 0; i < rows.length; i += 1) {
+          if (rows[i] && typeof rows[i] === "object" && !Array.isArray(rows[i])) {
+            Object.keys(rows[i]).forEach(function (column) {
+              if (columns.indexOf(column) === -1) columns.push(column);
+            });
+          }
+        }
+
+        if (columns.length === 0) {
+          description.textContent = rows.map(displayValue).join(", ");
+          field.appendChild(description);
+          parent.appendChild(field);
+          return;
+        }
+
+        var scroll = document.createElement("div");
+        scroll.className = "table-scroll";
+        var table = document.createElement("table");
+        table.className = "additional-table";
+        var head = document.createElement("thead");
+        var headingRow = document.createElement("tr");
+        columns.forEach(function (column) {
+          var heading = document.createElement("th");
+          heading.scope = "col";
+          heading.textContent = column;
+          headingRow.appendChild(heading);
+        });
+        head.appendChild(headingRow);
+        table.appendChild(head);
+
+        var body = document.createElement("tbody");
+        rows.forEach(function (row) {
+          var tableRow = document.createElement("tr");
+          columns.forEach(function (column) {
+            var cell = document.createElement("td");
+            cell.textContent = row && typeof row === "object" && !Array.isArray(row)
+              ? displayValue(row[column])
+              : "—";
+            tableRow.appendChild(cell);
+          });
+          body.appendChild(tableRow);
+        });
+        table.appendChild(body);
+        scroll.appendChild(table);
+        description.appendChild(scroll);
+        field.appendChild(description);
+        parent.appendChild(field);
+      }
+
+      function appendAdditional(parent, invoice) {
+        var fields = Object.keys(invoice).filter(function (key) {
+          return !knownFields.has(key);
+        });
+        if (fields.length === 0) return;
+
+        var card = document.createElement("section");
+        card.className = "card";
+        var heading = document.createElement("h2");
+        heading.textContent = "Información adicional";
+        card.appendChild(heading);
+        var list = document.createElement("dl");
+        list.className = "additional-list";
+
+        fields.forEach(function (key) {
+          var value = invoice[key];
+          if (Array.isArray(value) && value.some(function (item) {
+            return item !== null && typeof item === "object" && !Array.isArray(item);
+          })) {
+            appendObjectArray(list, key, value);
+            return;
+          }
+          appendField(list, key, displayValue(value));
+        });
+
+        card.appendChild(list);
+        parent.appendChild(card);
+      }
+
+      function appendCard(parent, title, fields, gridClass) {
+        var card = document.createElement("section");
+        card.className = "card";
+        var heading = document.createElement("h2");
+        heading.textContent = title;
+        card.appendChild(heading);
+        var list = document.createElement("dl");
+        list.className = gridClass || "field-grid";
+        fields(list);
+        card.appendChild(list);
+        parent.appendChild(card);
+      }
+
+      function renderInvoice(invoice, data, country) {
+        var timeZone = country === "SV" ? "America/El_Salvador" : "America/Guatemala";
+        var type = processType(invoice, timeZone);
+        var activeDays = daysActive(invoice, timeZone, data.meta && data.meta.ultimoExito);
+        var sla = "No aplica";
+        var slaClass = "status-neutral";
+        if (String(invoice.estatus || "").toLowerCase() === "abierta" && type !== "Cíclica") {
+          var numericDays = Number(activeDays);
+          if (activeDays !== "—" && numericDays <= 2) {
+            sla = "En tiempo";
+            slaClass = "status-green";
+          } else if (activeDays !== "—" && numericDays === 3) {
+            sla = "Por vencer";
+            slaClass = "status-yellow";
+          } else if (activeDays !== "—" && numericDays > 3) {
+            sla = "Vencido";
+            slaClass = "status-red";
+          } else {
+            sla = "No disponible";
+          }
+        }
+
+        contentElement.replaceChildren();
+        appendCard(contentElement, "Seguimiento", function (list) {
+          appendField(list, "Tipo de proceso", type);
+          appendField(list, "Días activa", activeDays);
+          var slaDescription = appendField(list, "Estado SLA", sla);
+          slaDescription.classList.add("status", slaClass);
+        });
+        appendCard(contentElement, "Datos de la factura", function (list) {
+          appendField(list, "No. factura", invoice.numeroFactura);
+          appendField(list, "DocEntry (SAP)", invoice.docEntry);
+          appendField(list, "País", country);
+          appendField(list, "Estatus", invoice.estatus);
+          appendField(list, "Código de cliente", invoice.codigoCliente);
+          appendField(list, "Cliente", invoice.nombreCliente);
+          appendField(list, "Fecha de emisión", formatDate(invoice.fechaEmision, timeZone));
+          appendField(list, "Fecha de vencimiento", formatDate(invoice.fechaDespacho, timeZone));
+          appendField(list, "Total factura", formatAmount(invoice.totalFactura, country));
+        });
+        appendAdditional(contentElement, invoice);
+        messageElement.hidden = true;
+        contentElement.hidden = false;
+      }
+
+      async function loadInvoice() {
+        var params = new URLSearchParams(window.location.search);
+        var country = params.get("pais");
+        var doc = params.get("doc");
+        var invoiceNumber = params.get("factura");
+
+        if (!country || (!doc && !invoiceNumber)) {
+          showMessage("Falta un parámetro requerido. El enlace debe incluir pais y doc o factura.");
+          return;
+        }
+        if (country !== "SV" && country !== "GT") {
+          showMessage("El país indicado no es válido. Use SV o GT.");
+          return;
+        }
+
+        var response;
+        var data;
+        try {
+          response = await fetch("data/facturas.json?t=" + Date.now());
+          if (response.ok) data = await response.json();
+        } catch (error) {
+          showMessage("No se pudo leer el archivo de facturas. Verifique su conexión e inténtelo de nuevo.");
+          return;
+        }
+        if (!response.ok) {
+          showMessage("No se pudieron cargar las facturas (error HTTP " + response.status + ").");
+          return;
+        }
+        if (!data || !Array.isArray(data.facturas)) {
+          showMessage("No se pudieron leer los datos: el archivo de facturas tiene un formato inesperado.");
+          return;
+        }
+
+        var invoice = data.facturas.find(function (item) {
+          if (!item || String(item.pais) !== country) return false;
+          if (doc) return String(item.docEntry) === String(doc);
+          return String(item.numeroFactura) === String(invoiceNumber);
+        });
+        if (!invoice) {
+          showMessage("Esta factura ya no aparece en el API. Puede que se haya despachado o cerrado.");
+          return;
+        }
+        renderInvoice(invoice, data, country);
+      }
+
+      loadInvoice();
+    }());
+  </script>
+</body>
+</html>
