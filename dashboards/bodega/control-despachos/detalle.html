@@ -522,8 +522,8 @@
         var explanation = document.createElement("p");
         explanation.className = "detail-note";
         explanation.textContent = articleRows.length
-          ? "Campos de artículos recibidos de SAP. Los valores originales se conservan; los nombres comunes se muestran en español."
-          : "El snapshot actual no incluye renglones ni campos de artículos/equipos para esta factura. Se mostrarán aquí cuando la API los entregue y el snapshot se actualice.";
+          ? "Se conservan los campos originales que SAP devuelve en cada registro, incluidos artículos, cantidades, modelos, series y otros datos disponibles."
+          : "El snapshot actual solo contiene datos generales de la factura; no incluye líneas de artículos o equipos. Esta sección se completará cuando SAP devuelva esos campos y se actualice el snapshot.";
         card.appendChild(explanation);
 
         if (articleRows.length > 0) {
@@ -531,7 +531,7 @@
           articleList.className = "additional-list";
           renderObjectArrayTable(
             articleList,
-            "Datos de artículos por registro de SAP",
+            "Campos disponibles por registro de SAP",
             articleRows
           );
 

@@ -43,7 +43,9 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
       Dscription: 'Radio portátil modelo X',
       Quantity: 4,
       Model: 'X',
-      SerialNumbers: [{ InternalSerialNumber: 'SERIE-001' }]
+      SerialNumbers: [{ InternalSerialNumber: 'SERIE-001' }],
+      CustomValidationField: 'dato adicional conservado',
+      DocumentLines: [{ ItemCode: 'RADIO-X', Quantity: 4 }]
     }];
     if (country === 'GT') {
       invoiceRows.push({
@@ -81,6 +83,14 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
   assert.deepEqual(
     guatemalaInvoice.detalleArticulos[0].SerialNumbers,
     [{ InternalSerialNumber: 'SERIE-001' }]
+  );
+  assert.equal(
+    guatemalaInvoice.detalleArticulos[0].CustomValidationField,
+    'dato adicional conservado'
+  );
+  assert.deepEqual(
+    guatemalaInvoice.detalleArticulos[0].DocumentLines,
+    [{ ItemCode: 'RADIO-X', Quantity: 4 }]
   );
   firstSnapshot.meta.ultimoExito = '2000-01-01T00:00:00.000Z';
   fs.writeFileSync(snapshotPath, JSON.stringify(firstSnapshot));
