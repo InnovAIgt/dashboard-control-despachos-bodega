@@ -162,6 +162,24 @@ function extraerDetalleSap(fila) {
   return Object.keys(detalle).length ? detalle : null;
 }
 
+function extraerArticulos(valor) {
+  if (!valor || typeof valor !== 'object') return null;
+  if (Array.isArray(valor)) return null;
+
+  for (const [campo, dato] of Object.entries(valor)) {
+    if (campo.toLowerCase().replace(/[^a-z0-9]/g, '') === 'articulos' &&
+        Array.isArray(dato)) {
+      return dato.length ? dato : null;
+    }
+    if (dato && typeof dato === 'object' && !Array.isArray(dato)) {
+      const anidados = extraerArticulos(dato);
+      if (anidados) return anidados;
+    }
+  }
+
+  return null;
+}
+
 function sanitizarRegistroApi(valor) {
   if (Array.isArray(valor)) return valor.map(sanitizarRegistroApi);
   if (!valor || typeof valor !== 'object') return valor;
@@ -195,6 +213,13 @@ function extraerLista(json) {
     if (CONFIG.rutaLista && Array.isArray(json[CONFIG.rutaLista])) {
       return json[CONFIG.rutaLista];
     }
+
+    const tieneIdentificadorFactura =
+      json.DocEntry !== undefined ||
+      json.docEntry !== undefined ||
+      json.NumeroFactura !== undefined ||
+      json.numeroFactura !== undefined;
+    if (tieneIdentificadorFactura) return [json];
 
     for (const k of Object.keys(json)) {
       if (Array.isArray(json[k])) return json[k];
@@ -272,6 +297,7 @@ function procesarFilas(filasCrudas, paisPorDefecto) {
     const pais = normalizarPais(leerCampo(fila, 'pais') || paisPorDefecto);
     const registroApiCompleto = sanitizarRegistroApi(fila);
     const detalleSap = extraerDetalleSap(registroApiCompleto);
+    const articulosSap = extraerArticulos(registroApiCompleto);
 
     const registro = {
       pais,
@@ -285,7 +311,11 @@ function procesarFilas(filasCrudas, paisPorDefecto) {
       docEntry: normalizarNumero(fila.docEntry || fila.DocEntry || fila.DOCENTRY),
       registrosApi: [registroApiCompleto]
     };
-    if (detalleSap) registro.detalleArticulos = [detalleSap];
+    if (articulosSap) {
+      registro.detalleArticulos = articulosSap;
+    } else if (detalleSap) {
+      registro.detalleArticulos = [detalleSap];
+    }
 
     if (CONFIG.api.agruparPorFactura) {
       if (mapa.has(clave)) {

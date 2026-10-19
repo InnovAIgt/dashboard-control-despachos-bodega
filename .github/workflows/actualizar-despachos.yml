@@ -29,10 +29,11 @@ jobs:
       - name: Consultar SAP y generar snapshot
         env:
           SAP_API_KEY: ${{ secrets.SAP_API_KEY }}
-          SAP_API_URL: ${{ vars.SAP_API_URL }}
-          SAP_YEAR: ${{ vars.SAP_YEAR }}
-          SAP_AUTH_TYPE: ${{ vars.SAP_AUTH_TYPE }}
-          SAP_HEADER_NAME: ${{ vars.SAP_HEADER_NAME }}
+          SAP_API_URL: https://sapapi.red.com.sv/api/Procesos/facturasyear?year={year}&var_pais={pais}
+          SAP_YEAR: "2026"
+          SAP_PAISES: GT,SV
+          SAP_AUTH_TYPE: header
+          SAP_HEADER_NAME: X-API-Key
           SAP_RUTA_LISTA: ${{ vars.SAP_RUTA_LISTA }}
           SAP_AGRUPAR_POR_FACTURA: ${{ vars.SAP_AGRUPAR_POR_FACTURA }}
         run: node scripts/actualizar-despachos.js

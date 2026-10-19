@@ -29,7 +29,7 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
   const server = http.createServer((request, response) => {
     const country = new URL(request.url, 'http://localhost').searchParams.get('var_pais');
     response.setHeader('Content-Type', 'application/json');
-    const invoiceRows = [{
+    const invoice = {
       pais: country,
       numeroFactura: country + '-123',
       fechaEmision: '2026-01-01',
@@ -47,17 +47,32 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
       CustomValidationField: 'dato adicional conservado',
       DocumentLines: [{ ItemCode: 'RADIO-X', Quantity: 4 }],
       ApiToken: 'must-not-be-published'
+    };
+    const articulos = [{
+      Linea: 0,
+      CodigoArticulo: 'RADIO-X',
+      Descripcion: 'Radio portátil modelo X',
+      Cantidad: 4,
+      Precio: 177.8686,
+      Descuento: 0,
+      TotalLinea: 1410.909
     }];
     if (country === 'GT') {
-      invoiceRows.push({
-        ...invoiceRows[0],
-        ItemCode: 'BATERIA-X',
-        Dscription: 'Batería para radio modelo X',
-        Quantity: 4,
-        SerialNumbers: [{ InternalSerialNumber: 'SERIE-002' }]
+      articulos.push({
+        Linea: 1,
+        CodigoArticulo: 'BATERIA-X',
+        Descripcion: 'Batería para radio modelo X',
+        Cantidad: 4,
+        Precio: 20,
+        Descuento: 0,
+        TotalLinea: 80
       });
     }
-    response.end(JSON.stringify(invoiceRows));
+    response.end(JSON.stringify({
+      ...invoice,
+      tipoFactura: 'FACTURA CICLICA',
+      Articulos: articulos
+    }));
   });
 
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
@@ -79,23 +94,23 @@ test('updates the successful API timestamp when invoice data is unchanged', asyn
   const originalInvoices = firstSnapshot.facturas;
   const guatemalaInvoice = originalInvoices.find(invoice => invoice.pais === 'GT');
   assert.equal(guatemalaInvoice.detalleArticulos.length, 2);
-  assert.equal(guatemalaInvoice.detalleArticulos[0].ItemCode, 'RADIO-X');
-  assert.equal(guatemalaInvoice.detalleArticulos[0].Quantity, 4);
+  assert.equal(guatemalaInvoice.detalleArticulos[0].CodigoArticulo, 'RADIO-X');
+  assert.equal(guatemalaInvoice.detalleArticulos[0].Cantidad, 4);
   assert.deepEqual(
-    guatemalaInvoice.detalleArticulos[0].SerialNumbers,
-    [{ InternalSerialNumber: 'SERIE-001' }]
+    guatemalaInvoice.detalleArticulos[0].Descripcion,
+    'Radio portátil modelo X'
   );
   assert.equal(
-    guatemalaInvoice.detalleArticulos[0].CustomValidationField,
-    'dato adicional conservado'
+    guatemalaInvoice.detalleArticulos[0].TotalLinea,
+    1410.909
   );
-  assert.deepEqual(
-    guatemalaInvoice.detalleArticulos[0].DocumentLines,
-    [{ ItemCode: 'RADIO-X', Quantity: 4 }]
-  );
-  assert.equal(guatemalaInvoice.registrosApi.length, 2);
+  assert.equal(guatemalaInvoice.registrosApi.length, 1);
   assert.equal(guatemalaInvoice.registrosApi[0].fechaEmision, '2026-01-01');
   assert.equal(Object.hasOwn(guatemalaInvoice.registrosApi[0], 'ApiToken'), false);
+  const elSalvadorInvoice = originalInvoices.find(invoice => invoice.pais === 'SV');
+  assert.equal(elSalvadorInvoice.detalleArticulos[0].CodigoArticulo, 'RADIO-X');
+  assert.equal(elSalvadorInvoice.detalleArticulos[0].Cantidad, 4);
+  assert.equal(elSalvadorInvoice.detalleArticulos[0].TotalLinea, 1410.909);
   firstSnapshot.meta.ultimoExito = '2000-01-01T00:00:00.000Z';
   fs.writeFileSync(snapshotPath, JSON.stringify(firstSnapshot));
 
