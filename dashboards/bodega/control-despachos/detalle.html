@@ -526,9 +526,31 @@
         });
       }
 
+      function flattenArticleRows(articleDetails) {
+        var flattenedRows = [];
+        articleDetails.forEach(function (articleDetail) {
+          if (!articleDetail || typeof articleDetail !== "object" ||
+              Array.isArray(articleDetail)) {
+            flattenedRows.push(articleDetail);
+            return;
+          }
+
+          var nestedArticles = Object.keys(articleDetail).find(function (fieldName) {
+            return fieldName.replace(/[_\s-]/g, "").toLowerCase() === "articulos" &&
+              Array.isArray(articleDetail[fieldName]);
+          });
+          if (nestedArticles) {
+            flattenedRows.push.apply(flattenedRows, articleDetail[nestedArticles]);
+          } else {
+            flattenedRows.push(articleDetail);
+          }
+        });
+        return flattenedRows;
+      }
+
       function appendArticleDetails(parentElement, invoiceRecord) {
         var articleRows = Array.isArray(invoiceRecord.detalleArticulos)
-          ? invoiceRecord.detalleArticulos
+          ? flattenArticleRows(invoiceRecord.detalleArticulos)
           : [];
         var fullApiRecords = Array.isArray(invoiceRecord.registrosApi)
           ? invoiceRecord.registrosApi
