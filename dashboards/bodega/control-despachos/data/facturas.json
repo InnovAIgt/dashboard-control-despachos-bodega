@@ -453416,7 +453416,7 @@
       "numeroFactura": "9072920",
       "fechaEmision": "2026-10-01",
       "fechaDespacho": "2026-10-31",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL002480",
       "nombreCliente": "PROVIDENCIA SOLAR, S.A DE C.V",
       "totalFactura": 0,
@@ -453427,7 +453427,7 @@
           "NumeroFactura": 9072920,
           "FechaEmision": "2026-10-01T00:00:00",
           "FechaDespacho": "2026-10-31T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL002480",
           "NombreCliente": "PROVIDENCIA SOLAR, S.A DE C.V",
           "tipoFactura": "FACTURA CICLICA",
@@ -456260,7 +456260,7 @@
       "numeroFactura": "9072972",
       "fechaEmision": "2026-10-01",
       "fechaDespacho": "2026-10-31",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL003486",
       "nombreCliente": "GRUPO MOSK, S.A. DE C.V.",
       "totalFactura": 0,
@@ -456271,7 +456271,7 @@
           "NumeroFactura": 9072972,
           "FechaEmision": "2026-10-01T00:00:00",
           "FechaDespacho": "2026-10-31T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL003486",
           "NombreCliente": "GRUPO MOSK, S.A. DE C.V.",
           "tipoFactura": "FACTURA CICLICA",
@@ -464728,6 +464728,911 @@
           "Precio": 0.0103,
           "Descuento": 0,
           "TotalLinea": 1.16,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073123",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000251",
+      "nombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48548,
+      "registrosApi": [
+        {
+          "DocEntry": 48548,
+          "NumeroFactura": 9073123,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000251",
+          "NombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00111",
+              "Descripcion": "PLAN TFRG36 $18",
+              "Cantidad": 12,
+              "Precio": 18,
+              "Descuento": 0,
+              "TotalLinea": 216,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00112",
+              "Descripcion": "PLAN TFRG37 $21",
+              "Cantidad": 4,
+              "Precio": 21,
+              "Descuento": 0,
+              "TotalLinea": 84,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00111",
+          "Descripcion": "PLAN TFRG36 $18",
+          "Cantidad": 12,
+          "Precio": 18,
+          "Descuento": 0,
+          "TotalLinea": 216,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00112",
+          "Descripcion": "PLAN TFRG37 $21",
+          "Cantidad": 4,
+          "Precio": 21,
+          "Descuento": 0,
+          "TotalLinea": 84,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073124",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000551",
+      "nombreCliente": "EMPRESA DE SEGURIDAD PROFESIONAL HALCON, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48549,
+      "registrosApi": [
+        {
+          "DocEntry": 48549,
+          "NumeroFactura": 9073124,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000551",
+          "NombreCliente": "EMPRESA DE SEGURIDAD PROFESIONAL HALCON, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "AVL00006",
+              "Descripcion": "PLAN AVL $19.00",
+              "Cantidad": 9,
+              "Precio": 19,
+              "Descuento": 0,
+              "TotalLinea": 171,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "INR00006",
+              "Descripcion": "PLAN TIRG $15",
+              "Cantidad": 38,
+              "Precio": 15,
+              "Descuento": 0,
+              "TotalLinea": 570,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "AVL00006",
+          "Descripcion": "PLAN AVL $19.00",
+          "Cantidad": 9,
+          "Precio": 19,
+          "Descuento": 0,
+          "TotalLinea": 171,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "INR00006",
+          "Descripcion": "PLAN TIRG $15",
+          "Cantidad": 38,
+          "Precio": 15,
+          "Descuento": 0,
+          "TotalLinea": 570,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073125",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000251",
+      "nombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48550,
+      "registrosApi": [
+        {
+          "DocEntry": 48550,
+          "NumeroFactura": 9073125,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000251",
+          "NombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00111",
+              "Descripcion": "PLAN TFRG36 $18",
+              "Cantidad": 5,
+              "Precio": 18,
+              "Descuento": 0,
+              "TotalLinea": 90,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00146",
+              "Descripcion": "PLAN APMRG CD DEFAULT",
+              "Cantidad": 1,
+              "Precio": 11,
+              "Descuento": 0,
+              "TotalLinea": 11,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00111",
+          "Descripcion": "PLAN TFRG36 $18",
+          "Cantidad": 5,
+          "Precio": 18,
+          "Descuento": 0,
+          "TotalLinea": 90,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00146",
+          "Descripcion": "PLAN APMRG CD DEFAULT",
+          "Cantidad": 1,
+          "Precio": 11,
+          "Descuento": 0,
+          "TotalLinea": 11,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073126",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000213",
+      "nombreCliente": "ALUMINIO DE EL SALVADOR S.A",
+      "totalFactura": 0,
+      "docEntry": 48551,
+      "registrosApi": [
+        {
+          "DocEntry": 48551,
+          "NumeroFactura": 9073126,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000213",
+          "NombreCliente": "ALUMINIO DE EL SALVADOR S.A",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "AVL00005",
+              "Descripcion": "AVL PLUS-FLEETOMIZER $16.00",
+              "Cantidad": 5,
+              "Precio": 16,
+              "Descuento": 0,
+              "TotalLinea": 80,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "AVL00005",
+          "Descripcion": "AVL PLUS-FLEETOMIZER $16.00",
+          "Cantidad": 5,
+          "Precio": 16,
+          "Descuento": 0,
+          "TotalLinea": 80,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073127",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000053",
+      "nombreCliente": "C L C INGENIEROS S.A DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48552,
+      "registrosApi": [
+        {
+          "DocEntry": 48552,
+          "NumeroFactura": 9073127,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000053",
+          "NombreCliente": "C L C INGENIEROS S.A DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00088",
+              "Descripcion": "PLAN TFRG04 $20",
+              "Cantidad": 4,
+              "Precio": 16,
+              "Descuento": 0,
+              "TotalLinea": 64,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00200",
+              "Descripcion": "PLAN TFRG $19.30",
+              "Cantidad": 11,
+              "Precio": 19.3,
+              "Descuento": 0,
+              "TotalLinea": 212.3,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00088",
+          "Descripcion": "PLAN TFRG04 $20",
+          "Cantidad": 4,
+          "Precio": 16,
+          "Descuento": 0,
+          "TotalLinea": 64,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00200",
+          "Descripcion": "PLAN TFRG $19.30",
+          "Cantidad": 11,
+          "Precio": 19.3,
+          "Descuento": 0,
+          "TotalLinea": 212.3,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073128",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000251",
+      "nombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48553,
+      "registrosApi": [
+        {
+          "DocEntry": 48553,
+          "NumeroFactura": 9073128,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000251",
+          "NombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00112",
+              "Descripcion": "PLAN TFRG37 $21",
+              "Cantidad": 17,
+              "Precio": 21,
+              "Descuento": 0,
+              "TotalLinea": 357,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00111",
+              "Descripcion": "PLAN TFRG36 $18",
+              "Cantidad": 5,
+              "Precio": 18,
+              "Descuento": 0,
+              "TotalLinea": 90,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00112",
+          "Descripcion": "PLAN TFRG37 $21",
+          "Cantidad": 17,
+          "Precio": 21,
+          "Descuento": 0,
+          "TotalLinea": 357,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00111",
+          "Descripcion": "PLAN TFRG36 $18",
+          "Cantidad": 5,
+          "Precio": 18,
+          "Descuento": 0,
+          "TotalLinea": 90,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073129",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000251",
+      "nombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48554,
+      "registrosApi": [
+        {
+          "DocEntry": 48554,
+          "NumeroFactura": 9073129,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000251",
+          "NombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00111",
+              "Descripcion": "PLAN TFRG36 $18",
+              "Cantidad": 5,
+              "Precio": 18,
+              "Descuento": 0,
+              "TotalLinea": 90,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00146",
+              "Descripcion": "PLAN APMRG CD DEFAULT",
+              "Cantidad": 1,
+              "Precio": 11,
+              "Descuento": 0,
+              "TotalLinea": 11,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00111",
+          "Descripcion": "PLAN TFRG36 $18",
+          "Cantidad": 5,
+          "Precio": 18,
+          "Descuento": 0,
+          "TotalLinea": 90,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00146",
+          "Descripcion": "PLAN APMRG CD DEFAULT",
+          "Cantidad": 1,
+          "Precio": 11,
+          "Descuento": 0,
+          "TotalLinea": 11,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073130",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL002185",
+      "nombreCliente": "AUTO EXPRESS EL SALVADOR, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48555,
+      "registrosApi": [
+        {
+          "DocEntry": 48555,
+          "NumeroFactura": 9073130,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL002185",
+          "NombreCliente": "AUTO EXPRESS EL SALVADOR, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "INR00027",
+              "Descripcion": "PLAN TIRG $25.00",
+              "Cantidad": 9,
+              "Precio": 25,
+              "Descuento": 0,
+              "TotalLinea": 225,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "INR00027",
+          "Descripcion": "PLAN TIRG $25.00",
+          "Cantidad": 9,
+          "Precio": 25,
+          "Descuento": 0,
+          "TotalLinea": 225,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073131",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000318",
+      "nombreCliente": "MARTINEZ UMANZOR CARLOS FERNANDO",
+      "totalFactura": 0,
+      "docEntry": 48556,
+      "registrosApi": [
+        {
+          "DocEntry": 48556,
+          "NumeroFactura": 9073131,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000318",
+          "NombreCliente": "MARTINEZ UMANZOR CARLOS FERNANDO",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "SUP00092",
+              "Descripcion": "COMPLEMENTO REDPTT SUBSIDIO EQ $1",
+              "Cantidad": 24,
+              "Precio": 1,
+              "Descuento": 0,
+              "TotalLinea": 24,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00097",
+              "Descripcion": "PLAN TFRG07 $15",
+              "Cantidad": 24,
+              "Precio": 15,
+              "Descuento": 0,
+              "TotalLinea": 360,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "SUP00092",
+          "Descripcion": "COMPLEMENTO REDPTT SUBSIDIO EQ $1",
+          "Cantidad": 24,
+          "Precio": 1,
+          "Descuento": 0,
+          "TotalLinea": 24,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00097",
+          "Descripcion": "PLAN TFRG07 $15",
+          "Cantidad": 24,
+          "Precio": 15,
+          "Descuento": 0,
+          "TotalLinea": 360,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073132",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000375",
+      "nombreCliente": "CLUB SALINITAS, S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 48557,
+      "registrosApi": [
+        {
+          "DocEntry": 48557,
+          "NumeroFactura": 9073132,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000375",
+          "NombreCliente": "CLUB SALINITAS, S.A. DE C.V.",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "INR00023",
+              "Descripcion": "PLAN TIRG $13.27",
+              "Cantidad": 93,
+              "Precio": 13.27,
+              "Descuento": 0,
+              "TotalLinea": 1234.11,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "INR00023",
+          "Descripcion": "PLAN TIRG $13.27",
+          "Cantidad": 93,
+          "Precio": 13.27,
+          "Descuento": 0,
+          "TotalLinea": 1234.11,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073133",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000240",
+      "nombreCliente": "EL CAFE DE DON PEDRO, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48558,
+      "registrosApi": [
+        {
+          "DocEntry": 48558,
+          "NumeroFactura": 9073133,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000240",
+          "NombreCliente": "EL CAFE DE DON PEDRO, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "INR00009",
+              "Descripcion": "PLAN TIRG $18",
+              "Cantidad": 5,
+              "Precio": 18,
+              "Descuento": 0,
+              "TotalLinea": 90,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "INR00009",
+          "Descripcion": "PLAN TIRG $18",
+          "Cantidad": 5,
+          "Precio": 18,
+          "Descuento": 0,
+          "TotalLinea": 90,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073134",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000318",
+      "nombreCliente": "MARTINEZ UMANZOR CARLOS FERNANDO",
+      "totalFactura": 0,
+      "docEntry": 48559,
+      "registrosApi": [
+        {
+          "DocEntry": 48559,
+          "NumeroFactura": 9073134,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000318",
+          "NombreCliente": "MARTINEZ UMANZOR CARLOS FERNANDO",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00097",
+              "Descripcion": "PLAN TFRG07 $15",
+              "Cantidad": 2,
+              "Precio": 15,
+              "Descuento": 0,
+              "TotalLinea": 30,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00090",
+              "Descripcion": "PLAN TFRG05 $17",
+              "Cantidad": 1,
+              "Precio": 17,
+              "Descuento": 0,
+              "TotalLinea": 17,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00097",
+          "Descripcion": "PLAN TFRG07 $15",
+          "Cantidad": 2,
+          "Precio": 15,
+          "Descuento": 0,
+          "TotalLinea": 30,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00090",
+          "Descripcion": "PLAN TFRG05 $17",
+          "Cantidad": 1,
+          "Precio": 17,
+          "Descuento": 0,
+          "TotalLinea": 17,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073135",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000251",
+      "nombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48560,
+      "registrosApi": [
+        {
+          "DocEntry": 48560,
+          "NumeroFactura": 9073135,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000251",
+          "NombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00111",
+              "Descripcion": "PLAN TFRG36 $18",
+              "Cantidad": 16,
+              "Precio": 18,
+              "Descuento": 0,
+              "TotalLinea": 288,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00111",
+          "Descripcion": "PLAN TFRG36 $18",
+          "Cantidad": 16,
+          "Precio": 18,
+          "Descuento": 0,
+          "TotalLinea": 288,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073136",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000251",
+      "nombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48561,
+      "registrosApi": [
+        {
+          "DocEntry": 48561,
+          "NumeroFactura": 9073136,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000251",
+          "NombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00111",
+              "Descripcion": "PLAN TFRG36 $18",
+              "Cantidad": 25,
+              "Precio": 18,
+              "Descuento": 0,
+              "TotalLinea": 450,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00146",
+              "Descripcion": "PLAN APMRG CD DEFAULT",
+              "Cantidad": 1,
+              "Precio": 11,
+              "Descuento": 0,
+              "TotalLinea": 11,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00111",
+          "Descripcion": "PLAN TFRG36 $18",
+          "Cantidad": 25,
+          "Precio": 18,
+          "Descuento": 0,
+          "TotalLinea": 450,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00146",
+          "Descripcion": "PLAN APMRG CD DEFAULT",
+          "Cantidad": 1,
+          "Precio": 11,
+          "Descuento": 0,
+          "TotalLinea": 11,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073137",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000431",
+      "nombreCliente": "PEÑA ALTA, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48562,
+      "registrosApi": [
+        {
+          "DocEntry": 48562,
+          "NumeroFactura": 9073137,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000431",
+          "NombreCliente": "PEÑA ALTA, S.A. DE C.V",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "DIS00109",
+              "Descripcion": "PLAN TFRG24 CD $25",
+              "Cantidad": 2,
+              "Precio": 25,
+              "Descuento": 0,
+              "TotalLinea": 50,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "DIS00108",
+              "Descripcion": "PLAN TFRG CD $23",
+              "Cantidad": 6,
+              "Precio": 24,
+              "Descuento": 0,
+              "TotalLinea": 144,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "DIS00109",
+          "Descripcion": "PLAN TFRG24 CD $25",
+          "Cantidad": 2,
+          "Precio": 25,
+          "Descuento": 0,
+          "TotalLinea": 50,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "DIS00108",
+          "Descripcion": "PLAN TFRG CD $23",
+          "Cantidad": 6,
+          "Precio": 24,
+          "Descuento": 0,
+          "TotalLinea": 144,
           "tipoFactura": null
         }
       ]
@@ -517033,7 +517938,7 @@
       "numeroFactura": "9080949",
       "fechaEmision": "2026-10-01",
       "fechaDespacho": "2026-10-31",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000381",
       "nombreCliente": "PRESIDENCIA DE LA REPUBLICA",
       "totalFactura": 0,
@@ -517044,7 +517949,7 @@
           "NumeroFactura": 9080949,
           "FechaEmision": "2026-10-01T00:00:00",
           "FechaDespacho": "2026-10-31T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000381",
           "NombreCliente": "PRESIDENCIA DE LA REPUBLICA",
           "tipoFactura": "FACTURA CICLICA",
@@ -521337,6 +522242,227 @@
           "Precio": 80,
           "Descuento": 0,
           "TotalLinea": 80,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9081028",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000584",
+      "nombreCliente": "PORTILLO ALVARO DE JESUS",
+      "totalFactura": 0,
+      "docEntry": 48544,
+      "registrosApi": [
+        {
+          "DocEntry": 48544,
+          "NumeroFactura": 9081028,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000584",
+          "NombreCliente": "PORTILLO ALVARO DE JESUS",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "INR00007",
+              "Descripcion": "PLAN TIRG $16",
+              "Cantidad": 3,
+              "Precio": 16,
+              "Descuento": 0,
+              "TotalLinea": 48,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "INR00008",
+              "Descripcion": "PLAN TIRG $17",
+              "Cantidad": 18,
+              "Precio": 17,
+              "Descuento": 0,
+              "TotalLinea": 306,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "INR00007",
+          "Descripcion": "PLAN TIRG $16",
+          "Cantidad": 3,
+          "Precio": 16,
+          "Descuento": 0,
+          "TotalLinea": 48,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "INR00008",
+          "Descripcion": "PLAN TIRG $17",
+          "Cantidad": 18,
+          "Precio": 17,
+          "Descuento": 0,
+          "TotalLinea": 306,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9081029",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000382",
+      "nombreCliente": "ASOCIACION COMUNITARIA MIRALVALLE",
+      "totalFactura": 0,
+      "docEntry": 48545,
+      "registrosApi": [
+        {
+          "DocEntry": 48545,
+          "NumeroFactura": 9081029,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000382",
+          "NombreCliente": "ASOCIACION COMUNITARIA MIRALVALLE",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "INR00010",
+              "Descripcion": "PLAN TIRG $19",
+              "Cantidad": 5,
+              "Precio": 19,
+              "Descuento": 0,
+              "TotalLinea": 95,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "INR00026",
+              "Descripcion": "PLAN TIRG $24.00",
+              "Cantidad": 1,
+              "Precio": 24,
+              "Descuento": 0,
+              "TotalLinea": 24,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "INR00010",
+          "Descripcion": "PLAN TIRG $19",
+          "Cantidad": 5,
+          "Precio": 19,
+          "Descuento": 0,
+          "TotalLinea": 95,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "INR00026",
+          "Descripcion": "PLAN TIRG $24.00",
+          "Cantidad": 1,
+          "Precio": 24,
+          "Descuento": 0,
+          "TotalLinea": 24,
+          "tipoFactura": null
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9081030",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000343",
+      "nombreCliente": "ASOCIACION AMIGOS DE PALMIRA",
+      "totalFactura": 0,
+      "docEntry": 48546,
+      "registrosApi": [
+        {
+          "DocEntry": 48546,
+          "NumeroFactura": 9081030,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000343",
+          "NombreCliente": "ASOCIACION AMIGOS DE PALMIRA",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "INR00004",
+              "Descripcion": "PLAN APMRG $10.00",
+              "Cantidad": 1,
+              "Precio": 10,
+              "Descuento": 0,
+              "TotalLinea": 10,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "INR00048",
+              "Descripcion": "PLAN TIRG $30",
+              "Cantidad": 6,
+              "Precio": 30,
+              "Descuento": 0,
+              "TotalLinea": 180,
+              "tipoFactura": null
+            },
+            {
+              "Linea": 2,
+              "CodigoArticulo": "INR00018",
+              "Descripcion": "PLAN TIRG CD + 300 $35",
+              "Cantidad": 7,
+              "Precio": 35,
+              "Descuento": 0,
+              "TotalLinea": 245,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "INR00004",
+          "Descripcion": "PLAN APMRG $10.00",
+          "Cantidad": 1,
+          "Precio": 10,
+          "Descuento": 0,
+          "TotalLinea": 10,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "INR00048",
+          "Descripcion": "PLAN TIRG $30",
+          "Cantidad": 6,
+          "Precio": 30,
+          "Descuento": 0,
+          "TotalLinea": 180,
+          "tipoFactura": null
+        },
+        {
+          "Linea": 2,
+          "CodigoArticulo": "INR00018",
+          "Descripcion": "PLAN TIRG CD + 300 $35",
+          "Cantidad": 7,
+          "Precio": 35,
+          "Descuento": 0,
+          "TotalLinea": 245,
           "tipoFactura": null
         }
       ]
@@ -531773,11 +532899,58 @@
           "tipoFactura": null
         }
       ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9090200",
+      "fechaEmision": "2026-10-20",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000252",
+      "nombreCliente": "EMBAJADA DE PANAMA",
+      "totalFactura": 0,
+      "docEntry": 48547,
+      "registrosApi": [
+        {
+          "DocEntry": 48547,
+          "NumeroFactura": 9090200,
+          "FechaEmision": "2026-10-20T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000252",
+          "NombreCliente": "EMBAJADA DE PANAMA",
+          "tipoFactura": "FACTURA CICLICA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "INR00011",
+              "Descripcion": "PLAN TIRG $21",
+              "Cantidad": 2,
+              "Precio": 21,
+              "Descuento": 0,
+              "TotalLinea": 42,
+              "tipoFactura": null
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "INR00011",
+          "Descripcion": "PLAN TIRG $21",
+          "Cantidad": 2,
+          "Precio": 21,
+          "Descuento": 0,
+          "TotalLinea": 42,
+          "tipoFactura": null
+        }
+      ]
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-20T15:44:32.629Z",
-    "ultimoIntento": "2026-10-20T15:44:32.629Z",
+    "ultimoExito": "2026-10-20T19:38:09.121Z",
+    "ultimoIntento": "2026-10-20T19:38:09.121Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
