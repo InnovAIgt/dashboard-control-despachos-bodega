@@ -311,23 +311,34 @@
           getUtcDayNumber(emissionDateParts)));
       }
 
-      function determineProcessType(invoiceRecord, timeZone) {
-        var customerCode = String(invoiceRecord.codigoCliente || "");
-        if (customerCode.indexOf("CE") === 0) return "STR";
-
-        var emissionDateParts = getDateParts(invoiceRecord.fechaEmision, timeZone);
-        var dispatchDateParts = getDateParts(invoiceRecord.fechaDespacho, timeZone);
-        if (emissionDateParts && dispatchDateParts &&
-            emissionDateParts.year === dispatchDateParts.year &&
-            emissionDateParts.month === dispatchDateParts.month) {
-          var lastDayOfMonth = new Date(Date.UTC(
-            emissionDateParts.year,
-            emissionDateParts.month,
-            0
-          )).getUTCDate();
-          if (dispatchDateParts.day === lastDayOfMonth) return "Cíclica";
+      function getApiInvoiceType(invoiceRecord) {
+        var apiRecords = Array.isArray(invoiceRecord.registrosApi)
+          ? invoiceRecord.registrosApi
+          : [];
+        for (var recordIndex = 0; recordIndex < apiRecords.length; recordIndex += 1) {
+          var apiRecord = apiRecords[recordIndex];
+          if (!apiRecord || typeof apiRecord !== "object") continue;
+          var typeField = Object.keys(apiRecord).find(function (fieldName) {
+            return fieldName.replace(/[_\s-]/g, "").toLowerCase() === "tipofactura";
+          });
+          if (typeField && apiRecord[typeField] !== null &&
+              apiRecord[typeField] !== undefined && apiRecord[typeField] !== "") {
+            return String(apiRecord[typeField]).trim();
+          }
         }
-        return "Reserva";
+        return "";
+      }
+
+      function determineProcessType(invoiceRecord) {
+        var apiInvoiceType = getApiInvoiceType(invoiceRecord);
+        var normalizedType = apiInvoiceType.toLowerCase();
+        if (normalizedType.indexOf("ciclica") !== -1 ||
+            normalizedType.indexOf("cíclica") !== -1) {
+          return "Cíclica";
+        }
+        if (normalizedType.indexOf("reserva") !== -1) return "Reserva";
+        if (normalizedType.indexOf("str") !== -1) return "STR";
+        return apiInvoiceType || "No disponible";
       }
 
       function appendLabeledField(parentElement, fieldLabel, fieldValue, valueClass) {
@@ -668,7 +679,7 @@
           ? "America/El_Salvador"
           : "America/Guatemala";
         var invoiceTotal = getCalculatedInvoiceTotal(invoiceRecord);
-        var processType = determineProcessType(invoiceRecord, countryTimeZone);
+        var processType = determineProcessType(invoiceRecord);
         var activeDayCount = calculateActiveDays(
           invoiceRecord,
           countryTimeZone,
