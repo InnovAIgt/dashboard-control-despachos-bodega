@@ -22962,6 +22962,51 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073138",
+      "fechaEmision": "2026-10-21",
+      "fechaDespacho": "2026-11-15",
+      "estatus": "Abierta",
+      "codigoCliente": "CL003604",
+      "nombreCliente": "RPV INVERSION Y ADMINISTRACION, S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 48565,
+      "registrosApi": [
+        {
+          "DocEntry": 48565,
+          "NumeroFactura": 9073138,
+          "FechaEmision": "2026-10-21T00:00:00",
+          "FechaDespacho": "2026-11-15T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL003604",
+          "NombreCliente": "RPV INVERSION Y ADMINISTRACION, S.A. DE C.V.",
+          "tipoFactura": "FACTURA EN RESERVA",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-260044",
+              "Descripcion": "HANDSFREE TAC-3 10W (NUEVO)",
+              "Cantidad": 20,
+              "Precio": 3,
+              "Descuento": 50,
+              "TotalLinea": 60
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-260044",
+          "Descripcion": "HANDSFREE TAC-3 10W (NUEVO)",
+          "Cantidad": 20,
+          "Precio": 3,
+          "Descuento": 50,
+          "TotalLinea": 60
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080082",
       "fechaEmision": "2026-01-08",
       "fechaDespacho": "2026-01-08",
@@ -24528,8 +24573,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-21T19:29:08.639Z",
-    "ultimoIntento": "2026-10-21T19:29:08.639Z",
+    "ultimoExito": "2026-10-21T22:36:35.595Z",
+    "ultimoIntento": "2026-10-21T22:36:35.595Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
