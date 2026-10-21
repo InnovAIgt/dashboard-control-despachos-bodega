@@ -560,6 +560,34 @@
         return flattenedRows;
       }
 
+      function getArticleRows(invoiceRecord) {
+        return Array.isArray(invoiceRecord.detalleArticulos)
+          ? flattenArticleRows(invoiceRecord.detalleArticulos)
+          : [];
+      }
+
+      function getCalculatedInvoiceTotal(invoiceRecord) {
+        var receivedTotal = Number(invoiceRecord.totalFactura);
+        if (Number.isFinite(receivedTotal) && receivedTotal !== 0) {
+          return receivedTotal;
+        }
+
+        var articleRows = getArticleRows(invoiceRecord);
+        var calculatedTotal = articleRows.reduce(function (total, articleRow) {
+          if (!articleRow || typeof articleRow !== "object" || Array.isArray(articleRow)) {
+            return total;
+          }
+
+          var lineTotalField = Object.keys(articleRow).find(function (fieldName) {
+            return fieldName.replace(/[_\s-]/g, "").toLowerCase() === "totallinea";
+          });
+          var lineTotal = lineTotalField ? Number(articleRow[lineTotalField]) : NaN;
+          return total + (Number.isFinite(lineTotal) ? lineTotal : 0);
+        }, 0);
+
+        return calculatedTotal;
+      }
+
       function removeArticleCollections(apiRecord) {
         if (!apiRecord || typeof apiRecord !== "object" || Array.isArray(apiRecord)) {
           return apiRecord;
@@ -574,9 +602,7 @@
       }
 
       function appendArticleDetails(parentElement, invoiceRecord) {
-        var articleRows = Array.isArray(invoiceRecord.detalleArticulos)
-          ? flattenArticleRows(invoiceRecord.detalleArticulos)
-          : [];
+        var articleRows = getArticleRows(invoiceRecord);
         var fullApiRecords = Array.isArray(invoiceRecord.registrosApi)
           ? invoiceRecord.registrosApi.map(removeArticleCollections)
           : [];
@@ -641,6 +667,7 @@
         var countryTimeZone = countryCode === "SV"
           ? "America/El_Salvador"
           : "America/Guatemala";
+        var invoiceTotal = getCalculatedInvoiceTotal(invoiceRecord);
         var processType = determineProcessType(invoiceRecord, countryTimeZone);
         var activeDayCount = calculateActiveDays(
           invoiceRecord,
@@ -693,7 +720,7 @@
           appendLabeledField(
             fieldList,
             "Total factura",
-            formatInvoiceTotal(invoiceRecord.totalFactura, countryCode)
+            formatInvoiceTotal(invoiceTotal, countryCode)
           );
         });
         appendArticleDetails(invoiceDetailsElement, invoiceRecord);
