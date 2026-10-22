@@ -23007,6 +23007,51 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073139",
+      "fechaEmision": "2026-10-22",
+      "fechaDespacho": "2028-04-30",
+      "estatus": "Abierta",
+      "codigoCliente": "CL003302",
+      "nombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 48566,
+      "registrosApi": [
+        {
+          "DocEntry": 48566,
+          "NumeroFactura": 9073139,
+          "FechaEmision": "2026-10-22T00:00:00",
+          "FechaDespacho": "2028-04-30T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL003302",
+          "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800072",
+              "Descripcion": "EQUIPO TCP-7 4G SC (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 75,
+              "Descuento": 0,
+              "TotalLinea": 75
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800072",
+          "Descripcion": "EQUIPO TCP-7 4G SC (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 75,
+          "Descuento": 0,
+          "TotalLinea": 75
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080082",
       "fechaEmision": "2026-01-08",
       "fechaDespacho": "2026-01-08",
@@ -24573,8 +24618,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-22T19:23:30.634Z",
-    "ultimoIntento": "2026-10-22T19:23:30.634Z",
+    "ultimoExito": "2026-10-22T22:30:57.784Z",
+    "ultimoIntento": "2026-10-22T22:30:57.784Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
