@@ -20,7 +20,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001103",
           "NombreCliente": "LEOPOLDO MEZA VASQUEZ",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -65,7 +65,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001074",
           "NombreCliente": "LQS, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -128,7 +128,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000610",
           "NombreCliente": "EMPRESA MUNICIPAL DE TRANSPORTE DE LA CIUDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -173,7 +173,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001074",
           "NombreCliente": "LQS, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -236,7 +236,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000030",
           "NombreCliente": "AVIATECA, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -281,7 +281,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000015",
           "NombreCliente": "TACA INTERNATIONAL AIRLINES SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -326,7 +326,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000849",
           "NombreCliente": "IMPORTACIONES LA BODEGONA SOCIEDAD ANÓNIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -389,7 +389,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -452,7 +452,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000149",
           "NombreCliente": "COMPANIA ADMINISTRADORA DE SERVICIOS, S. A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -497,7 +497,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -542,7 +542,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -605,7 +605,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -650,7 +650,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000720",
           "NombreCliente": "GUATEMALA DE MOLDEADOS, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -713,7 +713,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -776,7 +776,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001091",
           "NombreCliente": "IMPORTADORA MOLINA Y COPROPIEDAD",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -839,7 +839,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -884,7 +884,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001031",
           "NombreCliente": "ALEXIS OTONIEL DE LEON RECINOS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -947,7 +947,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001107",
           "NombreCliente": "EDISON FERNANDO MUNGUIA VALDEZ",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1010,7 +1010,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001035",
           "NombreCliente": "VIGILANCIA Y PROTECCION CORPORATIVA S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1073,7 +1073,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000651",
           "NombreCliente": "MUNICIPALIDAD DE CUILAPA SANTA ROSA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1172,7 +1172,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001102",
           "NombreCliente": "DELTA ELITE SSEBISPEC, SOCIEDAD ANÓNIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1235,7 +1235,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000820",
           "NombreCliente": "MUNICIPALIDAD DE MAGDALENA MILPAS ALTAS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1280,7 +1280,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000888",
           "NombreCliente": "SPEED SERVICE GARAGE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1343,7 +1343,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000028",
           "NombreCliente": "ROVALLEGO INGENIERIA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1388,7 +1388,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000028",
           "NombreCliente": "ROVALLEGO INGENIERIA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1469,7 +1469,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000736",
           "NombreCliente": "ASOCIACION DE TRANSPORTE DE PASAJEROS UNIDOS VEINTIOCHO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1514,7 +1514,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1577,7 +1577,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001035",
           "NombreCliente": "VIGILANCIA Y PROTECCION CORPORATIVA S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1622,7 +1622,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001089",
           "NombreCliente": "CONSTRUCTORA DEL VALLE, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1703,7 +1703,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000027",
           "NombreCliente": "COMPANIA DE SEGURIDAD Y ASESORIA SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1748,7 +1748,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -1793,7 +1793,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001031",
           "NombreCliente": "ALEXIS OTONIEL DE LEON RECINOS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1856,7 +1856,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000853",
           "NombreCliente": "SEGURIDAD PRIVADA BOSFORO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1919,7 +1919,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000778",
           "NombreCliente": "CORPORACION PRIVADA DE INVESTIGACION Y VIGILANCIA EL ESPIA, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -1982,7 +1982,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000634",
           "NombreCliente": "COOPERATIVA AGRICOLA INTEGRAL UNION DE CUATRO PINOS R L",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2045,7 +2045,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001114",
           "NombreCliente": "FACILITIES MANAGEMENT DE GUATEMALA, SOCIEDAD ANÓNIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2090,7 +2090,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000673",
           "NombreCliente": "SERVICIO DE TRANSPORTE NUEVA UNIBUS SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2153,7 +2153,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000610",
           "NombreCliente": "EMPRESA MUNICIPAL DE TRANSPORTE DE LA CIUDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2216,7 +2216,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2333,7 +2333,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001078",
           "NombreCliente": "SERVICIOS E INSTALACIONES DE CABLE E INTERNET, SOCIEDAD ANÓNIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2396,7 +2396,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000522",
           "NombreCliente": "VUELA AVIACION, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2459,7 +2459,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2558,7 +2558,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000004",
           "NombreCliente": "MUNICIPALIDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2603,7 +2603,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2666,7 +2666,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2729,7 +2729,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000688",
           "NombreCliente": "CELULOSAS Y COLORANTES DE GUATEMALA, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2792,7 +2792,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2837,7 +2837,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2882,7 +2882,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000610",
           "NombreCliente": "EMPRESA MUNICIPAL DE TRANSPORTE DE LA CIUDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2927,7 +2927,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001121",
           "NombreCliente": "ABASTECEDORA FERRETERA DEL PAIS, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -2972,7 +2972,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001123",
           "NombreCliente": "ROVALLEGO INGENIERIA, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3017,7 +3017,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000618",
           "NombreCliente": "ORGANISMO JUDICIAL",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3062,7 +3062,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001035",
           "NombreCliente": "VIGILANCIA Y PROTECCION CORPORATIVA S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3107,7 +3107,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001035",
           "NombreCliente": "VIGILANCIA Y PROTECCION CORPORATIVA S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3170,7 +3170,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -3215,7 +3215,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3260,7 +3260,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000763",
           "NombreCliente": "CAPITAL HUMANO SOCIAL, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3323,7 +3323,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000853",
           "NombreCliente": "SEGURIDAD PRIVADA BOSFORO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3368,7 +3368,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3575,7 +3575,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3782,7 +3782,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -3989,7 +3989,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4160,7 +4160,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001129",
           "NombreCliente": "ASOCIACION ACCIONADA ANDARES DOCE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -4205,7 +4205,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001034",
           "NombreCliente": "MUNICIPALIDAD DE PARRAMOS CHIMALTENANGO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4268,7 +4268,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000103",
           "NombreCliente": "ARANA CARRILLO SERVICIOS DE VIGILANCIA PROFESIONAL S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4313,7 +4313,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000888",
           "NombreCliente": "SPEED SERVICE GARAGE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4358,7 +4358,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000680",
           "NombreCliente": "CONDOR, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4403,7 +4403,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001012",
           "NombreCliente": "NUEVOS HORIZONTES LIMITADOS, SOCIEDAD ANÓNIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4448,7 +4448,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000762",
           "NombreCliente": "CESAR EVERARDO KRISCHE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4547,7 +4547,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001092",
           "NombreCliente": "GAVINO HERNANDEZ TACAJ CHUB",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4610,7 +4610,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000696",
           "NombreCliente": "COOPERATIVA DE TRANSPORTE INTEGRAL FLOMITAX, RESPONSABILIDAD LIMITA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4673,7 +4673,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001030",
           "NombreCliente": "COMPAÑIA DE INVESTIGACION PROTECCION Y SEGURIDAD, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4736,7 +4736,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000103",
           "NombreCliente": "ARANA CARRILLO SERVICIOS DE VIGILANCIA PROFESIONAL S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4781,7 +4781,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001030",
           "NombreCliente": "COMPAÑIA DE INVESTIGACION PROTECCION Y SEGURIDAD, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -4826,7 +4826,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5033,7 +5033,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5240,7 +5240,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000640",
           "NombreCliente": "CORPORACION YANTARNI, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5285,7 +5285,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5492,7 +5492,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5537,7 +5537,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000498",
           "NombreCliente": "BLACK WARRIOR SECURITY S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -5600,7 +5600,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001030",
           "NombreCliente": "COMPAÑIA DE INVESTIGACION PROTECCION Y SEGURIDAD, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5681,7 +5681,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000498",
           "NombreCliente": "BLACK WARRIOR SECURITY S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5744,7 +5744,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001030",
           "NombreCliente": "COMPAÑIA DE INVESTIGACION PROTECCION Y SEGURIDAD, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5789,7 +5789,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -5834,7 +5834,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5879,7 +5879,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000888",
           "NombreCliente": "SPEED SERVICE GARAGE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5924,7 +5924,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001030",
           "NombreCliente": "COMPAÑIA DE INVESTIGACION PROTECCION Y SEGURIDAD, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -5969,7 +5969,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001079",
           "NombreCliente": "FREDY ALEXANDER BATEN CHANCHAVAC",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6014,7 +6014,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000610",
           "NombreCliente": "EMPRESA MUNICIPAL DE TRANSPORTE DE LA CIUDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6077,7 +6077,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001013",
           "NombreCliente": "FIDEICOMISO DE TRANSPORTE DE LA CIUDAD DE GUATEMALA -FIDEMUNI-",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6140,7 +6140,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001036",
           "NombreCliente": "ASOCIACION CULTURAL DE EDUCACION Y COMUNICACION CRISTIANA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6185,7 +6185,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000486",
           "NombreCliente": "ESTRATEGIAS Y SEGURIDAD PRIVADA, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -6230,7 +6230,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000634",
           "NombreCliente": "COOPERATIVA AGRICOLA INTEGRAL UNION DE CUATRO PINOS R L",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6275,7 +6275,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000634",
           "NombreCliente": "COOPERATIVA AGRICOLA INTEGRAL UNION DE CUATRO PINOS R L",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6338,7 +6338,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001139",
           "NombreCliente": "JOSE EDUARDO AMBROSIO ESCOBAR",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6401,7 +6401,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000640",
           "NombreCliente": "CORPORACION YANTARNI, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6464,7 +6464,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000571",
           "NombreCliente": "SERVICIOS Y CONSULTORIA DE CONSTRUCCION AGRICULTURA Y",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6527,7 +6527,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000520",
           "NombreCliente": "MULTITRANSPORTES MAGEN, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6590,7 +6590,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000520",
           "NombreCliente": "MULTITRANSPORTES MAGEN, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6653,7 +6653,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000571",
           "NombreCliente": "SERVICIOS Y CONSULTORIA DE CONSTRUCCION AGRICULTURA Y",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6716,7 +6716,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CL000061",
           "NombreCliente": "CONSTRUCCIONES Y SERVICIOS VIALES, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6779,7 +6779,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000061",
           "NombreCliente": "CONSTRUCCIONES Y SERVICIOS VIALES, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -6842,7 +6842,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7049,7 +7049,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7256,7 +7256,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7409,7 +7409,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7526,7 +7526,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001036",
           "NombreCliente": "ASOCIACION CULTURAL DE EDUCACION Y COMUNICACION CRISTIANA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7589,7 +7589,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000610",
           "NombreCliente": "EMPRESA MUNICIPAL DE TRANSPORTE DE LA CIUDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7634,7 +7634,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000763",
           "NombreCliente": "CAPITAL HUMANO SOCIAL, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7679,7 +7679,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000736",
           "NombreCliente": "ASOCIACION DE TRANSPORTE DE PASAJEROS UNIDOS VEINTIOCHO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7724,7 +7724,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000634",
           "NombreCliente": "COOPERATIVA AGRICOLA INTEGRAL UNION DE CUATRO PINOS R L",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7769,7 +7769,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000688",
           "NombreCliente": "CELULOSAS Y COLORANTES DE GUATEMALA, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7868,7 +7868,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001017",
           "NombreCliente": "DIRECCIÓN GENERAL DE PROTECCIÓN Y SEGURIDAD VIAL",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7931,7 +7931,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -7976,7 +7976,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001075",
           "NombreCliente": "JOSE ANTONIO ARZÚ TINOCO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8021,7 +8021,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000688",
           "NombreCliente": "CELULOSAS Y COLORANTES DE GUATEMALA, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8120,7 +8120,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000004",
           "NombreCliente": "MUNICIPALIDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8165,7 +8165,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000071",
           "NombreCliente": "VICLASA, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -8210,7 +8210,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001077",
           "NombreCliente": "ASOCIACIÓN CIVIL ACCIONADA DE PROPIETARIOS EDIFICIO \"ESENTA APARTAMENTOS\"",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8255,7 +8255,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8318,7 +8318,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000720",
           "NombreCliente": "GUATEMALA DE MOLDEADOS, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8399,7 +8399,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8462,7 +8462,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8507,7 +8507,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000608",
           "NombreCliente": "CORPORACION DE ORGANIZACIONES Y PROYECTOS DE SEGURIDAD S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8552,7 +8552,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000688",
           "NombreCliente": "CELULOSAS Y COLORANTES DE GUATEMALA, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8615,7 +8615,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000696",
           "NombreCliente": "COOPERATIVA DE TRANSPORTE INTEGRAL FLOMITAX, RESPONSABILIDAD LIMITA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8678,7 +8678,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -8885,7 +8885,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9110,7 +9110,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9317,7 +9317,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001142",
           "NombreCliente": "INMOBILIARIA LAS ACACIAS, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9380,7 +9380,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000004",
           "NombreCliente": "MUNICIPALIDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9425,7 +9425,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000634",
           "NombreCliente": "COOPERATIVA AGRICOLA INTEGRAL UNION DE CUATRO PINOS R L",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -9488,7 +9488,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001017",
           "NombreCliente": "DIRECCIÓN GENERAL DE PROTECCIÓN Y SEGURIDAD VIAL",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9551,7 +9551,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -9596,7 +9596,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000224",
           "NombreCliente": "SEGURIDAD DIGNATARIA CORPORATIVA PROFESIONAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9641,7 +9641,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000004",
           "NombreCliente": "MUNICIPALIDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9704,7 +9704,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000224",
           "NombreCliente": "SEGURIDAD DIGNATARIA CORPORATIVA PROFESIONAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9767,7 +9767,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000696",
           "NombreCliente": "COOPERATIVA DE TRANSPORTE INTEGRAL FLOMITAX, RESPONSABILIDAD LIMITA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9830,7 +9830,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000675",
           "NombreCliente": "SERVICIO DE TRANSPORTE UNIBUS SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9893,7 +9893,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000673",
           "NombreCliente": "SERVICIO DE TRANSPORTE NUEVA UNIBUS SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9938,7 +9938,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000618",
           "NombreCliente": "ORGANISMO JUDICIAL",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -9983,7 +9983,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10226,7 +10226,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10451,7 +10451,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000673",
           "NombreCliente": "SERVICIO DE TRANSPORTE NUEVA UNIBUS SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10514,7 +10514,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001031",
           "NombreCliente": "ALEXIS OTONIEL DE LEON RECINOS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10577,7 +10577,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000720",
           "NombreCliente": "GUATEMALA DE MOLDEADOS, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -10658,7 +10658,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001152",
           "NombreCliente": "INVERSIONES REAL STATE DE ORIENTE, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10703,7 +10703,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10784,7 +10784,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000630",
           "NombreCliente": "FERROCARRILES DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10829,7 +10829,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000608",
           "NombreCliente": "CORPORACION DE ORGANIZACIONES Y PROYECTOS DE SEGURIDAD S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10946,7 +10946,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000827",
           "NombreCliente": "KAYROS SECURITY, SOCIEDAD ANÓNIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -10991,7 +10991,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001156",
           "NombreCliente": "TRANSPORTE Y ADMINISTRACION DE VALORES, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11036,7 +11036,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000688",
           "NombreCliente": "CELULOSAS Y COLORANTES DE GUATEMALA, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -11135,7 +11135,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000045",
           "NombreCliente": "WACKENHUT DE GUATEMALA, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11180,7 +11180,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001091",
           "NombreCliente": "IMPORTADORA MOLINA Y COPROPIEDAD",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11243,7 +11243,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000675",
           "NombreCliente": "SERVICIO DE TRANSPORTE UNIBUS SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11324,7 +11324,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001144",
           "NombreCliente": "ASOCIACION DE MEDICOS ESPECIALISTAS DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11369,7 +11369,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001031",
           "NombreCliente": "ALEXIS OTONIEL DE LEON RECINOS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11432,7 +11432,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000814",
           "NombreCliente": "ALFA SECURITY, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11495,7 +11495,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11594,7 +11594,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11657,7 +11657,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11738,7 +11738,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000928",
           "NombreCliente": "SHELTER PROTECCION, S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11783,7 +11783,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000233",
           "NombreCliente": "SERSEVI SERVICIOS DE SEGURIDAD Y VIGILANCIA INDUSTRIAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11846,7 +11846,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000233",
           "NombreCliente": "SERSEVI SERVICIOS DE SEGURIDAD Y VIGILANCIA INDUSTRIAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11909,7 +11909,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000409",
           "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -11954,7 +11954,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12161,7 +12161,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12368,7 +12368,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12413,7 +12413,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000610",
           "NombreCliente": "EMPRESA MUNICIPAL DE TRANSPORTE DE LA CIUDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12458,7 +12458,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000736",
           "NombreCliente": "ASOCIACION DE TRANSPORTE DE PASAJEROS UNIDOS VEINTIOCHO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12521,7 +12521,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001166",
           "NombreCliente": "GERMAN ESTUARDO FERNANDEZ BARAHONA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12584,7 +12584,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000736",
           "NombreCliente": "ASOCIACION DE TRANSPORTE DE PASAJEROS UNIDOS VEINTIOCHO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12683,7 +12683,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000736",
           "NombreCliente": "ASOCIACION DE TRANSPORTE DE PASAJEROS UNIDOS VEINTIOCHO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12746,7 +12746,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000610",
           "NombreCliente": "EMPRESA MUNICIPAL DE TRANSPORTE DE LA CIUDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -12809,7 +12809,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000610",
           "NombreCliente": "EMPRESA MUNICIPAL DE TRANSPORTE DE LA CIUDAD DE GUATEMALA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -12872,7 +12872,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000736",
           "NombreCliente": "ASOCIACION DE TRANSPORTE DE PASAJEROS UNIDOS VEINTIOCHO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12935,7 +12935,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000903",
           "NombreCliente": "LUIS ALFREDO LOPEZ BARILLAS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -12980,7 +12980,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13061,7 +13061,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000061",
           "NombreCliente": "CONSTRUCCIONES Y SERVICIOS VIALES, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13106,7 +13106,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000027",
           "NombreCliente": "COMPANIA DE SEGURIDAD Y ASESORIA SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13205,7 +13205,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000640",
           "NombreCliente": "CORPORACION YANTARNI, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13250,7 +13250,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL001081",
           "NombreCliente": "INGRUP, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13295,7 +13295,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13502,7 +13502,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13619,7 +13619,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000763",
           "NombreCliente": "CAPITAL HUMANO SOCIAL, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13682,7 +13682,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001171",
           "NombreCliente": "CELMA EVELYN PEREZ PEREZ",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13727,7 +13727,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001170",
           "NombreCliente": "J&L SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13772,7 +13772,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13853,7 +13853,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000682",
           "NombreCliente": "EDWIN ROLANDO RALDA MARTINEZ",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -13916,7 +13916,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001035",
           "NombreCliente": "VIGILANCIA Y PROTECCION CORPORATIVA S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -13961,7 +13961,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000520",
           "NombreCliente": "MULTITRANSPORTES MAGEN, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14060,7 +14060,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000651",
           "NombreCliente": "MUNICIPALIDAD DE CUILAPA SANTA ROSA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14123,7 +14123,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000895",
           "NombreCliente": "SEGURIDAD IGM",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14168,7 +14168,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001035",
           "NombreCliente": "VIGILANCIA Y PROTECCION CORPORATIVA S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14213,7 +14213,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001075",
           "NombreCliente": "JOSE ANTONIO ARZÚ TINOCO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -14258,7 +14258,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000986",
           "NombreCliente": "BACK OFFICE SMART SOLUTION SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -14321,7 +14321,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001123",
           "NombreCliente": "ROVALLEGO INGENIERIA, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -14384,7 +14384,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000677",
           "NombreCliente": "ASOC DE PROP MICROB RULET 1RO DE JULIO SERVITAX",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14429,7 +14429,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14744,7 +14744,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14807,7 +14807,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL001035",
           "NombreCliente": "VIGILANCIA Y PROTECCION CORPORATIVA S.A.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14870,7 +14870,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14901,7 +14901,7 @@
       "numeroFactura": "1025898",
       "fechaEmision": "2026-10-16",
       "fechaDespacho": "2026-10-16",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000001",
       "nombreCliente": "INTELFON GUATEMALA, S.A",
       "totalFactura": 0,
@@ -14912,10 +14912,10 @@
           "NumeroFactura": 1025898,
           "FechaEmision": "2026-10-16T00:00:00",
           "FechaDespacho": "2026-10-16T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -15068,7 +15068,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15401,7 +15401,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15608,7 +15608,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15761,7 +15761,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 3,
@@ -15968,7 +15968,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -16175,7 +16175,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 1,
@@ -16382,7 +16382,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 1,
@@ -16589,7 +16589,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -16796,7 +16796,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -17003,7 +17003,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -17210,7 +17210,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -17273,7 +17273,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -17354,7 +17354,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -17453,7 +17453,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -17768,7 +17768,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -18083,7 +18083,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 1,
@@ -18290,7 +18290,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 1,
@@ -18497,7 +18497,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 3,
@@ -18704,7 +18704,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -18911,7 +18911,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -19118,7 +19118,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000061",
           "NombreCliente": "CONSTRUCCIONES Y SERVICIOS VIALES, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -19181,7 +19181,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -19496,7 +19496,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -19811,7 +19811,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003329",
           "NombreCliente": "ASOCIACION DE DESARROLLO COMUNAL RESIDENCIAL LAS PILETAS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -19856,7 +19856,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002375",
           "NombreCliente": "PROTECCION INTEGRAL DE BIENES, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -19901,7 +19901,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000292",
           "NombreCliente": "ALCALDIA MUNICIPAL DE AHUACHAPAN CENTRO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -19946,7 +19946,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20045,7 +20045,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20126,7 +20126,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003449",
           "NombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20189,7 +20189,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003137",
           "NombreCliente": "DISTRIBUIDORA PAREDES VELA, SOCIEDAD ANONIMA DE CAPITAL VARIABLLE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20234,7 +20234,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003137",
           "NombreCliente": "DISTRIBUIDORA PAREDES VELA, SOCIEDAD ANONIMA DE CAPITAL VARIABLLE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20279,7 +20279,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003411",
           "NombreCliente": "HOUSE OF SURF - MIZATA, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20342,7 +20342,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002976",
           "NombreCliente": "ALTO SIETE/24, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20405,7 +20405,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002843",
           "NombreCliente": "TRANSPORTES ALAS, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20450,7 +20450,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003421",
           "NombreCliente": "BAMBU LOURDES, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20513,7 +20513,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20558,7 +20558,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003421",
           "NombreCliente": "BAMBU LOURDES, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20621,7 +20621,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000053",
           "NombreCliente": "C L C INGENIEROS S.A DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20666,7 +20666,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003421",
           "NombreCliente": "BAMBU LOURDES, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20729,7 +20729,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CL002375",
           "NombreCliente": "PROTECCION INTEGRAL DE BIENES, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20774,7 +20774,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003305",
           "NombreCliente": "TRANSPORTE SORTO´S, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20819,7 +20819,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003421",
           "NombreCliente": "BAMBU LOURDES, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20864,7 +20864,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20909,7 +20909,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003520",
           "NombreCliente": "CARLOS FRANCISCO RODRIGUEZ URQUILLA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -20972,7 +20972,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003373",
           "NombreCliente": "ACONTAXIS, DE R.L.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21017,7 +21017,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003518",
           "NombreCliente": "PROTECCION MAXIMA, SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21116,7 +21116,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003170",
           "NombreCliente": "ROCHAC FERRUFINO EDUARDO JAVIER",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21161,7 +21161,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003411",
           "NombreCliente": "HOUSE OF SURF - MIZATA, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21206,7 +21206,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003170",
           "NombreCliente": "ROCHAC FERRUFINO EDUARDO JAVIER",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21251,7 +21251,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003532",
           "NombreCliente": "MELENDEZ ZEPEDA MOISES FRANCISCO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21296,7 +21296,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000375",
           "NombreCliente": "CLUB SALINITAS, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21341,7 +21341,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002461",
           "NombreCliente": "MIRANDA ORTIZ ORLANDO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21404,7 +21404,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000053",
           "NombreCliente": "C L C INGENIEROS S.A DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21449,7 +21449,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003485",
           "NombreCliente": "ZAMNA, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21494,7 +21494,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003028",
           "NombreCliente": "CAÑAS RENDEROS JUAN ANTONIO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21539,7 +21539,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003456",
           "NombreCliente": "INVERSIONES CALMA, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21584,7 +21584,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003542",
           "NombreCliente": "MARVIN ALEXANDER FERRUFINO RODRIGUEZ",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21629,7 +21629,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003375",
           "NombreCliente": "MISION BAUTISTA INTERNACIONAL DE EL SALVADOR",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21674,7 +21674,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003319",
           "NombreCliente": "DUARTE MOLINA GERMAN",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21719,7 +21719,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003137",
           "NombreCliente": "DISTRIBUIDORA PAREDES VELA, SOCIEDAD ANONIMA DE CAPITAL VARIABLLE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21764,7 +21764,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000318",
           "NombreCliente": "MARTINEZ UMANZOR CARLOS FERNANDO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21809,7 +21809,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21854,7 +21854,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003018",
           "NombreCliente": "JER'S, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21899,7 +21899,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003346",
           "NombreCliente": "SSEPO, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -21962,7 +21962,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000036",
           "NombreCliente": "COAMCUSAM, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22007,7 +22007,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003394",
           "NombreCliente": "GRUPO INDUSTRIAL MONTERREY, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22052,7 +22052,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000036",
           "NombreCliente": "COAMCUSAM, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22097,7 +22097,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003564",
           "NombreCliente": "MOREIRA AREVALO, IVETTE CAROLINA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22142,7 +22142,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003137",
           "NombreCliente": "DISTRIBUIDORA PAREDES VELA, SOCIEDAD ANONIMA DE CAPITAL VARIABLLE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22187,7 +22187,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22232,7 +22232,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22277,7 +22277,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22322,7 +22322,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003558",
           "NombreCliente": "HQS INVERSIONES, SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -22367,7 +22367,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002843",
           "NombreCliente": "TRANSPORTES ALAS, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22412,7 +22412,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002843",
           "NombreCliente": "TRANSPORTES ALAS, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22457,7 +22457,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003468",
           "NombreCliente": "BONA FIDE, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22520,7 +22520,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003449",
           "NombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22565,7 +22565,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002826",
           "NombreCliente": "GIRON AVILES JOSE MARIO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22628,7 +22628,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003518",
           "NombreCliente": "PROTECCION MAXIMA, SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22691,7 +22691,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002957",
           "NombreCliente": "GRUPO DE REACCION DE SEGURIDAD PRIVADA, S.A DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22736,7 +22736,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003508",
           "NombreCliente": "COMPAÑIA SALVADOREÑA DE SEGURIDAD, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22781,7 +22781,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000251",
           "NombreCliente": "PROYECTOS DE INFRAESTRUCTURA Y MANTENIMIENTO, S.A. DE C.V",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22844,7 +22844,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003431",
           "NombreCliente": "A&G CONTRUCTORES, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22889,7 +22889,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -22934,7 +22934,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -22979,7 +22979,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003604",
           "NombreCliente": "RPV INVERSION Y ADMINISTRACION, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -23024,7 +23024,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000584",
           "NombreCliente": "PORTILLO ALVARO DE JESUS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23069,7 +23069,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003263",
           "NombreCliente": "CORTE DE CUENTAS DE LA REPUBLICA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23114,7 +23114,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002206",
           "NombreCliente": "RECINOS CANTOR BALTAZAR RODMAN",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23177,7 +23177,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003507",
           "NombreCliente": "JOSHUA STEVEN PINEDA RENDEROS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23240,7 +23240,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000584",
           "NombreCliente": "PORTILLO ALVARO DE JESUS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23285,7 +23285,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000584",
           "NombreCliente": "PORTILLO ALVARO DE JESUS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23348,7 +23348,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001703",
           "NombreCliente": "ROSALES MOLINA JOSE RITO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23393,7 +23393,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003397",
           "NombreCliente": "ORELLANA VELASQUEZ JUAN CARLOS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23438,7 +23438,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003534",
           "NombreCliente": "ERICK ALFREDO ALVAREZ MONTERROZA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23483,7 +23483,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003534",
           "NombreCliente": "ERICK ALFREDO ALVAREZ MONTERROZA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23528,7 +23528,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003280",
           "NombreCliente": "CONDOMINIO RESIDENCIAL PUERTA REAL",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23591,7 +23591,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002206",
           "NombreCliente": "RECINOS CANTOR BALTAZAR RODMAN",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23654,7 +23654,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CL000292",
           "NombreCliente": "ALCALDIA MUNICIPAL DE AHUACHAPAN CENTRO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23699,7 +23699,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000292",
           "NombreCliente": "ALCALDIA MUNICIPAL DE AHUACHAPAN CENTRO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23744,7 +23744,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003018",
           "NombreCliente": "JER'S, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23789,7 +23789,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003266",
           "NombreCliente": "HERNANDEZ VASQUEZ JOSE WILFREDO",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23852,7 +23852,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000584",
           "NombreCliente": "PORTILLO ALVARO DE JESUS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23897,7 +23897,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003169",
           "NombreCliente": "MONTES SANDOVAL DORA ALICIA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23960,7 +23960,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003397",
           "NombreCliente": "ORELLANA VELASQUEZ JUAN CARLOS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24005,7 +24005,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003596",
           "NombreCliente": "WILLIAM DAVID GARCIA MELENDEZ",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24050,7 +24050,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000134",
           "NombreCliente": "CORTE SUPREMA DE JUSTICIA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24095,7 +24095,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003517",
           "NombreCliente": "ISAIAS POLANCO SANTOS",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24140,7 +24140,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000134",
           "NombreCliente": "CORTE SUPREMA DE JUSTICIA",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -24185,7 +24185,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24284,7 +24284,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24383,7 +24383,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003098",
           "NombreCliente": "GLASS MOUNTAIN BPO, S.A. DE C.V.",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24428,7 +24428,7 @@
           "Estatus": "Cancelada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24509,7 +24509,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "FACTURA EN RESERVA",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24573,8 +24573,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-22T15:31:45.976Z",
-    "ultimoIntento": "2026-10-22T15:31:45.976Z",
+    "ultimoExito": "2026-10-22T19:23:30.634Z",
+    "ultimoIntento": "2026-10-22T19:23:30.634Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
