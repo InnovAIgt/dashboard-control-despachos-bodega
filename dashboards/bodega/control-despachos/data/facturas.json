@@ -22934,7 +22934,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23024,7 +23024,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24618,8 +24618,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-22T22:30:57.784Z",
-    "ultimoIntento": "2026-10-22T22:30:57.784Z",
+    "ultimoExito": "2026-10-23T00:52:02.534Z",
+    "ultimoIntento": "2026-10-23T00:52:02.534Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
