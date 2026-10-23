@@ -14730,7 +14730,7 @@
       "numeroFactura": "1025887",
       "fechaEmision": "2026-10-15",
       "fechaDespacho": "2026-11-15",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000158",
       "nombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
       "totalFactura": 0,
@@ -14741,7 +14741,7 @@
           "NumeroFactura": 1025887,
           "FechaEmision": "2026-10-15T00:00:00",
           "FechaDespacho": "2026-11-15T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
           "tipoFactura": "Entrega completada",
@@ -23052,6 +23052,51 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073140",
+      "fechaEmision": "2026-10-23",
+      "fechaDespacho": "2026-10-23",
+      "estatus": "Abierta",
+      "codigoCliente": "CL002957",
+      "nombreCliente": "GRUPO DE REACCION DE SEGURIDAD PRIVADA, S.A DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48567,
+      "registrosApi": [
+        {
+          "DocEntry": 48567,
+          "NumeroFactura": 9073140,
+          "FechaEmision": "2026-10-23T00:00:00",
+          "FechaDespacho": "2026-10-23T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL002957",
+          "NombreCliente": "GRUPO DE REACCION DE SEGURIDAD PRIVADA, S.A DE C.V",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-170001",
+              "Descripcion": "ANTENA TSP-2 V1 3G (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 5,
+              "Descuento": 0,
+              "TotalLinea": 5
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-170001",
+          "Descripcion": "ANTENA TSP-2 V1 3G (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 5,
+          "Descuento": 0,
+          "TotalLinea": 5
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080082",
       "fechaEmision": "2026-01-08",
       "fechaDespacho": "2026-01-08",
@@ -24618,8 +24663,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-23T15:15:02.018Z",
-    "ultimoIntento": "2026-10-23T15:15:02.018Z",
+    "ultimoExito": "2026-10-23T19:16:46.069Z",
+    "ultimoIntento": "2026-10-23T19:16:46.069Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
