@@ -15051,6 +15051,69 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1025907",
+      "fechaEmision": "2026-10-23",
+      "fechaDespacho": "2026-10-23",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000061",
+      "nombreCliente": "CONSTRUCCIONES Y SERVICIOS VIALES, S.A",
+      "totalFactura": 0,
+      "docEntry": 32879,
+      "registrosApi": [
+        {
+          "DocEntry": 32879,
+          "NumeroFactura": 1025907,
+          "FechaEmision": "2026-10-23T00:00:00",
+          "FechaDespacho": "2026-10-23T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000061",
+          "NombreCliente": "CONSTRUCCIONES Y SERVICIOS VIALES, S.A",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800004",
+              "Descripcion": "EQUIPO FMT-1001 4G SC (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 1316.9642,
+              "Descuento": 0,
+              "TotalLinea": 1316.96
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-760002",
+              "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800004",
+          "Descripcion": "EQUIPO FMT-1001 4G SC (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 1316.9642,
+          "Descuento": 0,
+          "TotalLinea": 1316.96
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-760002",
+          "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -24663,8 +24726,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-23T22:16:29.276Z",
-    "ultimoIntento": "2026-10-23T22:16:29.276Z",
+    "ultimoExito": "2026-10-24T00:45:43.681Z",
+    "ultimoIntento": "2026-10-24T00:45:43.681Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
