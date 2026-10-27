@@ -15114,6 +15114,51 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1025908",
+      "fechaEmision": "2026-10-27",
+      "fechaDespacho": "2026-11-27",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001091",
+      "nombreCliente": "IMPORTADORA MOLINA Y COPROPIEDAD",
+      "totalFactura": 0,
+      "docEntry": 32880,
+      "registrosApi": [
+        {
+          "DocEntry": 32880,
+          "NumeroFactura": 1025908,
+          "FechaEmision": "2026-10-27T00:00:00",
+          "FechaDespacho": "2026-11-27T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL001091",
+          "NombreCliente": "IMPORTADORA MOLINA Y COPROPIEDAD",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500005",
+              "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+              "Cantidad": 2,
+              "Precio": 116.0714,
+              "Descuento": 0,
+              "TotalLinea": 232.14
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500005",
+          "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+          "Cantidad": 2,
+          "Precio": 116.0714,
+          "Descuento": 0,
+          "TotalLinea": 232.14
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -23042,7 +23087,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003604",
           "NombreCliente": "RPV INVERSION Y ADMINISTRACION, S.A. DE C.V.",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -23118,7 +23163,7 @@
       "numeroFactura": "9073140",
       "fechaEmision": "2026-10-23",
       "fechaDespacho": "2026-10-23",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL002957",
       "nombreCliente": "GRUPO DE REACCION DE SEGURIDAD PRIVADA, S.A DE C.V",
       "totalFactura": 0,
@@ -23129,9 +23174,54 @@
           "NumeroFactura": 9073140,
           "FechaEmision": "2026-10-23T00:00:00",
           "FechaDespacho": "2026-10-23T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL002957",
           "NombreCliente": "GRUPO DE REACCION DE SEGURIDAD PRIVADA, S.A DE C.V",
+          "tipoFactura": "Entrega completada",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-170001",
+              "Descripcion": "ANTENA TSP-2 V1 3G (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 5,
+              "Descuento": 0,
+              "TotalLinea": 5
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-170001",
+          "Descripcion": "ANTENA TSP-2 V1 3G (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 5,
+          "Descuento": 0,
+          "TotalLinea": 5
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073142",
+      "fechaEmision": "2026-10-27",
+      "fechaDespacho": "2026-10-27",
+      "estatus": "Cerrada",
+      "codigoCliente": "CL003594",
+      "nombreCliente": "PROCERESA S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 48571,
+      "registrosApi": [
+        {
+          "DocEntry": 48571,
+          "NumeroFactura": 9073142,
+          "FechaEmision": "2026-10-27T00:00:00",
+          "FechaDespacho": "2026-10-27T00:00:00",
+          "Estatus": "Cerrada",
+          "CodigoCliente": "CL003594",
+          "NombreCliente": "PROCERESA S.A. DE C.V.",
           "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
@@ -24293,7 +24383,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000134",
           "NombreCliente": "CORTE SUPREMA DE JUSTICIA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24726,8 +24816,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-27T13:35:32.328Z",
-    "ultimoIntento": "2026-10-27T13:35:32.328Z",
+    "ultimoExito": "2026-10-27T18:55:12.377Z",
+    "ultimoIntento": "2026-10-27T18:55:12.377Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
