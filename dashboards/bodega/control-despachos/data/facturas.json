@@ -15131,7 +15131,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL001091",
           "NombreCliente": "IMPORTADORA MOLINA Y COPROPIEDAD",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24816,8 +24816,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-28T14:21:54.759Z",
-    "ultimoIntento": "2026-10-28T14:21:54.759Z",
+    "ultimoExito": "2026-10-28T19:40:57.558Z",
+    "ultimoIntento": "2026-10-28T19:40:57.558Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
