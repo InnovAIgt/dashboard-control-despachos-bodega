@@ -15159,6 +15159,51 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1025919",
+      "fechaEmision": "2026-10-30",
+      "fechaDespacho": "2026-10-30",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000678",
+      "nombreCliente": "VISION PANORAMICA, S.A",
+      "totalFactura": 0,
+      "docEntry": 32891,
+      "registrosApi": [
+        {
+          "DocEntry": 32891,
+          "NumeroFactura": 1025919,
+          "FechaEmision": "2026-10-30T00:00:00",
+          "FechaDespacho": "2026-10-30T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000678",
+          "NombreCliente": "VISION PANORAMICA, S.A",
+          "tipoFactura": "Entrega completada",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-130001",
+              "Descripcion": "BATERIA TSP-2 V1 3G (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 151.7857,
+              "Descuento": 0,
+              "TotalLinea": 151.79
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-130001",
+          "Descripcion": "BATERIA TSP-2 V1 3G (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 151.7857,
+          "Descuento": 0,
+          "TotalLinea": 151.79
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -24816,8 +24861,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-30T12:41:44.197Z",
-    "ultimoIntento": "2026-10-30T12:41:44.197Z",
+    "ultimoExito": "2026-10-30T18:13:17.266Z",
+    "ultimoIntento": "2026-10-30T18:13:17.266Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
