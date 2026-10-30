@@ -14915,7 +14915,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15162,7 +15162,7 @@
       "numeroFactura": "1025919",
       "fechaEmision": "2026-10-30",
       "fechaDespacho": "2026-10-30",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000678",
       "nombreCliente": "VISION PANORAMICA, S.A",
       "totalFactura": 0,
@@ -15173,7 +15173,7 @@
           "NumeroFactura": 1025919,
           "FechaEmision": "2026-10-30T00:00:00",
           "FechaDespacho": "2026-10-30T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000678",
           "NombreCliente": "VISION PANORAMICA, S.A",
           "tipoFactura": "Entrega completada",
@@ -24861,8 +24861,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-30T18:13:17.266Z",
-    "ultimoIntento": "2026-10-30T18:13:17.266Z",
+    "ultimoExito": "2026-10-30T22:20:09.964Z",
+    "ultimoIntento": "2026-10-30T22:20:09.964Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
