@@ -14213,7 +14213,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001075",
           "NombreCliente": "JOSE ANTONIO ARZÚ TINOCO",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14258,7 +14258,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000986",
           "NombreCliente": "BACK OFFICE SMART SOLUTION SOCIEDAD ANONIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -14321,7 +14321,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL001123",
           "NombreCliente": "ROVALLEGO INGENIERIA, SOCIEDAD ANONIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15068,7 +15068,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000061",
           "NombreCliente": "CONSTRUCCIONES Y SERVICIOS VIALES, S.A",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24816,8 +24816,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-29T20:40:54.383Z",
-    "ultimoIntento": "2026-10-29T20:40:54.383Z",
+    "ultimoExito": "2026-10-30T00:22:19.256Z",
+    "ultimoIntento": "2026-10-30T00:22:19.256Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
