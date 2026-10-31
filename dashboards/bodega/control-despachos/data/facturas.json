@@ -23267,7 +23267,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003594",
           "NombreCliente": "PROCERESA S.A. DE C.V.",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24861,8 +24861,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-10-30T22:20:09.964Z",
-    "ultimoIntento": "2026-10-30T22:20:09.964Z",
+    "ultimoExito": "2026-10-31T01:39:53.875Z",
+    "ultimoIntento": "2026-10-31T01:39:53.875Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
