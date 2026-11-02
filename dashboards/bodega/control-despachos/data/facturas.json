@@ -11724,7 +11724,7 @@
       "numeroFactura": "1025054",
       "fechaEmision": "2026-08-07",
       "fechaDespacho": "2026-09-07",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000928",
       "nombreCliente": "SHELTER PROTECCION, S.A.",
       "totalFactura": 0,
@@ -11735,7 +11735,7 @@
           "NumeroFactura": 1025054,
           "FechaEmision": "2026-08-07T00:00:00",
           "FechaDespacho": "2026-09-07T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000928",
           "NombreCliente": "SHELTER PROTECCION, S.A.",
           "tipoFactura": "Entrega completada",
@@ -24861,8 +24861,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-02T06:52:13.783Z",
-    "ultimoIntento": "2026-11-02T06:52:13.783Z",
+    "ultimoExito": "2026-11-02T16:37:33.460Z",
+    "ultimoIntento": "2026-11-02T16:37:33.460Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
