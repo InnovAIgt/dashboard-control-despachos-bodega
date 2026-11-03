@@ -15204,6 +15204,51 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1026187",
+      "fechaEmision": "2026-11-03",
+      "fechaDespacho": "2026-11-03",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000008",
+      "nombreCliente": "SEGURIDAD INDUSTRIAL DE GUATEMALA, S.A.",
+      "totalFactura": 0,
+      "docEntry": 33159,
+      "registrosApi": [
+        {
+          "DocEntry": 33159,
+          "NumeroFactura": 1026187,
+          "FechaEmision": "2026-11-03T00:00:00",
+          "FechaDespacho": "2026-11-03T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000008",
+          "NombreCliente": "SEGURIDAD INDUSTRIAL DE GUATEMALA, S.A.",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-130001",
+              "Descripcion": "BATERIA TSP-2 V1 3G (NUEVO)",
+              "Cantidad": 4,
+              "Precio": 151.7857,
+              "Descuento": 0,
+              "TotalLinea": 607.14
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-130001",
+          "Descripcion": "BATERIA TSP-2 V1 3G (NUEVO)",
+          "Cantidad": 4,
+          "Precio": 151.7857,
+          "Descuento": 0,
+          "TotalLinea": 607.14
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -17921,7 +17966,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CE000001",
           "NombreCliente": "INTELFON, S.A. DE C.V",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24861,8 +24906,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-03T11:49:50.499Z",
-    "ultimoIntento": "2026-11-03T11:49:50.499Z",
+    "ultimoExito": "2026-11-03T18:41:08.917Z",
+    "ultimoIntento": "2026-11-03T18:41:08.917Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
