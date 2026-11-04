@@ -15249,6 +15249,132 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1026189",
+      "fechaEmision": "2026-11-03",
+      "fechaDespacho": "2026-12-03",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000158",
+      "nombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 33161,
+      "registrosApi": [
+        {
+          "DocEntry": 33161,
+          "NumeroFactura": 1026189,
+          "FechaEmision": "2026-11-03T00:00:00",
+          "FechaDespacho": "2026-12-03T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000158",
+          "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-110001",
+              "Descripcion": "CARGADOR DE PARED TSP-2 V1 3G (NUEVO)",
+              "Cantidad": 58,
+              "Precio": 18.0178,
+              "Descuento": 0,
+              "TotalLinea": 1045.03
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-P-160002",
+              "Descripcion": "CABLE TIPO C-USB (NUEVO)",
+              "Cantidad": 58,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-110001",
+          "Descripcion": "CARGADOR DE PARED TSP-2 V1 3G (NUEVO)",
+          "Cantidad": 58,
+          "Precio": 18.0178,
+          "Descuento": 0,
+          "TotalLinea": 1045.03
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-P-160002",
+          "Descripcion": "CABLE TIPO C-USB (NUEVO)",
+          "Cantidad": 58,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026190",
+      "fechaEmision": "2026-11-03",
+      "fechaDespacho": "2026-12-03",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000158",
+      "nombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 33162,
+      "registrosApi": [
+        {
+          "DocEntry": 33162,
+          "NumeroFactura": 1026190,
+          "FechaEmision": "2026-11-03T00:00:00",
+          "FechaDespacho": "2026-12-03T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000158",
+          "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-110001",
+              "Descripcion": "CARGADOR DE PARED TSP-2 V1 3G (NUEVO)",
+              "Cantidad": 22,
+              "Precio": 26.7857,
+              "Descuento": 0,
+              "TotalLinea": 589.29
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-P-160002",
+              "Descripcion": "CABLE TIPO C-USB (NUEVO)",
+              "Cantidad": 22,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-110001",
+          "Descripcion": "CARGADOR DE PARED TSP-2 V1 3G (NUEVO)",
+          "Cantidad": 22,
+          "Precio": 26.7857,
+          "Descuento": 0,
+          "TotalLinea": 589.29
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-P-160002",
+          "Descripcion": "CABLE TIPO C-USB (NUEVO)",
+          "Cantidad": 22,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -24906,8 +25032,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-04T03:16:55.840Z",
-    "ultimoIntento": "2026-11-04T03:16:55.840Z",
+    "ultimoExito": "2026-11-04T11:03:46.893Z",
+    "ultimoIntento": "2026-11-04T11:03:46.893Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
