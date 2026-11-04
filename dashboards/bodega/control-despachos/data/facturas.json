@@ -15221,7 +15221,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000008",
           "NombreCliente": "SEGURIDAD INDUSTRIAL DE GUATEMALA, S.A.",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15266,7 +15266,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15329,7 +15329,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15370,6 +15370,51 @@
           "Precio": 0,
           "Descuento": 0,
           "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026192",
+      "fechaEmision": "2026-11-04",
+      "fechaDespacho": "2026-11-04",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000409",
+      "nombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
+      "totalFactura": 0,
+      "docEntry": 33164,
+      "registrosApi": [
+        {
+          "DocEntry": 33164,
+          "NumeroFactura": 1026192,
+          "FechaEmision": "2026-11-04T00:00:00",
+          "FechaDespacho": "2026-11-04T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000409",
+          "NombreCliente": "FUERZA INTEGRAL DE SEGURIDAD TOTAL, S.A",
+          "tipoFactura": "Entrega completada",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-260044",
+              "Descripcion": "HANDSFREE TAC-3 10W (NUEVO)",
+              "Cantidad": 5,
+              "Precio": 80.3571,
+              "Descuento": 0,
+              "TotalLinea": 401.79
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-260044",
+          "Descripcion": "HANDSFREE TAC-3 10W (NUEVO)",
+          "Cantidad": 5,
+          "Precio": 80.3571,
+          "Descuento": 0,
+          "TotalLinea": 401.79
         }
       ]
     },
@@ -23466,6 +23511,51 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073426",
+      "fechaEmision": "2026-11-04",
+      "fechaDespacho": "2026-11-04",
+      "estatus": "Cerrada",
+      "codigoCliente": "CL003449",
+      "nombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 48977,
+      "registrosApi": [
+        {
+          "DocEntry": 48977,
+          "NumeroFactura": 9073426,
+          "FechaEmision": "2026-11-04T00:00:00",
+          "FechaDespacho": "2026-11-04T00:00:00",
+          "Estatus": "Cerrada",
+          "CodigoCliente": "CL003449",
+          "NombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-120001",
+              "Descripcion": "CLIP TSP-2 V1 3G (NUEVO)",
+              "Cantidad": 2,
+              "Precio": 3,
+              "Descuento": 0,
+              "TotalLinea": 6
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-120001",
+          "Descripcion": "CLIP TSP-2 V1 3G (NUEVO)",
+          "Cantidad": 2,
+          "Precio": 3,
+          "Descuento": 0,
+          "TotalLinea": 6
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080082",
       "fechaEmision": "2026-01-08",
       "fechaDespacho": "2026-01-08",
@@ -25032,8 +25122,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-04T18:34:35.038Z",
-    "ultimoIntento": "2026-11-04T18:34:35.038Z",
+    "ultimoExito": "2026-11-04T23:53:56.920Z",
+    "ultimoIntento": "2026-11-04T23:53:56.920Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
