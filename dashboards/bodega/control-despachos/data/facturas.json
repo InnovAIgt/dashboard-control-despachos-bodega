@@ -15420,6 +15420,177 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1026193",
+      "fechaEmision": "2026-11-05",
+      "fechaDespacho": "2026-12-05",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000158",
+      "nombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 33165,
+      "registrosApi": [
+        {
+          "DocEntry": 33165,
+          "NumeroFactura": 1026193,
+          "FechaEmision": "2026-11-05T00:00:00",
+          "FechaDespacho": "2026-12-05T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000158",
+          "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800081",
+              "Descripcion": "EQUIPO TSP4-V1 4G SC",
+              "Cantidad": 1,
+              "Precio": 487.5,
+              "Descuento": 0,
+              "TotalLinea": 487.5
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-730002",
+              "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800081",
+          "Descripcion": "EQUIPO TSP4-V1 4G SC",
+          "Cantidad": 1,
+          "Precio": 487.5,
+          "Descuento": 0,
+          "TotalLinea": 487.5
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-730002",
+          "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026208",
+      "fechaEmision": "2026-11-05",
+      "fechaDespacho": "2026-12-05",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001158",
+      "nombreCliente": "GERSON EDUARDO CHACON AREVALO",
+      "totalFactura": 0,
+      "docEntry": 33180,
+      "registrosApi": [
+        {
+          "DocEntry": 33180,
+          "NumeroFactura": 1026208,
+          "FechaEmision": "2026-11-05T00:00:00",
+          "FechaDespacho": "2026-12-05T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL001158",
+          "NombreCliente": "GERSON EDUARDO CHACON AREVALO",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800072",
+              "Descripcion": "EQUIPO TCP-7 4G SC (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 754.4642,
+              "Descuento": 0,
+              "TotalLinea": 754.46
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800072",
+          "Descripcion": "EQUIPO TCP-7 4G SC (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 754.4642,
+          "Descuento": 0,
+          "TotalLinea": 754.46
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026209",
+      "fechaEmision": "2026-11-05",
+      "fechaDespacho": "2026-12-05",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001158",
+      "nombreCliente": "GERSON EDUARDO CHACON AREVALO",
+      "totalFactura": 0,
+      "docEntry": 33181,
+      "registrosApi": [
+        {
+          "DocEntry": 33181,
+          "NumeroFactura": 1026209,
+          "FechaEmision": "2026-11-05T00:00:00",
+          "FechaDespacho": "2026-12-05T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL001158",
+          "NombreCliente": "GERSON EDUARDO CHACON AREVALO",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800072",
+              "Descripcion": "EQUIPO TCP-7 4G SC (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 754.4642,
+              "Descuento": 0,
+              "TotalLinea": 754.46
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-730002",
+              "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800072",
+          "Descripcion": "EQUIPO TCP-7 4G SC (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 754.4642,
+          "Descuento": 0,
+          "TotalLinea": 754.46
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-730002",
+          "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -23303,7 +23474,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
-          "tipoFactura": "Entrega completada",
+          "tipoFactura": "Pendiente de entrega",
           "Articulos": [
             {
               "Linea": 0,
@@ -23528,7 +23699,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003449",
           "NombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -25122,8 +25293,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-05T11:58:37.297Z",
-    "ultimoIntento": "2026-11-05T11:58:37.297Z",
+    "ultimoExito": "2026-11-05T19:37:01.689Z",
+    "ultimoIntento": "2026-11-05T19:37:01.689Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
