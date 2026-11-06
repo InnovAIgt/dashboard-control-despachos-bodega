@@ -15545,7 +15545,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL001158",
           "NombreCliente": "GERSON EDUARDO CHACON AREVALO",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -25293,8 +25293,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-05T19:37:01.689Z",
-    "ultimoIntento": "2026-11-05T19:37:01.689Z",
+    "ultimoExito": "2026-11-06T00:32:37.154Z",
+    "ultimoIntento": "2026-11-06T00:32:37.154Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
