@@ -24888,6 +24888,51 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9081137",
+      "fechaEmision": "2026-11-06",
+      "fechaDespacho": "2026-11-06",
+      "estatus": "Abierta",
+      "codigoCliente": "CL003300",
+      "nombreCliente": "ALCALDIA MUNICIPAL DE LA LIBERTAD SUR",
+      "totalFactura": 0,
+      "docEntry": 48982,
+      "registrosApi": [
+        {
+          "DocEntry": 48982,
+          "NumeroFactura": 9081137,
+          "FechaEmision": "2026-11-06T00:00:00",
+          "FechaDespacho": "2026-11-06T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL003300",
+          "NombreCliente": "ALCALDIA MUNICIPAL DE LA LIBERTAD SUR",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500005",
+              "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+              "Cantidad": 10,
+              "Precio": 5,
+              "Descuento": 0,
+              "TotalLinea": 50
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500005",
+          "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+          "Cantidad": 10,
+          "Precio": 5,
+          "Descuento": 0,
+          "TotalLinea": 50
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9090118",
       "fechaEmision": "2026-06-18",
       "fechaDespacho": "2026-07-30",
@@ -25293,8 +25338,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-06T15:09:15.965Z",
-    "ultimoIntento": "2026-11-06T15:09:15.965Z",
+    "ultimoExito": "2026-11-06T20:51:14.757Z",
+    "ultimoIntento": "2026-11-06T20:51:14.757Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
