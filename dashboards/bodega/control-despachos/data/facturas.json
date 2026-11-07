@@ -15437,7 +15437,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000158",
           "NombreCliente": "POLLO CAMPERO, SOCIEDAD ANONIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15577,6 +15577,69 @@
           "Precio": 754.4642,
           "Descuento": 0,
           "TotalLinea": 754.46
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-730002",
+          "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026211",
+      "fechaEmision": "2026-11-06",
+      "fechaDespacho": "2026-11-06",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000648",
+      "nombreCliente": "EOLICO SAN ANTONIO EL SITIO SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 33183,
+      "registrosApi": [
+        {
+          "DocEntry": 33183,
+          "NumeroFactura": 1026211,
+          "FechaEmision": "2026-11-06T00:00:00",
+          "FechaDespacho": "2026-11-06T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000648",
+          "NombreCliente": "EOLICO SAN ANTONIO EL SITIO SOCIEDAD ANONIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800081",
+              "Descripcion": "EQUIPO TSP4-V1 4G SC",
+              "Cantidad": 1,
+              "Precio": 669.6428,
+              "Descuento": 0,
+              "TotalLinea": 669.64
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-730002",
+              "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800081",
+          "Descripcion": "EQUIPO TSP4-V1 4G SC",
+          "Cantidad": 1,
+          "Precio": 669.6428,
+          "Descuento": 0,
+          "TotalLinea": 669.64
         },
         {
           "Linea": 1,
@@ -25338,8 +25401,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-06T20:51:14.757Z",
-    "ultimoIntento": "2026-11-06T20:51:14.757Z",
+    "ultimoExito": "2026-11-07T00:25:53.269Z",
+    "ultimoIntento": "2026-11-07T00:25:53.269Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
