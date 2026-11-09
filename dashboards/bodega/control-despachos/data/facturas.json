@@ -23478,7 +23478,7 @@
       "numeroFactura": "9072825",
       "fechaEmision": "2026-09-29",
       "fechaDespacho": "2026-10-15",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL003302",
       "nombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
       "totalFactura": 0,
@@ -23489,7 +23489,7 @@
           "NumeroFactura": 9072825,
           "FechaEmision": "2026-09-29T00:00:00",
           "FechaDespacho": "2026-10-15T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
           "tipoFactura": "Entrega completada",
@@ -23523,7 +23523,7 @@
       "numeroFactura": "9073113",
       "fechaEmision": "2026-10-05",
       "fechaDespacho": "2026-10-05",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL003302",
       "nombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
       "totalFactura": 0,
@@ -23534,7 +23534,7 @@
           "NumeroFactura": 9073113,
           "FechaEmision": "2026-10-05T00:00:00",
           "FechaDespacho": "2026-10-05T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL003302",
           "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
           "tipoFactura": "Pendiente de entrega",
@@ -23785,6 +23785,114 @@
           "Precio": 3,
           "Descuento": 0,
           "TotalLinea": 6
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073429",
+      "fechaEmision": "2026-11-09",
+      "fechaDespacho": "2026-11-09",
+      "estatus": "Abierta",
+      "codigoCliente": "CL003427",
+      "nombreCliente": "DAVID ANTONIO BOGLE NOLASCO",
+      "totalFactura": 0,
+      "docEntry": 48985,
+      "registrosApi": [
+        {
+          "DocEntry": 48985,
+          "NumeroFactura": 9073429,
+          "FechaEmision": "2026-11-09T00:00:00",
+          "FechaDespacho": "2026-11-09T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL003427",
+          "NombreCliente": "DAVID ANTONIO BOGLE NOLASCO",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-760002",
+              "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO",
+              "Cantidad": 1,
+              "Precio": 5,
+              "Descuento": 0,
+              "TotalLinea": 5
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-760002",
+          "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO",
+          "Cantidad": 1,
+          "Precio": 5,
+          "Descuento": 0,
+          "TotalLinea": 5
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073430",
+      "fechaEmision": "2026-11-09",
+      "fechaDespacho": "2026-11-09",
+      "estatus": "Abierta",
+      "codigoCliente": "CL002594",
+      "nombreCliente": "HEME, S.A. DE C.V",
+      "totalFactura": 0,
+      "docEntry": 48986,
+      "registrosApi": [
+        {
+          "DocEntry": 48986,
+          "NumeroFactura": 9073430,
+          "FechaEmision": "2026-11-09T00:00:00",
+          "FechaDespacho": "2026-11-09T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL002594",
+          "NombreCliente": "HEME, S.A. DE C.V",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "2-P-800004",
+              "Descripcion": "EQUIPO FMT-1001 4G SC (USADO)",
+              "Cantidad": 1,
+              "Precio": 50,
+              "Descuento": 0,
+              "TotalLinea": 50
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "N-730002",
+              "Descripcion": "TIG 100MB INTELFON FLEXIPOOL M2M (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 5,
+              "Descuento": 0,
+              "TotalLinea": 5
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "2-P-800004",
+          "Descripcion": "EQUIPO FMT-1001 4G SC (USADO)",
+          "Cantidad": 1,
+          "Precio": 50,
+          "Descuento": 0,
+          "TotalLinea": 50
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "N-730002",
+          "Descripcion": "TIG 100MB INTELFON FLEXIPOOL M2M (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 5,
+          "Descuento": 0,
+          "TotalLinea": 5
         }
       ]
     },
@@ -24968,7 +25076,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003300",
           "NombreCliente": "ALCALDIA MUNICIPAL DE LA LIBERTAD SUR",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -25401,8 +25509,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-09T08:42:42.098Z",
-    "ultimoIntento": "2026-11-09T08:42:42.098Z",
+    "ultimoExito": "2026-11-09T19:09:48.553Z",
+    "ultimoIntento": "2026-11-09T19:09:48.553Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
