@@ -15608,7 +15608,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000648",
           "NombreCliente": "EOLICO SAN ANTONIO EL SITIO SOCIEDAD ANONIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15640,6 +15640,69 @@
           "Precio": 669.6428,
           "Descuento": 0,
           "TotalLinea": 669.64
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-730002",
+          "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026236",
+      "fechaEmision": "2026-11-10",
+      "fechaDespacho": "2026-11-10",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000673",
+      "nombreCliente": "SERVICIO DE TRANSPORTE NUEVA UNIBUS SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 33208,
+      "registrosApi": [
+        {
+          "DocEntry": 33208,
+          "NumeroFactura": 1026236,
+          "FechaEmision": "2026-11-10T00:00:00",
+          "FechaDespacho": "2026-11-10T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000673",
+          "NombreCliente": "SERVICIO DE TRANSPORTE NUEVA UNIBUS SOCIEDAD ANONIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "2-P-800001",
+              "Descripcion": "EQUIPO TSP2-V1 3G SC (USADO)",
+              "Cantidad": 1,
+              "Precio": 312.5,
+              "Descuento": 0,
+              "TotalLinea": 312.5
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-730002",
+              "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "2-P-800001",
+          "Descripcion": "EQUIPO TSP2-V1 3G SC (USADO)",
+          "Cantidad": 1,
+          "Precio": 312.5,
+          "Descuento": 0,
+          "TotalLinea": 312.5
         },
         {
           "Linea": 1,
@@ -23807,7 +23870,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL003427",
           "NombreCliente": "DAVID ANTONIO BOGLE NOLASCO",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -25509,8 +25572,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-10T17:16:36.175Z",
-    "ultimoIntento": "2026-11-10T17:16:36.175Z",
+    "ultimoExito": "2026-11-10T22:24:23.946Z",
+    "ultimoIntento": "2026-11-10T22:24:23.946Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
