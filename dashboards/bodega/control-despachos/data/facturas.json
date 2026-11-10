@@ -25062,7 +25062,7 @@
       "numeroFactura": "9081137",
       "fechaEmision": "2026-11-06",
       "fechaDespacho": "2026-11-06",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL003300",
       "nombreCliente": "ALCALDIA MUNICIPAL DE LA LIBERTAD SUR",
       "totalFactura": 0,
@@ -25073,7 +25073,7 @@
           "NumeroFactura": 9081137,
           "FechaEmision": "2026-11-06T00:00:00",
           "FechaDespacho": "2026-11-06T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL003300",
           "NombreCliente": "ALCALDIA MUNICIPAL DE LA LIBERTAD SUR",
           "tipoFactura": "Entrega completada",
@@ -25509,8 +25509,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-09T19:09:48.553Z",
-    "ultimoIntento": "2026-11-09T19:09:48.553Z",
+    "ultimoExito": "2026-11-10T02:02:01.466Z",
+    "ultimoIntento": "2026-11-10T02:02:01.466Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
