@@ -15717,6 +15717,51 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1026252",
+      "fechaEmision": "2026-11-11",
+      "fechaDespacho": "2026-11-11",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000045",
+      "nombreCliente": "WACKENHUT DE GUATEMALA, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 33224,
+      "registrosApi": [
+        {
+          "DocEntry": 33224,
+          "NumeroFactura": 1026252,
+          "FechaEmision": "2026-11-11T00:00:00",
+          "FechaDespacho": "2026-11-11T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000045",
+          "NombreCliente": "WACKENHUT DE GUATEMALA, SOCIEDAD ANONIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500005",
+              "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+              "Cantidad": 16,
+              "Precio": 80.35714,
+              "Descuento": 0,
+              "TotalLinea": 1285.71
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500005",
+          "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+          "Cantidad": 16,
+          "Precio": 80.35714,
+          "Descuento": 0,
+          "TotalLinea": 1285.71
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -23964,7 +24009,7 @@
       "numeroFactura": "9073438",
       "fechaEmision": "2026-11-11",
       "fechaDespacho": "2026-11-11",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL003449",
       "nombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
       "totalFactura": 0,
@@ -23975,7 +24020,7 @@
           "NumeroFactura": 9073438,
           "FechaEmision": "2026-11-11T00:00:00",
           "FechaDespacho": "2026-11-11T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL003449",
           "NombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
           "tipoFactura": "Pendiente de entrega",
@@ -25635,8 +25680,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-11T17:05:39.066Z",
-    "ultimoIntento": "2026-11-11T17:05:39.066Z",
+    "ultimoExito": "2026-11-11T23:25:39.148Z",
+    "ultimoIntento": "2026-11-11T23:25:39.148Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
