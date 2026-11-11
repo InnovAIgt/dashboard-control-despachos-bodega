@@ -23856,7 +23856,7 @@
       "numeroFactura": "9073429",
       "fechaEmision": "2026-11-09",
       "fechaDespacho": "2026-11-09",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL003427",
       "nombreCliente": "DAVID ANTONIO BOGLE NOLASCO",
       "totalFactura": 0,
@@ -23867,7 +23867,7 @@
           "NumeroFactura": 9073429,
           "FechaEmision": "2026-11-09T00:00:00",
           "FechaDespacho": "2026-11-09T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL003427",
           "NombreCliente": "DAVID ANTONIO BOGLE NOLASCO",
           "tipoFactura": "Entrega completada",
@@ -23956,6 +23956,69 @@
           "Precio": 5,
           "Descuento": 0,
           "TotalLinea": 5
+        }
+      ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9073438",
+      "fechaEmision": "2026-11-11",
+      "fechaDespacho": "2026-11-11",
+      "estatus": "Abierta",
+      "codigoCliente": "CL003449",
+      "nombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 48998,
+      "registrosApi": [
+        {
+          "DocEntry": 48998,
+          "NumeroFactura": 9073438,
+          "FechaEmision": "2026-11-11T00:00:00",
+          "FechaDespacho": "2026-11-11T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL003449",
+          "NombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500008",
+              "Descripcion": "HANDSFREE TCP-7 - SEMI OREJERA",
+              "Cantidad": 5,
+              "Precio": 5.5,
+              "Descuento": 0,
+              "TotalLinea": 27.5
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-P-500005",
+              "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+              "Cantidad": 5,
+              "Precio": 5,
+              "Descuento": 0,
+              "TotalLinea": 25
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500008",
+          "Descripcion": "HANDSFREE TCP-7 - SEMI OREJERA",
+          "Cantidad": 5,
+          "Precio": 5.5,
+          "Descuento": 0,
+          "TotalLinea": 27.5
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-P-500005",
+          "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+          "Cantidad": 5,
+          "Precio": 5,
+          "Descuento": 0,
+          "TotalLinea": 25
         }
       ]
     },
@@ -25572,8 +25635,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-11T09:10:50.933Z",
-    "ultimoIntento": "2026-11-11T09:10:50.933Z",
+    "ultimoExito": "2026-11-11T17:05:39.066Z",
+    "ultimoIntento": "2026-11-11T17:05:39.066Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
