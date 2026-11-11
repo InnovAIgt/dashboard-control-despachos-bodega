@@ -15657,7 +15657,7 @@
       "numeroFactura": "1026236",
       "fechaEmision": "2026-11-10",
       "fechaDespacho": "2026-11-10",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000673",
       "nombreCliente": "SERVICIO DE TRANSPORTE NUEVA UNIBUS SOCIEDAD ANONIMA",
       "totalFactura": 0,
@@ -15668,7 +15668,7 @@
           "NumeroFactura": 1026236,
           "FechaEmision": "2026-11-10T00:00:00",
           "FechaDespacho": "2026-11-10T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000673",
           "NombreCliente": "SERVICIO DE TRANSPORTE NUEVA UNIBUS SOCIEDAD ANONIMA",
           "tipoFactura": "Pendiente de entrega",
@@ -25572,8 +25572,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-10T22:24:23.946Z",
-    "ultimoIntento": "2026-11-10T22:24:23.946Z",
+    "ultimoExito": "2026-11-11T02:00:53.116Z",
+    "ultimoIntento": "2026-11-11T02:00:53.116Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
