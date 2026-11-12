@@ -11022,7 +11022,7 @@
       "numeroFactura": "1024690",
       "fechaEmision": "2026-07-30",
       "fechaDespacho": "2026-08-30",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000688",
       "nombreCliente": "CELULOSAS Y COLORANTES DE GUATEMALA, S.A.",
       "totalFactura": 0,
@@ -11033,10 +11033,10 @@
           "NumeroFactura": 1024690,
           "FechaEmision": "2026-07-30T00:00:00",
           "FechaDespacho": "2026-08-30T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000688",
           "NombreCliente": "CELULOSAS Y COLORANTES DE GUATEMALA, S.A.",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15531,7 +15531,7 @@
       "numeroFactura": "1026209",
       "fechaEmision": "2026-11-05",
       "fechaDespacho": "2026-12-05",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001158",
       "nombreCliente": "GERSON EDUARDO CHACON AREVALO",
       "totalFactura": 0,
@@ -15542,7 +15542,7 @@
           "NumeroFactura": 1026209,
           "FechaEmision": "2026-11-05T00:00:00",
           "FechaDespacho": "2026-12-05T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL001158",
           "NombreCliente": "GERSON EDUARDO CHACON AREVALO",
           "tipoFactura": "Entrega completada",
@@ -15757,6 +15757,204 @@
           "Precio": 80.35714,
           "Descuento": 0,
           "TotalLinea": 1285.71
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026255",
+      "fechaEmision": "2026-11-12",
+      "fechaDespacho": "2026-11-12",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000001",
+      "nombreCliente": "INTELFON GUATEMALA, S.A",
+      "totalFactura": 0,
+      "docEntry": 33227,
+      "registrosApi": [
+        {
+          "DocEntry": 33227,
+          "NumeroFactura": 1026255,
+          "FechaEmision": "2026-11-12T00:00:00",
+          "FechaDespacho": "2026-11-12T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000001",
+          "NombreCliente": "INTELFON GUATEMALA, S.A",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-CLI465",
+              "Descripcion": "CLIP PARA MODELO I465 (NUEVO GT)",
+              "Cantidad": 100,
+              "Precio": 30.63,
+              "Descuento": 0,
+              "TotalLinea": 3063
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "7-CLI680",
+              "Descripcion": "CLIP PARA MODELO I680 (GARANTIA GT)",
+              "Cantidad": 200,
+              "Precio": 27.84,
+              "Descuento": 0,
+              "TotalLinea": 5568
+            },
+            {
+              "Linea": 2,
+              "CodigoArticulo": "1-CLI680",
+              "Descripcion": "CLIP PARA MODELO I680 (NUEVO GT)",
+              "Cantidad": 100,
+              "Precio": 31.9,
+              "Descuento": 0,
+              "TotalLinea": 3190
+            },
+            {
+              "Linea": 3,
+              "CodigoArticulo": "1-CLI776",
+              "Descripcion": "CLIP PARA MODELO I776 (NUEVO GT)",
+              "Cantidad": 100,
+              "Precio": 13.16,
+              "Descuento": 0,
+              "TotalLinea": 1316
+            },
+            {
+              "Linea": 4,
+              "CodigoArticulo": "1-CLI886",
+              "Descripcion": "CLIP PARA MODELO I886 (NUEVO GT)",
+              "Cantidad": 79,
+              "Precio": 2.02,
+              "Descuento": 0,
+              "TotalLinea": 159.58
+            },
+            {
+              "Linea": 5,
+              "CodigoArticulo": "1-CLI418",
+              "Descripcion": "CLIP PARA TERMINAL I418 (NUEVO GT)",
+              "Cantidad": 150,
+              "Precio": 6.38,
+              "Descuento": 0,
+              "TotalLinea": 957
+            },
+            {
+              "Linea": 6,
+              "CodigoArticulo": "1-CLI760",
+              "Descripcion": "CLIP PARA TERMINAL MODELO I760 Y I580 (NUEVO GT)",
+              "Cantidad": 250,
+              "Precio": 9.27,
+              "Descuento": 0,
+              "TotalLinea": 2317.5
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-CLI465",
+          "Descripcion": "CLIP PARA MODELO I465 (NUEVO GT)",
+          "Cantidad": 100,
+          "Precio": 30.63,
+          "Descuento": 0,
+          "TotalLinea": 3063
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "7-CLI680",
+          "Descripcion": "CLIP PARA MODELO I680 (GARANTIA GT)",
+          "Cantidad": 200,
+          "Precio": 27.84,
+          "Descuento": 0,
+          "TotalLinea": 5568
+        },
+        {
+          "Linea": 2,
+          "CodigoArticulo": "1-CLI680",
+          "Descripcion": "CLIP PARA MODELO I680 (NUEVO GT)",
+          "Cantidad": 100,
+          "Precio": 31.9,
+          "Descuento": 0,
+          "TotalLinea": 3190
+        },
+        {
+          "Linea": 3,
+          "CodigoArticulo": "1-CLI776",
+          "Descripcion": "CLIP PARA MODELO I776 (NUEVO GT)",
+          "Cantidad": 100,
+          "Precio": 13.16,
+          "Descuento": 0,
+          "TotalLinea": 1316
+        },
+        {
+          "Linea": 4,
+          "CodigoArticulo": "1-CLI886",
+          "Descripcion": "CLIP PARA MODELO I886 (NUEVO GT)",
+          "Cantidad": 79,
+          "Precio": 2.02,
+          "Descuento": 0,
+          "TotalLinea": 159.58
+        },
+        {
+          "Linea": 5,
+          "CodigoArticulo": "1-CLI418",
+          "Descripcion": "CLIP PARA TERMINAL I418 (NUEVO GT)",
+          "Cantidad": 150,
+          "Precio": 6.38,
+          "Descuento": 0,
+          "TotalLinea": 957
+        },
+        {
+          "Linea": 6,
+          "CodigoArticulo": "1-CLI760",
+          "Descripcion": "CLIP PARA TERMINAL MODELO I760 Y I580 (NUEVO GT)",
+          "Cantidad": 250,
+          "Precio": 9.27,
+          "Descuento": 0,
+          "TotalLinea": 2317.5
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026256",
+      "fechaEmision": "2026-11-12",
+      "fechaDespacho": "2026-11-12",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000001",
+      "nombreCliente": "INTELFON GUATEMALA, S.A",
+      "totalFactura": 0,
+      "docEntry": 33228,
+      "registrosApi": [
+        {
+          "DocEntry": 33228,
+          "NumeroFactura": 1026256,
+          "FechaEmision": "2026-11-12T00:00:00",
+          "FechaDespacho": "2026-11-12T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000001",
+          "NombreCliente": "INTELFON GUATEMALA, S.A",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-MLICR1",
+              "Descripcion": "MANOS LIBRES COLA DE RATON UN AURICULAR 1 PTT (NUEVO GT)",
+              "Cantidad": 172,
+              "Precio": 44.74,
+              "Descuento": 0,
+              "TotalLinea": 7695.28
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-MLICR1",
+          "Descripcion": "MANOS LIBRES COLA DE RATON UN AURICULAR 1 PTT (NUEVO GT)",
+          "Cantidad": 172,
+          "Precio": 44.74,
+          "Descuento": 0,
+          "TotalLinea": 7695.28
         }
       ]
     },
@@ -23946,7 +24144,7 @@
       "numeroFactura": "9073430",
       "fechaEmision": "2026-11-09",
       "fechaDespacho": "2026-11-09",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL002594",
       "nombreCliente": "HEME, S.A. DE C.V",
       "totalFactura": 0,
@@ -23957,7 +24155,7 @@
           "NumeroFactura": 9073430,
           "FechaEmision": "2026-11-09T00:00:00",
           "FechaDespacho": "2026-11-09T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL002594",
           "NombreCliente": "HEME, S.A. DE C.V",
           "tipoFactura": "Pendiente de entrega",
@@ -25680,8 +25878,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-12T12:17:13.653Z",
-    "ultimoIntento": "2026-11-12T12:17:13.653Z",
+    "ultimoExito": "2026-11-12T20:02:19.204Z",
+    "ultimoIntento": "2026-11-12T20:02:19.204Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
