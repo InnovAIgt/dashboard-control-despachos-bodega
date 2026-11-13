@@ -13605,7 +13605,7 @@
       "numeroFactura": "1025506",
       "fechaEmision": "2026-09-18",
       "fechaDespacho": "2026-10-18",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000763",
       "nombreCliente": "CAPITAL HUMANO SOCIAL, SOCIEDAD ANONIMA",
       "totalFactura": 0,
@@ -13616,7 +13616,7 @@
           "NumeroFactura": 1025506,
           "FechaEmision": "2026-09-18T00:00:00",
           "FechaDespacho": "2026-10-18T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000763",
           "NombreCliente": "CAPITAL HUMANO SOCIAL, SOCIEDAD ANONIMA",
           "tipoFactura": "Entrega completada",
@@ -25923,8 +25923,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-13T07:41:20.870Z",
-    "ultimoIntento": "2026-11-13T07:41:20.870Z",
+    "ultimoExito": "2026-11-13T15:41:33.559Z",
+    "ultimoIntento": "2026-11-13T15:41:33.559Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
