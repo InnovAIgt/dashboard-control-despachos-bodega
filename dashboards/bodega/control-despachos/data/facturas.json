@@ -15671,7 +15671,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000673",
           "NombreCliente": "SERVICIO DE TRANSPORTE NUEVA UNIBUS SOCIEDAD ANONIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24203,7 +24203,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL002594",
           "NombreCliente": "HEME, S.A. DE C.V",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -24266,7 +24266,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL003449",
           "NombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -25923,8 +25923,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-13T15:41:33.559Z",
-    "ultimoIntento": "2026-11-13T15:41:33.559Z",
+    "ultimoExito": "2026-11-13T21:38:07.386Z",
+    "ultimoIntento": "2026-11-13T21:38:07.386Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
