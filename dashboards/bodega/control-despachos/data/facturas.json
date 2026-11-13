@@ -15960,6 +15960,51 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1026259",
+      "fechaEmision": "2026-11-12",
+      "fechaDespacho": "2026-12-12",
+      "estatus": "Cerrada",
+      "codigoCliente": "CL000997",
+      "nombreCliente": "GRUPO DISCORSA, SOCIEDAD ANÓNIMA",
+      "totalFactura": 0,
+      "docEntry": 33231,
+      "registrosApi": [
+        {
+          "DocEntry": 33231,
+          "NumeroFactura": 1026259,
+          "FechaEmision": "2026-11-12T00:00:00",
+          "FechaDespacho": "2026-12-12T00:00:00",
+          "Estatus": "Cerrada",
+          "CodigoCliente": "CL000997",
+          "NombreCliente": "GRUPO DISCORSA, SOCIEDAD ANÓNIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "2-P-800001",
+              "Descripcion": "EQUIPO TSP2-V1 3G SC (USADO)",
+              "Cantidad": 2,
+              "Precio": 312.5,
+              "Descuento": 0,
+              "TotalLinea": 625
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "2-P-800001",
+          "Descripcion": "EQUIPO TSP2-V1 3G SC (USADO)",
+          "Cantidad": 2,
+          "Precio": 312.5,
+          "Descuento": 0,
+          "TotalLinea": 625
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -25878,8 +25923,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-12T20:02:19.204Z",
-    "ultimoIntento": "2026-11-12T20:02:19.204Z",
+    "ultimoExito": "2026-11-13T00:59:26.893Z",
+    "ultimoIntento": "2026-11-13T00:59:26.893Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
