@@ -15486,7 +15486,7 @@
       "numeroFactura": "1026208",
       "fechaEmision": "2026-11-05",
       "fechaDespacho": "2026-12-05",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001158",
       "nombreCliente": "GERSON EDUARDO CHACON AREVALO",
       "totalFactura": 0,
@@ -15497,10 +15497,10 @@
           "NumeroFactura": 1026208,
           "FechaEmision": "2026-11-05T00:00:00",
           "FechaDespacho": "2026-12-05T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL001158",
           "NombreCliente": "GERSON EDUARDO CHACON AREVALO",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15531,7 +15531,7 @@
       "numeroFactura": "1026209",
       "fechaEmision": "2026-11-05",
       "fechaDespacho": "2026-12-05",
-      "estatus": "Cerrada",
+      "estatus": "Abierta",
       "codigoCliente": "CL001158",
       "nombreCliente": "GERSON EDUARDO CHACON AREVALO",
       "totalFactura": 0,
@@ -15542,7 +15542,7 @@
           "NumeroFactura": 1026209,
           "FechaEmision": "2026-11-05T00:00:00",
           "FechaDespacho": "2026-12-05T00:00:00",
-          "Estatus": "Cerrada",
+          "Estatus": "Abierta",
           "CodigoCliente": "CL001158",
           "NombreCliente": "GERSON EDUARDO CHACON AREVALO",
           "tipoFactura": "Entrega completada",
@@ -25923,8 +25923,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-16T07:57:12.423Z",
-    "ultimoIntento": "2026-11-16T07:57:12.423Z",
+    "ultimoExito": "2026-11-16T17:54:30.986Z",
+    "ultimoIntento": "2026-11-16T17:54:30.986Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
