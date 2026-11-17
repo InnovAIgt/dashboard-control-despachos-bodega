@@ -8601,7 +8601,7 @@
       "numeroFactura": "1024256",
       "fechaEmision": "2026-06-23",
       "fechaDespacho": "2026-07-23",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000696",
       "nombreCliente": "COOPERATIVA DE TRANSPORTE INTEGRAL FLOMITAX, RESPONSABILIDAD LIMITA",
       "totalFactura": 0,
@@ -8612,7 +8612,7 @@
           "NumeroFactura": 1024256,
           "FechaEmision": "2026-06-23T00:00:00",
           "FechaDespacho": "2026-07-23T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000696",
           "NombreCliente": "COOPERATIVA DE TRANSPORTE INTEGRAL FLOMITAX, RESPONSABILIDAD LIMITA",
           "tipoFactura": "Entrega completada",
@@ -16126,6 +16126,51 @@
           "Precio": 0,
           "Descuento": 0,
           "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026263",
+      "fechaEmision": "2026-11-17",
+      "fechaDespacho": "2026-12-17",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001136",
+      "nombreCliente": "TRANSPORTES Y SERVICIOS SAN JUDAS TADEO, SOCIEDAD ANÓNIMA",
+      "totalFactura": 0,
+      "docEntry": 33235,
+      "registrosApi": [
+        {
+          "DocEntry": 33235,
+          "NumeroFactura": 1026263,
+          "FechaEmision": "2026-11-17T00:00:00",
+          "FechaDespacho": "2026-12-17T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL001136",
+          "NombreCliente": "TRANSPORTES Y SERVICIOS SAN JUDAS TADEO, SOCIEDAD ANÓNIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-760002",
+              "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 80.36,
+              "Descuento": 0,
+              "TotalLinea": 80.36
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-760002",
+          "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 80.36,
+          "Descuento": 0,
+          "TotalLinea": 80.36
         }
       ]
     },
@@ -26094,8 +26139,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-17T09:16:10.922Z",
-    "ultimoIntento": "2026-11-17T09:16:10.922Z",
+    "ultimoExito": "2026-11-17T18:37:28.753Z",
+    "ultimoIntento": "2026-11-17T18:37:28.753Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
