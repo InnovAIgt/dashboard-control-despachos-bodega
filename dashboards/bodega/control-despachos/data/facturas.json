@@ -14244,7 +14244,7 @@
       "numeroFactura": "1025867",
       "fechaEmision": "2026-10-08",
       "fechaDespacho": "2026-11-08",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000986",
       "nombreCliente": "BACK OFFICE SMART SOLUTION SOCIEDAD ANONIMA",
       "totalFactura": 0,
@@ -14255,7 +14255,7 @@
           "NumeroFactura": 1025867,
           "FechaEmision": "2026-10-08T00:00:00",
           "FechaDespacho": "2026-11-08T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000986",
           "NombreCliente": "BACK OFFICE SMART SOLUTION SOCIEDAD ANONIMA",
           "tipoFactura": "Entrega completada",
@@ -15531,7 +15531,7 @@
       "numeroFactura": "1026209",
       "fechaEmision": "2026-11-05",
       "fechaDespacho": "2026-12-05",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL001158",
       "nombreCliente": "GERSON EDUARDO CHACON AREVALO",
       "totalFactura": 0,
@@ -15542,7 +15542,7 @@
           "NumeroFactura": 1026209,
           "FechaEmision": "2026-11-05T00:00:00",
           "FechaDespacho": "2026-12-05T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL001158",
           "NombreCliente": "GERSON EDUARDO CHACON AREVALO",
           "tipoFactura": "Entrega completada",
@@ -15734,7 +15734,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000045",
           "NombreCliente": "WACKENHUT DE GUATEMALA, SOCIEDAD ANONIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -16000,6 +16000,132 @@
           "Precio": 312.5,
           "Descuento": 0,
           "TotalLinea": 625
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026261",
+      "fechaEmision": "2026-11-16",
+      "fechaDespacho": "2026-12-16",
+      "estatus": "Cerrada",
+      "codigoCliente": "CL000820",
+      "nombreCliente": "MUNICIPALIDAD DE MAGDALENA MILPAS ALTAS",
+      "totalFactura": 0,
+      "docEntry": 33233,
+      "registrosApi": [
+        {
+          "DocEntry": 33233,
+          "NumeroFactura": 1026261,
+          "FechaEmision": "2026-11-16T00:00:00",
+          "FechaDespacho": "2026-12-16T00:00:00",
+          "Estatus": "Cerrada",
+          "CodigoCliente": "CL000820",
+          "NombreCliente": "MUNICIPALIDAD DE MAGDALENA MILPAS ALTAS",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800081",
+              "Descripcion": "EQUIPO TSP4-V1 4G SC",
+              "Cantidad": 1,
+              "Precio": 669.6428,
+              "Descuento": 0,
+              "TotalLinea": 669.64
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-760002",
+              "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800081",
+          "Descripcion": "EQUIPO TSP4-V1 4G SC",
+          "Cantidad": 1,
+          "Precio": 669.6428,
+          "Descuento": 0,
+          "TotalLinea": 669.64
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-760002",
+          "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026262",
+      "fechaEmision": "2026-11-16",
+      "fechaDespacho": "2026-12-16",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000608",
+      "nombreCliente": "CORPORACION DE ORGANIZACIONES Y PROYECTOS DE SEGURIDAD S.A",
+      "totalFactura": 0,
+      "docEntry": 33234,
+      "registrosApi": [
+        {
+          "DocEntry": 33234,
+          "NumeroFactura": 1026262,
+          "FechaEmision": "2026-11-16T00:00:00",
+          "FechaDespacho": "2026-12-16T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000608",
+          "NombreCliente": "CORPORACION DE ORGANIZACIONES Y PROYECTOS DE SEGURIDAD S.A",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800081",
+              "Descripcion": "EQUIPO TSP4-V1 4G SC",
+              "Cantidad": 2,
+              "Precio": 669.6428,
+              "Descuento": 0,
+              "TotalLinea": 1339.29
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-730002",
+              "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+              "Cantidad": 2,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800081",
+          "Descripcion": "EQUIPO TSP4-V1 4G SC",
+          "Cantidad": 2,
+          "Precio": 669.6428,
+          "Descuento": 0,
+          "TotalLinea": 1339.29
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-730002",
+          "Descripcion": "TIG 100MB INTELFON FLEXIPOOL NT $1.85 (NUEVO)",
+          "Cantidad": 2,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
         }
       ]
     },
@@ -24312,6 +24438,51 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073441",
+      "fechaEmision": "2026-11-16",
+      "fechaDespacho": "2026-11-16",
+      "estatus": "Cerrada",
+      "codigoCliente": "CL003449",
+      "nombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 49003,
+      "registrosApi": [
+        {
+          "DocEntry": 49003,
+          "NumeroFactura": 9073441,
+          "FechaEmision": "2026-11-16T00:00:00",
+          "FechaDespacho": "2026-11-16T00:00:00",
+          "Estatus": "Cerrada",
+          "CodigoCliente": "CL003449",
+          "NombreCliente": "IBL, INTERNACIONAL, S.A. DE C.V.",
+          "tipoFactura": "Entrega completada",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500005",
+              "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+              "Cantidad": 1,
+              "Precio": 5,
+              "Descuento": 0,
+              "TotalLinea": 5
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500005",
+          "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+          "Cantidad": 1,
+          "Precio": 5,
+          "Descuento": 0,
+          "TotalLinea": 5
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080082",
       "fechaEmision": "2026-01-08",
       "fechaDespacho": "2026-01-08",
@@ -25923,8 +26094,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-16T17:54:30.986Z",
-    "ultimoIntento": "2026-11-16T17:54:30.986Z",
+    "ultimoExito": "2026-11-17T01:16:23.096Z",
+    "ultimoIntento": "2026-11-17T01:16:23.096Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
