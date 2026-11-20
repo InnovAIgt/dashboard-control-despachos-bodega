@@ -15779,7 +15779,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -15932,7 +15932,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -16022,7 +16022,7 @@
           "Estatus": "Cerrada",
           "CodigoCliente": "CL000820",
           "NombreCliente": "MUNICIPALIDAD DE MAGDALENA MILPAS ALTAS",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -16148,7 +16148,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL001136",
           "NombreCliente": "TRANSPORTES Y SERVICIOS SAN JUDAS TADEO, SOCIEDAD ANÓNIMA",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -26139,8 +26139,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-20T10:28:59.335Z",
-    "ultimoIntento": "2026-11-20T10:28:59.335Z",
+    "ultimoExito": "2026-11-20T18:44:32.079Z",
+    "ultimoIntento": "2026-11-20T18:44:32.079Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
