@@ -16085,7 +16085,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL000608",
           "NombreCliente": "CORPORACION DE ORGANIZACIONES Y PROYECTOS DE SEGURIDAD S.A",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -26139,8 +26139,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-19T21:48:00.360Z",
-    "ultimoIntento": "2026-11-19T21:48:00.360Z",
+    "ultimoExito": "2026-11-20T02:40:20.038Z",
+    "ultimoIntento": "2026-11-20T02:40:20.038Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
