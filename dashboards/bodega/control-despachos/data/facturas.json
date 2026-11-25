@@ -15765,7 +15765,7 @@
       "numeroFactura": "1026255",
       "fechaEmision": "2026-11-12",
       "fechaDespacho": "2026-11-12",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000001",
       "nombreCliente": "INTELFON GUATEMALA, S.A",
       "totalFactura": 0,
@@ -15776,7 +15776,7 @@
           "NumeroFactura": 1026255,
           "FechaEmision": "2026-11-12T00:00:00",
           "FechaDespacho": "2026-11-12T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
           "tipoFactura": "Entrega completada",
@@ -15918,7 +15918,7 @@
       "numeroFactura": "1026256",
       "fechaEmision": "2026-11-12",
       "fechaDespacho": "2026-11-12",
-      "estatus": "Abierta",
+      "estatus": "Cerrada",
       "codigoCliente": "CL000001",
       "nombreCliente": "INTELFON GUATEMALA, S.A",
       "totalFactura": 0,
@@ -15929,7 +15929,7 @@
           "NumeroFactura": 1026256,
           "FechaEmision": "2026-11-12T00:00:00",
           "FechaDespacho": "2026-11-12T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cerrada",
           "CodigoCliente": "CL000001",
           "NombreCliente": "INTELFON GUATEMALA, S.A",
           "tipoFactura": "Entrega completada",
@@ -16171,6 +16171,222 @@
           "Precio": 80.36,
           "Descuento": 0,
           "TotalLinea": 80.36
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026275",
+      "fechaEmision": "2026-11-24",
+      "fechaDespacho": "2026-12-24",
+      "estatus": "Cerrada",
+      "codigoCliente": "CL000678",
+      "nombreCliente": "VISION PANORAMICA, S.A",
+      "totalFactura": 0,
+      "docEntry": 33247,
+      "registrosApi": [
+        {
+          "DocEntry": 33247,
+          "NumeroFactura": 1026275,
+          "FechaEmision": "2026-11-24T00:00:00",
+          "FechaDespacho": "2026-12-24T00:00:00",
+          "Estatus": "Cerrada",
+          "CodigoCliente": "CL000678",
+          "NombreCliente": "VISION PANORAMICA, S.A",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "3-P-800001",
+              "Descripcion": "EQUIPO TSP2-V1 3G SC (REFURBISHED)",
+              "Cantidad": 1,
+              "Precio": 312.5,
+              "Descuento": 0,
+              "TotalLinea": 312.5
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-760002",
+              "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "3-P-800001",
+          "Descripcion": "EQUIPO TSP2-V1 3G SC (REFURBISHED)",
+          "Cantidad": 1,
+          "Precio": 312.5,
+          "Descuento": 0,
+          "TotalLinea": 312.5
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-760002",
+          "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026276",
+      "fechaEmision": "2026-11-24",
+      "fechaDespacho": "2026-12-24",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000928",
+      "nombreCliente": "SHELTER PROTECCION, S.A.",
+      "totalFactura": 0,
+      "docEntry": 33248,
+      "registrosApi": [
+        {
+          "DocEntry": 33248,
+          "NumeroFactura": 1026276,
+          "FechaEmision": "2026-11-24T00:00:00",
+          "FechaDespacho": "2026-12-24T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000928",
+          "NombreCliente": "SHELTER PROTECCION, S.A.",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-4300001",
+              "Descripcion": "TOCKEN CIRCULAR NFC TAG",
+              "Cantidad": 24,
+              "Precio": 17.8571,
+              "Descuento": 0,
+              "TotalLinea": 428.57
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-4300001",
+          "Descripcion": "TOCKEN CIRCULAR NFC TAG",
+          "Cantidad": 24,
+          "Precio": 17.8571,
+          "Descuento": 0,
+          "TotalLinea": 428.57
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026277",
+      "fechaEmision": "2026-11-24",
+      "fechaDespacho": "2026-12-24",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000814",
+      "nombreCliente": "ALFA SECURITY, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 33249,
+      "registrosApi": [
+        {
+          "DocEntry": 33249,
+          "NumeroFactura": 1026277,
+          "FechaEmision": "2026-11-24T00:00:00",
+          "FechaDespacho": "2026-12-24T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000814",
+          "NombreCliente": "ALFA SECURITY, SOCIEDAD ANONIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-800081",
+              "Descripcion": "EQUIPO TSP4-V1 4G SC",
+              "Cantidad": 1,
+              "Precio": 669.6428,
+              "Descuento": 0,
+              "TotalLinea": 669.64
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "1-760002",
+              "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 0,
+              "Descuento": 0,
+              "TotalLinea": 0
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-800081",
+          "Descripcion": "EQUIPO TSP4-V1 4G SC",
+          "Cantidad": 1,
+          "Precio": 669.6428,
+          "Descuento": 0,
+          "TotalLinea": 669.64
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "1-760002",
+          "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 0,
+          "Descuento": 0,
+          "TotalLinea": 0
+        }
+      ]
+    },
+    {
+      "pais": "GT",
+      "numeroFactura": "1026278",
+      "fechaEmision": "2026-11-24",
+      "fechaDespacho": "2026-12-24",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001142",
+      "nombreCliente": "INMOBILIARIA LAS ACACIAS, S.A.",
+      "totalFactura": 0,
+      "docEntry": 33250,
+      "registrosApi": [
+        {
+          "DocEntry": 33250,
+          "NumeroFactura": 1026278,
+          "FechaEmision": "2026-11-24T00:00:00",
+          "FechaDespacho": "2026-12-24T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL001142",
+          "NombreCliente": "INMOBILIARIA LAS ACACIAS, S.A.",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-260003",
+              "Descripcion": "MANOS LIBRES FMT1000 TIPO COLA DE RATON",
+              "Cantidad": 5,
+              "Precio": 116.0714,
+              "Descuento": 0,
+              "TotalLinea": 580.36
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-260003",
+          "Descripcion": "MANOS LIBRES FMT1000 TIPO COLA DE RATON",
+          "Cantidad": 5,
+          "Precio": 116.0714,
+          "Descuento": 0,
+          "TotalLinea": 580.36
         }
       ]
     },
@@ -26136,11 +26352,56 @@
           "TotalLinea": 6103
         }
       ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9090219",
+      "fechaEmision": "2026-11-24",
+      "fechaDespacho": "2026-11-24",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001890",
+      "nombreCliente": "AEROMANTENIMIENTO, S.A",
+      "totalFactura": 0,
+      "docEntry": 49030,
+      "registrosApi": [
+        {
+          "DocEntry": 49030,
+          "NumeroFactura": 9090219,
+          "FechaEmision": "2026-11-24T00:00:00",
+          "FechaDespacho": "2026-11-24T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL001890",
+          "NombreCliente": "AEROMANTENIMIENTO, S.A",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500009",
+              "Descripcion": "HANDSFREE FMT-1000 V1/V2 - SEMI OREJERA",
+              "Cantidad": 11,
+              "Precio": 10.17,
+              "Descuento": 0,
+              "TotalLinea": 111.87
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500009",
+          "Descripcion": "HANDSFREE FMT-1000 V1/V2 - SEMI OREJERA",
+          "Cantidad": 11,
+          "Precio": 10.17,
+          "Descuento": 0,
+          "TotalLinea": 111.87
+        }
+      ]
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-24T16:18:48.145Z",
-    "ultimoIntento": "2026-11-24T16:18:48.145Z",
+    "ultimoExito": "2026-11-25T00:52:30.569Z",
+    "ultimoIntento": "2026-11-25T00:52:30.569Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
