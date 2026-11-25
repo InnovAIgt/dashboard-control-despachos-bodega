@@ -21450,6 +21450,51 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "8000784",
+      "fechaEmision": "2026-11-24",
+      "fechaDespacho": "2026-11-24",
+      "estatus": "Cerrada",
+      "codigoCliente": "CL001890",
+      "nombreCliente": "AEROMANTENIMIENTO, S.A",
+      "totalFactura": 0,
+      "docEntry": 49031,
+      "registrosApi": [
+        {
+          "DocEntry": 49031,
+          "NumeroFactura": 8000784,
+          "FechaEmision": "2026-11-24T00:00:00",
+          "FechaDespacho": "2026-11-24T00:00:00",
+          "Estatus": "Cerrada",
+          "CodigoCliente": "CL001890",
+          "NombreCliente": "AEROMANTENIMIENTO, S.A",
+          "tipoFactura": "Entrega completada",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500009",
+              "Descripcion": "HANDSFREE FMT-1000 V1/V2 - SEMI OREJERA",
+              "Cantidad": 11,
+              "Precio": 10.17,
+              "Descuento": 0,
+              "TotalLinea": 111.87
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500009",
+          "Descripcion": "HANDSFREE FMT-1000 V1/V2 - SEMI OREJERA",
+          "Cantidad": 11,
+          "Precio": 10.17,
+          "Descuento": 0,
+          "TotalLinea": 111.87
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9070268",
       "fechaEmision": "2026-01-16",
       "fechaDespacho": "2026-01-16",
@@ -26358,7 +26403,7 @@
       "numeroFactura": "9090219",
       "fechaEmision": "2026-11-24",
       "fechaDespacho": "2026-11-24",
-      "estatus": "Abierta",
+      "estatus": "Cancelada",
       "codigoCliente": "CL001890",
       "nombreCliente": "AEROMANTENIMIENTO, S.A",
       "totalFactura": 0,
@@ -26369,10 +26414,10 @@
           "NumeroFactura": 9090219,
           "FechaEmision": "2026-11-24T00:00:00",
           "FechaDespacho": "2026-11-24T00:00:00",
-          "Estatus": "Abierta",
+          "Estatus": "Cancelada",
           "CodigoCliente": "CL001890",
           "NombreCliente": "AEROMANTENIMIENTO, S.A",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -26397,11 +26442,56 @@
           "TotalLinea": 111.87
         }
       ]
+    },
+    {
+      "pais": "SV",
+      "numeroFactura": "9090220",
+      "fechaEmision": "2026-11-25",
+      "fechaDespacho": "2026-11-25",
+      "estatus": "Abierta",
+      "codigoCliente": "CL001890",
+      "nombreCliente": "AEROMANTENIMIENTO, S.A",
+      "totalFactura": 0,
+      "docEntry": 49032,
+      "registrosApi": [
+        {
+          "DocEntry": 49032,
+          "NumeroFactura": 9090220,
+          "FechaEmision": "2026-11-25T00:00:00",
+          "FechaDespacho": "2026-11-25T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL001890",
+          "NombreCliente": "AEROMANTENIMIENTO, S.A",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500009",
+              "Descripcion": "HANDSFREE FMT-1000 V1/V2 - SEMI OREJERA",
+              "Cantidad": 11,
+              "Precio": 11.5,
+              "Descuento": 0,
+              "TotalLinea": 126.5
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500009",
+          "Descripcion": "HANDSFREE FMT-1000 V1/V2 - SEMI OREJERA",
+          "Cantidad": 11,
+          "Precio": 11.5,
+          "Descuento": 0,
+          "TotalLinea": 126.5
+        }
+      ]
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-25T09:18:02.713Z",
-    "ultimoIntento": "2026-11-25T09:18:02.713Z",
+    "ultimoExito": "2026-11-25T19:24:41.754Z",
+    "ultimoIntento": "2026-11-25T19:24:41.754Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
