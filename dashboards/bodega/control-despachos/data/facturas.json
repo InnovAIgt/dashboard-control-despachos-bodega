@@ -16392,6 +16392,51 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1026280",
+      "fechaEmision": "2026-11-26",
+      "fechaDespacho": "2026-12-26",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000763",
+      "nombreCliente": "CAPITAL HUMANO SOCIAL, SOCIEDAD ANONIMA",
+      "totalFactura": 0,
+      "docEntry": 33252,
+      "registrosApi": [
+        {
+          "DocEntry": 33252,
+          "NumeroFactura": 1026280,
+          "FechaEmision": "2026-11-26T00:00:00",
+          "FechaDespacho": "2026-12-26T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000763",
+          "NombreCliente": "CAPITAL HUMANO SOCIAL, SOCIEDAD ANONIMA",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500005",
+              "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+              "Cantidad": 19,
+              "Precio": 116.0714,
+              "Descuento": 0,
+              "TotalLinea": 2205.36
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500005",
+          "Descripcion": "HANDSFREE PLUG  TIPO K (DOS PINES)  - COLA DE RATON",
+          "Cantidad": 19,
+          "Precio": 116.0714,
+          "Descuento": 0,
+          "TotalLinea": 2205.36
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -24789,6 +24834,69 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073458",
+      "fechaEmision": "2026-11-25",
+      "fechaDespacho": "2026-11-25",
+      "estatus": "Abierta",
+      "codigoCliente": "CL003039",
+      "nombreCliente": "ARRUE DUARTE KEVIN ANTONIO",
+      "totalFactura": 0,
+      "docEntry": 49033,
+      "registrosApi": [
+        {
+          "DocEntry": 49033,
+          "NumeroFactura": 9073458,
+          "FechaEmision": "2026-11-25T00:00:00",
+          "FechaDespacho": "2026-11-25T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL003039",
+          "NombreCliente": "ARRUE DUARTE KEVIN ANTONIO",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "2-P-800036",
+              "Descripcion": "EQUIPO TSP4-V2 NFC 4G (USADO)",
+              "Cantidad": 1,
+              "Precio": 35,
+              "Descuento": 0,
+              "TotalLinea": 35
+            },
+            {
+              "Linea": 1,
+              "CodigoArticulo": "N-730002",
+              "Descripcion": "TIG 100MB INTELFON FLEXIPOOL M2M (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 5,
+              "Descuento": 0,
+              "TotalLinea": 5
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "2-P-800036",
+          "Descripcion": "EQUIPO TSP4-V2 NFC 4G (USADO)",
+          "Cantidad": 1,
+          "Precio": 35,
+          "Descuento": 0,
+          "TotalLinea": 35
+        },
+        {
+          "Linea": 1,
+          "CodigoArticulo": "N-730002",
+          "Descripcion": "TIG 100MB INTELFON FLEXIPOOL M2M (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 5,
+          "Descuento": 0,
+          "TotalLinea": 5
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080082",
       "fechaEmision": "2026-01-08",
       "fechaDespacho": "2026-01-08",
@@ -26490,8 +26598,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-26T11:04:27.631Z",
-    "ultimoIntento": "2026-11-26T11:04:27.631Z",
+    "ultimoExito": "2026-11-26T20:05:43.130Z",
+    "ultimoIntento": "2026-11-26T20:05:43.130Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
