@@ -26462,7 +26462,7 @@
           "Estatus": "Abierta",
           "CodigoCliente": "CL001890",
           "NombreCliente": "AEROMANTENIMIENTO, S.A",
-          "tipoFactura": "Pendiente de entrega",
+          "tipoFactura": "Entrega completada",
           "Articulos": [
             {
               "Linea": 0,
@@ -26490,8 +26490,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-25T19:24:41.754Z",
-    "ultimoIntento": "2026-11-25T19:24:41.754Z",
+    "ultimoExito": "2026-11-26T02:19:24.393Z",
+    "ultimoIntento": "2026-11-26T02:19:24.393Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
