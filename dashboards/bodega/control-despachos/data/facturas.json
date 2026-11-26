@@ -15963,7 +15963,7 @@
       "numeroFactura": "1026259",
       "fechaEmision": "2026-11-12",
       "fechaDespacho": "2026-12-12",
-      "estatus": "Cerrada",
+      "estatus": "Abierta",
       "codigoCliente": "CL000997",
       "nombreCliente": "GRUPO DISCORSA, SOCIEDAD ANÓNIMA",
       "totalFactura": 0,
@@ -15974,7 +15974,7 @@
           "NumeroFactura": 1026259,
           "FechaEmision": "2026-11-12T00:00:00",
           "FechaDespacho": "2026-12-12T00:00:00",
-          "Estatus": "Cerrada",
+          "Estatus": "Abierta",
           "CodigoCliente": "CL000997",
           "NombreCliente": "GRUPO DISCORSA, SOCIEDAD ANÓNIMA",
           "tipoFactura": "Pendiente de entrega",
@@ -26490,8 +26490,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-26T02:19:24.393Z",
-    "ultimoIntento": "2026-11-26T02:19:24.393Z",
+    "ultimoExito": "2026-11-26T11:04:27.631Z",
+    "ultimoIntento": "2026-11-26T11:04:27.631Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
