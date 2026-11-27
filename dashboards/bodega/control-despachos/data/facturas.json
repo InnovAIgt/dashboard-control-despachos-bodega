@@ -16437,6 +16437,51 @@
     },
     {
       "pais": "GT",
+      "numeroFactura": "1026286",
+      "fechaEmision": "2026-11-27",
+      "fechaDespacho": "2026-12-27",
+      "estatus": "Abierta",
+      "codigoCliente": "CL000608",
+      "nombreCliente": "CORPORACION DE ORGANIZACIONES Y PROYECTOS DE SEGURIDAD S.A",
+      "totalFactura": 0,
+      "docEntry": 33258,
+      "registrosApi": [
+        {
+          "DocEntry": 33258,
+          "NumeroFactura": 1026286,
+          "FechaEmision": "2026-11-27T00:00:00",
+          "FechaDespacho": "2026-12-27T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL000608",
+          "NombreCliente": "CORPORACION DE ORGANIZACIONES Y PROYECTOS DE SEGURIDAD S.A",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-760002",
+              "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+              "Cantidad": 1,
+              "Precio": 80.36,
+              "Descuento": 0,
+              "TotalLinea": 80.36
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-760002",
+          "Descripcion": "CLG G-NAV REG COR 1GB ECONOMICO (NUEVO)",
+          "Cantidad": 1,
+          "Precio": 80.36,
+          "Descuento": 0,
+          "TotalLinea": 80.36
+        }
+      ]
+    },
+    {
+      "pais": "GT",
       "numeroFactura": "2000095",
       "fechaEmision": "2026-01-13",
       "fechaDespacho": "2026-02-13",
@@ -26598,8 +26643,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-27T11:27:41.678Z",
-    "ultimoIntento": "2026-11-27T11:27:41.678Z",
+    "ultimoExito": "2026-11-27T20:09:11.915Z",
+    "ultimoIntento": "2026-11-27T20:09:11.915Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
