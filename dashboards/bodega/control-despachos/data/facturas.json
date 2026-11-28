@@ -24942,6 +24942,51 @@
     },
     {
       "pais": "SV",
+      "numeroFactura": "9073460",
+      "fechaEmision": "2026-11-27",
+      "fechaDespacho": "2026-11-27",
+      "estatus": "Abierta",
+      "codigoCliente": "CL003302",
+      "nombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
+      "totalFactura": 0,
+      "docEntry": 49036,
+      "registrosApi": [
+        {
+          "DocEntry": 49036,
+          "NumeroFactura": 9073460,
+          "FechaEmision": "2026-11-27T00:00:00",
+          "FechaDespacho": "2026-11-27T00:00:00",
+          "Estatus": "Abierta",
+          "CodigoCliente": "CL003302",
+          "NombreCliente": "PROTECCION INTEGRAL DE EL SALVADOR, S.A. DE C.V.",
+          "tipoFactura": "Pendiente de entrega",
+          "Articulos": [
+            {
+              "Linea": 0,
+              "CodigoArticulo": "1-P-500008",
+              "Descripcion": "HANDSFREE TCP-7 - SEMI OREJERA",
+              "Cantidad": 1,
+              "Precio": 7,
+              "Descuento": 0,
+              "TotalLinea": 7
+            }
+          ]
+        }
+      ],
+      "detalleArticulos": [
+        {
+          "Linea": 0,
+          "CodigoArticulo": "1-P-500008",
+          "Descripcion": "HANDSFREE TCP-7 - SEMI OREJERA",
+          "Cantidad": 1,
+          "Precio": 7,
+          "Descuento": 0,
+          "TotalLinea": 7
+        }
+      ]
+    },
+    {
+      "pais": "SV",
       "numeroFactura": "9080082",
       "fechaEmision": "2026-01-08",
       "fechaDespacho": "2026-01-08",
@@ -26643,8 +26688,8 @@
     }
   ],
   "meta": {
-    "ultimoExito": "2026-11-27T20:09:11.915Z",
-    "ultimoIntento": "2026-11-27T20:09:11.915Z",
+    "ultimoExito": "2026-11-28T02:39:12.199Z",
+    "ultimoIntento": "2026-11-28T02:39:12.199Z",
     "intervaloMin": 5,
     "fuente": "API",
     "error": null
